@@ -162,7 +162,7 @@
             Una declaraci&oacute;n CSS est&aacute; compuesta por selector, propiedad y valor.
         </p>
         <img src="https://2.bp.blogspot.com/-yrZT99X6IMQ/Unhyj7P1SMI/AAAAAAAAASg/3yB4EREBbUk/s1600/regla_css.png" alt="Ejemplo declaracion CSS">
-        <h4>Tipos de selectores: b&aacute;sicos y combinadores</h4>
+        <h4>Tipos de selectores: b&aacute;sicos y combinadores.</h4>
         <p>
             Los <u>selectores</u> definene sobre qu&eacute; elementos se aplicar&aacute; un conjunto de reglas CSS.
         </p>
@@ -189,6 +189,59 @@
             <tr>
                 <th>Universal</th>
                 <td>* {...}</td>
+            </tr>
+        </table><br>
+        <table border="1">
+            <tr>
+                <th colspan="2">Selectores Combinadores</th>
+            </tr>
+            <tr>
+                <th>Descendientes</th>
+                <td>div p</td>
+            </tr>
+            <tr>
+                <th>Hijo directo</th>
+                <td>div > p</td>
+            </tr>
+            <tr>
+                <th>Elemento adyacente</th>
+                <td>div + p</td>
+            </tr>
+            <tr>
+                <th>General de hermanos</th>
+                <td>div ~ p</td>
+            </tr>
+        </table>
+        <h4>Tipos de selectores: pseudoclases y pseudoelementos.</h4>
+        <p>
+            Las pseudoclases permiten llegar a las actividades o acciones que 
+            realiza el usuario, por ejemplo: darle clic a un bot&oacute;n, pasar el mouse 
+            sobre una imagen, bot&oacute;n o texto; para poder extilizarlo. Los pseudoelementos 
+            permiten acceder a los elementos de HTML que no son accesibles por otros selectores, 
+            por ejemplo: la primera letra de un texto, agregar contenido antes o depu&eacute;s 
+            de un texto, entre otros; para poder estilizarlo. Ambos se diferencian por que las 
+            pseudoclases se escriben con dos puntos y los pseudoelementos con dobles dos puntos.
+        </p>
+        <table border="1">
+            <tr>
+                <th>Pseudoclases</th>
+                <th>Pseudoelementos</th>
+            </tr>
+            <tr>
+                <td>:active</td>
+                <td>::after</td>
+            </tr>
+            <tr>
+                <td>:focus</td>
+                <td>::before</td>
+            </tr>
+            <tr>
+                <td>:hover</td>
+                <td>::first-letter</td>
+            </tr>
+            <tr>
+                <td>:nth-child(n)</td>
+                <td>::placeholder</td>
             </tr>
         </table>
        </section>
