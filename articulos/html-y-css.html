@@ -247,9 +247,57 @@
         <h3>Cascada y especificidad en CSS</h3>
         <p>
             <u>Hojas de Estilo en Cascada (del ingl&eacute;s Cascading Style Sheets) o CSS</u> es el lenguaje de estilos utilizado para describir la 
-            la presentaci&oacute;n de documentos HTML. <u>Cascada</u> significa que el orden de las reglas en CSS, importa. Los navegadores determinan 
-            que reglas de CSS deben aplicarse a las etiquetas HTML.
+            presentaci&oacute;n de documentos HTML. <u>Cascada</u> significa que el orden de las reglas en CSS, importa. Los navegadores determinan 
+            que reglas de CSS deben aplicarse a las etiquetas HTML. El orden y el origen de clasificaci&oacute;n del CSS, intervienen en el proceso. 
+            Sin embargo, no todo es color de rosa. A veces los navegadores entran en conflicto porque no saben que regla aplicar. 
+            <u>La especificidad de los selectores</u> es la manera que tiene CSS de lidiar con los conflictos. Entre mayor especificidad, mayor va a 
+            ser la probabilidad de que sus declaraciones se usen sobre las dem&aacute;s.
         </p>
+        <table border="1">
+            <tr>
+                <th>Jerarqu&iacute;a de la especificidad de CSS</th>
+            </tr>
+            <tr>
+                <td>!important</td>
+            </tr>
+            <tr>
+                <td>Estilos en l&iacute;nea</td>
+            </tr>
+            <tr>
+                <td>#id</td>
+            </tr>
+            <tr>
+                <td>Clases, atributos y pseudoclases</td>
+            </tr>
+            <tr>
+                <td>Elementos y pseudoelementos</td>
+            </tr>
+            <tr>
+                <td>Selector universal</td>
+            </tr>
+        </table>
+        <h3>Tipos de display m&aacute;s usados</h3>
+        <p>
+            <u>Display</u> es el tipo de visualizaci&oacute;n (el tipo de cuadro de representaci&oacute;n) que tienen los elementos.
+        </p>
+        <ul>
+            <li>Block: muestra un elemento como un elemento de bloque (como &#60;p>). Comienza en una nueva l&iacute;nea y ocupa todo el ancho.</li>
+            <li>Inline: muestra un elemento como un elemento en l&iacute;nea (como &#60;span>). Cualquier propiedad de alto y ancho no tendr&aacute; efecto.</li>
+            <li>Inline-block: muestra un elemento como un contenedor de bloques de nivel en l&iacute;nea. El elemento en s&iacute; est&aacute; formateado 
+                como un elemento en l&iacute;nea, pero puede aplicar valores de alto y ancho.
+            </li>
+            <li>Flex: muestra un elemento como un contenedor flexible a nivel de bloque.</li>
+            <li>Grid: muestra un elemento como un contenedor de cuadr&iacute;cula a nivel de bloque.</li>
+        </ul>
+        <h3>Modelo de caja</h3>
+        <p>
+            Todo en CSS tiene una caja alrededor, y comprender estas cajas es clave para poder crear diseños con CSS o para alinear elementos con otros 
+            elementos. En CSS, en general, hay dos tipos de cajas: <u>cajas en bloque</u> y <u>cajas en l&iacute;nea</u>. El modelo de cajas CSS completo 
+            se aplica a cajas que representan comportamiento en bloque; las cajas con comportamiento en l&iacute;nea solo usan una parte del comportamiento 
+            definido en el modelo de cajas. El modelo define c&oacute;mo funcionan juntas las diferentes partes de una caja (margen, border, relleno y 
+            contenido) para crear una caja que puedas ver en tu p&aacute;gina.
+        </p>
+        <img src="https://miro.medium.com/max/382/1*LYIt459KOTM4R-uQFHg_bw.png" alt="Ejemplo modelo caja CSS">
        </section>
     </article>
     <aside>
@@ -258,7 +306,14 @@
         <a href="https://htmlreference.io/">HTML Reference - A free guide to all HTML elements and attributes</a><br>
         <a href="https://htmlcolorcodes.com/es/">C&oacute;digos de Colores HTML</a><br>
         <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements">Pseudoclases y pseudoelementos</a><br>
-        <a href="https://specificity.keegan.st">Specificity Calculator</a>
+        <a href="https://developer.mozilla.org/es/docs/Web/CSS/Specificity">Especificidad - CSS - MDN Web Docs</a><br>
+        <a href="https://specificity.keegan.st">Specificity Calculator</a><br>
+        <a href="https://www.w3schools.com/cssref/pr_class_display.asp">CSS display property - W3Schools</a><br>
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox | CSS-Tricks</a><br>
+        <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">A Complete Guide to Grid | CSS-Stricks</a><br>
+        <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model">El modelo de caja - Aprende sobre desarrollo web | MDN</a><br>
+        <a href="https://www.joshwcomeau.com/css/rules-of-margin-collapse/">The Rules of Margin Collapse</a><br>
+        <a href="https://learn-the-web.algonquindesign.ca/topics/flexbox/">Flexbox · Web Dev Topics · Learn the Web</a>
     </aside>
     <footer>
         Base de Conocimiento - 26/07/2022
