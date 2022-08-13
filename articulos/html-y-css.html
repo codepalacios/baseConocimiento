@@ -253,29 +253,7 @@
             <u>La especificidad de los selectores</u> es la manera que tiene CSS de lidiar con los conflictos. Entre mayor especificidad, mayor va a 
             ser la probabilidad de que sus declaraciones se usen sobre las dem&aacute;s.
         </p>
-        <table border="1">
-            <tr>
-                <th>Jerarqu&iacute;a de la especificidad de CSS</th>
-            </tr>
-            <tr>
-                <td>!important</td>
-            </tr>
-            <tr>
-                <td>Estilos en l&iacute;nea</td>
-            </tr>
-            <tr>
-                <td>#id</td>
-            </tr>
-            <tr>
-                <td>Clases, atributos y pseudoclases</td>
-            </tr>
-            <tr>
-                <td>Elementos y pseudoelementos</td>
-            </tr>
-            <tr>
-                <td>Selector universal</td>
-            </tr>
-        </table>
+        <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Q7AjHHJ9--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hhf8sfgmd2w72c7yp8o3.png" alt="Jeraquia especificidad CSS">
         <h3>Tipos de display m&aacute;s usados</h3>
         <p>
             <u>Display</u> es el tipo de visualizaci&oacute;n (el tipo de cuadro de representaci&oacute;n) que tienen los elementos.
@@ -298,6 +276,34 @@
             contenido) para crear una caja que puedas ver en tu p&aacute;gina.
         </p>
         <img src="https://miro.medium.com/max/382/1*LYIt459KOTM4R-uQFHg_bw.png" alt="Ejemplo modelo caja CSS">
+        <h3>Colapso de m&aacute;rgenes</h3>
+        <p>
+            Cuando dos elementos de bloque HTML tienen m&aacute;rgenes verticiales que se tocan entre s&iacute;, estos dos m&aacute;rgenes colapsan en uno 
+            o se fusionan entre s&iacute;, y aqui dominar&aacute; el m&aacute;s grande. En otras palabras el colapso de m&aacute;rgenes <u>sucede cuando</u> hay dos elementos bloque 
+            adyacentes y <u>no sucede cuando</u> existe un contenedor tipo flexbox, grid o elementos que no sean bloque.
+        </p>
+        <img src="https://miro.medium.com/max/535/1*irihT0essp7Rs2cqtHxyQw.png" alt="Ejemplo colapso margenes CSS">
+        <h3>Posicionamiento</h3>
+        <p>
+            La propiedad de CSS <u>position</u> o posicionamiento nos ayuda a ubicar elementos en un espacio determinado. En CSS tenemos diferentes tipos 
+            de position como pueden ser:
+        </p>
+        <lu>
+            <li>Relative</li>
+            <li>Absolute</li>
+            <li>Fixed</li>
+            <li>Stiky</li>
+            <li>Static</li>
+            <li>Inherital</li>
+        </lu>
+        <h3>Z-index y el contexto de apilamiento</h3>
+        <p>
+            El contexto de apilamiento habla sobre el eje Z que es invisible, sin embargo es un eje desde la pantalla del navegador hacia el usuario en 
+            donde se tienen varios elementos HTML uno encima de otro. El contexto de apilamiento puede suceder por el orden de los elementos del documento 
+            HTML o por la propiedad z-index. La propiedad CSS z-index indica el orden de un elemento posicionado y sus descendientes. Cuando varios elementos 
+            se superponen, los elementos con mayor valor z-index cubren aquellos con menor valor.
+        </p>
+        <img src="https://www.todo-argentina.net/cursos/css/imagenes/css38.gif" alt="Ejemplo z-index CSS">
        </section>
     </article>
     <aside>
