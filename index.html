@@ -9,24 +9,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="/estilos/index.css" / type="text/css">
 </head>
 
 <body>
-    <header>
-        <h1>
-            Base de Conocimiento
-        </h1>
-    </header>
-    <article>
-        <h2>Menú principal</h2>
-        <section>
-            <a href="articulos/html-y-css.html">HTML y CSS</a>
-        </section>
-    </article>
-    <footer>
-        Base de Conocimiento - 26/07/2022
-    </footer>
+    <div class="container">
+        <header class="header-container">
+                Base de Conocimiento
+        </header>
+        <article class="article-container">
+            <span>Art&iacute;culos</span>
+            <div class="section-container">
+                <section class="section-terminal-y-comandos">
+                    <a href="/">Terminal y L&iacute;nea de Comandos</a>
+                    <p>Texto de prueba para descripcion del articulo</p>
+                </section>
+                <section class="section-git-y-github">
+                    <a href="/">Git y GitHub</a>
+                    <p>Texto de prueba para descripcion del articulo</p>
+                </section>
+                <section class="section-html-y-css">
+                    <a href="articulos/html-y-css.html">HTML y CSS</a>
+                    <p>Texto de prueba para descripcion del articulo</p>
+                </section>
+            </div>   
+        </article>
+        <footer class="footer-container">
+            Base de Conocimiento - 26/07/2022
+        </footer>
+    </div>
 </body>
 
 </html>
