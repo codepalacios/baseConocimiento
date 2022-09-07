@@ -467,5 +467,100 @@
             Fue desarrollado por Google.
         </li>
     </ul>
+    <!--
+        Optimización de imágenes.
+
+        Tamaño máximo recomendado para una imagen: 70 kb.
+
+        Herramientas para optimizar imágenes:
+        - Tiny PNG: comprime el tamaño de una imagen, para hacerla más ligera
+        - Verifix: elimina los metadatos de una imagen, para reducir su tamaño
+    -->
+    <h3>Etiqueta img</h3>
+    <p>
+        El elemento HTML &lt;img> incrusta una imagen dentro de un documento. A 
+        continuación, veremos c&oacute;mo funciona.
+    </p>
+    <p>
+        La etiqueta &lt;img> va siempre dentro del contenedor &lt;body>, pues es 
+        un elemento visible.
+    </p>
+    <h4>Funcionamiento de la etiqueta alt:</h4>
+    <p>
+        &lt;img src="ubicacio&oacute;n de la imagen" alt="descripci&oacute;n 
+        de la imagen">
+    </p>
+    <h4>Atributos de la etiqueta img</h4>
+    <p>
+        La etiqueta img cuenta con dos atributos "src" y el segundo atributo es 
+        "alt". Ambos son importantes.
+    </p>
+    <p>
+        El atributo de "src" es para mostrar en d&oacute;nde se encuentra la 
+        imagen que vamos a inscrustar. Las im&aacute;genes se pueden obtener de 
+        alguna carpeta o una URL que obtengamos de internet.
+    </p>
+    <ul>
+        <li>
+            En caso de que el nombre de tu imagen lleve alg&uacute;n espacio, 
+            deber&aacute;s sustituir ese espacio con un guion o guion medio. Caso 
+            contrario, el navegador no podr&aacute; reconocer la ubicaci&oacute;n.
+        </li>
+    </ul>
+    <p>
+        Alt sirve para agregar una descripci&oacute;n a nuestra imagen. Esto es 
+        &uacute;til por cuestiones de SEO y tambi&eacute;n para accesibilidad (por 
+        ejemplo para personas con visi&oacute;n reducida).
+    </p>
+    <ul>
+        <li>
+            &lt;img>, a diferencia de la gran mayor&iacute;a de la dem&aacute;s 
+            etiquetas de HTML, no necesita una etiqueta de cierre.
+        </li>
+    </ul>
+    <h3>Etiqueta figure</h3>
+    <p>
+        Es una etiqueta que permite almacenar una imagen en su interior. Es una 
+        mejor pr&aacute;ctica comparada con usar solamente un contenedor div. 
+        Como complemento al contenedor figure, se utiliza la etiqueta figcaption, 
+        que permite daler una peque&nacute;a descripci&oacute;n a la imagen, como 
+        el autor, fuente o algo por el estilo, que se mostrar&aacute; abajo de 
+        la imagen.
+    </p>
+    <p>
+        Figcaption se diferencia del atributo Alt porque esta &uacute;ltima 
+        muestra su descripci&oacute;n en texto en el navegador solamente al 
+        pasar el mouse por encima de la imagen (de ah&iacute; su utilidad para 
+        personas con discapacidad visual).
+    </p>
+    <p>
+        Es imporante considerar que la etiqueta figure no es &uacute;nicamente 
+        para imagenes, representa contenido independiente, a menudo con un 
+        t&iacute;tulo. Por lo general, se trata de una imagen, una 
+        ilustraci&oacute;n, un diagrama, un fragmento de c&oacute;digo, o un 
+        esquema al que se hace referencia en el texto principal, pero que se 
+        puede mover a otra p&aacute;gina o a un ap&eacute;ndice sin que afecte 
+        al flujo principal.
+    </p>
+    <!-- Ejemplo de etiqueta figure:  -->
+    <h3>Etiqueta video</h3>
+    <p>
+        La etiqueta &lt;video>, tiene algunos atributos como:
+    </p>
+    <ol>
+        <li>
+            Controls: agrega al video los controles necesarios para reproducir, 
+            pausar y adelantar.
+        </li>
+        <li>
+            preload = auto: hace que el navegador descargue el video, en el 
+            momento en el que se acceda a la p&aacute;gina.
+        </li>
+    </ol>
+    <p>
+        La etiqueta &lt;source>, se puede colocar dentro de una etiqueta 
+        &lt;video> varias veces, para especificar diferentes rutas. Esto para 
+        asegurar que cualquier navegador pueda mostrar el video.
+    </p>
 </body>
 </html>
