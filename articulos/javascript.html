@@ -225,6 +225,9 @@
 
 
      <!-- 
+
+      PRUEBA DE JAVASCRIPT
+
         Variables
       Hablo principalmente de las diferencias entre var, let y const. Var ya no se usa por que suele dar algunos problemas aunque es valido ocuparlo, pero altualmente se utiliza let. Const no puede cambiar su valor una vez asignado.
       Aclarando puntos de declarar una variable, inicializarla y reinicializarla.
@@ -235,8 +238,41 @@
       Punto importante a considerar: el uso del return en una condicional que este dentro de una función.
 
         Ciclos
-      Punti importante aclarar sobre los ciclos infinitos.
+      Punto importante aclarar sobre los ciclos infinitos.
 
+        Arrays y objetos
+      Array: es una lista de elementos. Objeto: es una lista de elementos PERO cada elemento tiene un nombre clave.
+
+        Bonus: reducción de condicionales.
+      Profesor untilizo un if que si un objeto con el nombre de la propiedad le retornava un valor ese if se ejecutaria.
+
+
+      MANIPULACION DEL DOM
+
+        Cómo conectar JavaScript con HTML
+      El DOM en HTML y etiqueta para vincular javascript. //Mostrar ejemplo con código.
+      Tambien se hablo sobre lo que es un entorno de ejecución. Backend y Frontend (NodeJS y el navegador web)
+
+        Leyendo HTML desde JavaScript
+      Tenemos funciones o metodos que nos da nuestro entorno de ejecucion (el navegador web en el caso de desarrollo frontend) para seleccionar los elementos que tenemos en el html que esta ejecutando a nuestro código javascritp.
+      document.getElementById();
+      document.getElementByClassName();
+      document.querySelecto();
+      document.querySelectorAll(); // Trae en forma de lista todos los elementos
+      Nota: incluir ejemplos practicos ya que es importante dejar muy en claro la lecutra HTML desde JavaScript.
+
+
+        Escribiendo HTML desde JavaScript
+      Manipulacion del DOM desde javascritp consiste en editar e incluso crear nuevos elementos para nuestro html utilizando javascript. Tiene sentido que se haga con la intencion de que cuando el usuario haga algo pase algo.
+      En clase se vio como cambiar el contenido de un elemento html, obtener o cambiar un atributo, agregar o remover clases, cambiar valores, finalemente crear nuevos elementos.
+      innerHTML // Importante tener cuidado por temas de seguridad por que escribe HTML no texto.
+      innerText
+      classList.add
+      classList.remove
+      input.value = '123'
+      document.createElement(img);
+
+      
       -->
 
 
