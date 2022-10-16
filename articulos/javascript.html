@@ -261,7 +261,6 @@
       document.querySelectorAll(); // Trae en forma de lista todos los elementos
       Nota: incluir ejemplos practicos ya que es importante dejar muy en claro la lecutra HTML desde JavaScript.
 
-
         Escribiendo HTML desde JavaScript
       Manipulacion del DOM desde javascritp consiste en editar e incluso crear nuevos elementos para nuestro html utilizando javascript. Tiene sentido que se haga con la intencion de que cuando el usuario haga algo pase algo.
       En clase se vio como cambiar el contenido de un elemento html, obtener o cambiar un atributo, agregar o remover clases, cambiar valores, finalemente crear nuevos elementos.
@@ -272,7 +271,21 @@
       input.value = '123'
       document.createElement(img);
 
+        Eventos en JavaScript: interactuando con usuarios
+      Profesor muestra en clase como se ejecutan un console.log en html con onClick u onChange (para inputs evaluando el cambio de su contenido interior). Adional informa que no es la forma correcta en html si no mandar a llamar metodos a javascript. En archivo .js crea las variables respectivas y cada click en un boton por clente (escuchando evento) manda a llamar funcion que retorna una suma. Explica que existen varias formas y no es la unica. Atributos en HTML.
+      Nota: reto que deja profesor es transformar un string a entero (Number o parseInt).
+
+        addEventListener
+      Lo ideal es que se agrege un escucha perde desde javascript para mantener nuestro codigo HTML y CSS limpio. Esto se logra agregando element.addEventListener('nombreEvento', funcionALlamarSinParentesisAlFinal) en javascript. También se explico el funcionamiento de un formulario que al último boton que tenga le asiga automaticamente type='submit' y que al interactuar con el recarga la pagina modificando la url. Los valores que se ingresaron en el formulario por ende desaparecera y no mostrara la informacion en la misma paginda. Se hablo que para parar el comportamiento por default se pueden hacer dos cosas: primero seria cambiar el button a type='button' o segundo utilizar el objeto event (nota: explicarlo en el contenido a profundidad) enviado a la funcion al a llamar en el escucha para utilizar event.preventDefault(); evitando que se recargue la pagina y luego cambiando la información en los elementos HTML segun necesitemos.
+      Nota: validar agregar enlace de referencia a mas elementos o eventos de addEventListener.
+
       
+      CONTRIBUCION A PROYECTOS
+
+        Conectando GitHub a proyectos de JavaScript
+      Profesor hablo sobre como conectar un repositorio ya existente a GitHub haciendo enfasis en confirguar primero el archivo .gitinore (gitignore.io, evaluar si contenido seria mejor colocarlo en articulo git). De tal forma ya podriamos contribuir a otros proyectos de javascript.
+
+
       -->
 
 
