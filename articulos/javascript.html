@@ -304,6 +304,15 @@
 
         Carrito de compras.
       Profesor agrego el aside carrito de compras. Puntos importantes: se agrego color de fondo para que los menus no se superpongan e utilizo menuMobile.classList.contains('inactive'); para validar si un menu estaba abierto y cerrarlo si es estaba abriendo otros (retorana verdadero o faslo);
+
+        Lista de productos: HTML a partir de arrays.
+      Profesor agrego el contenedor principar y el contenedor de cards (que tiene en su interior toda la lista de los productos) si envargo no dejo el código ingresado a mano, sino que solo dejo los contenedores principales para luego desde javascript ingresarlos de forma interactiva mediante un recorrido de array (que simula de momento un API REST). En el cual genera el HTML guardandolas en constantes mediante const nameElement = documente.createElement('div'); luego le agrega clases mediante classList. En cuanto a elementos de imagenes hace productImg.setAttribute('src', product.image); para modificar y traer la src de la imagen del objeto de array. Tambien con innerText agrega precio y nombre del producto. Por ultimo agregar de forma ordenada todo el html mediante cardsContainer.appendChild(productCard);. Tambien aclara que lo ideal seria tener un funcion render para traer no solo un listado si no poder traer el que se seleccione de acuerdo a la interaccion que realice el usuario o lo que seleccione. Nota: dificil de incluir estas notas LOL.
+
+        Detalle de un producto.
+      Profesor agrego el aside de detalles de un producto. Configuro el css de forma especifica utilizando ids y por ultimo configuro javascritp para los nuevos selectores. Nota: configuraciones practicamente.
+
+        Interacción entre todos los componentes.
+      El profesor termino de configurar las interacciones entres los menus para que estos se cierren y no se superpogan. Nota importante: al haber generado elementos HTML desde javascript desde el mismo javascript se le pueden agregar addEventListener() para escuchar sus respectivos eventos que desde HTML no se podrián. Podria ser un buen punto a considerar para agregar al articulo.
       -->
 
   </body>
