@@ -26,7 +26,20 @@ html {
 }
 .headboard__title {
   color: var(--white);
-  margin: 0;
+}
+.main-container {
+  width: 31rem;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.main-container__article {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid var(--grey);
+}
+.main-container__title {
+  font-weight: bold;
+  font-size: medium;
 }
 
 /* Media Tablet */
