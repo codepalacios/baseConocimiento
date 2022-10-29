@@ -1,7 +1,38 @@
 :root {
-    --primary-blue: #2D3142;
-    --grey: #BFC0C0;
-    --white: #FFFFFF;
-    --red: #EF8354;
-    --secondary-blue: #4F5D75;
+  --primary-blue: #2d3142;
+  --grey: #bfc0c0;
+  --white: #ffffff;
+  --red: #ef8354;
+  --secondary-blue: #4f5d75;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Media Mobile */
+.headboard {
+  width: 100%;
+  height: 5rem;
+  background-color: var(--primary-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headboard__title {
+  color: var(--white);
+  margin: 0;
+}
+
+/* Media Tablet */
+@media (min-width: 426px) {
+}
+
+/* Media Laptop */
+@media (min-width: 769px) {
 }
