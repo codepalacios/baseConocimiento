@@ -4,6 +4,7 @@
   --white: #ffffff;
   --red: #ef8354;
   --secondary-blue: #4f5d75;
+  --black: #000000;
 }
 * {
   box-sizing: border-box;
@@ -54,6 +55,28 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--black);
+}
+.main-container__link:hover {
+  color: var(--red);
+  font-size: 1.4rem;
+}
+.footer-container {
+  width: 31rem;
+  height: 4rem;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid var(--primary-blue);
+  background-color: var(--primary-blue);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container__date {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 /* Media Tablet */
