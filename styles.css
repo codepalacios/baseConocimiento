@@ -60,6 +60,7 @@ html {
 .main-container__link:hover {
   color: var(--red);
   font-size: 1.4rem;
+  border-bottom: 1px solid var(--red);
 }
 .footer-container {
   width: 31rem;
@@ -81,6 +82,28 @@ html {
 
 /* Media Tablet */
 @media (min-width: 426px) {
+  .main-container {
+    width: 41.5rem;
+  }
+  .main-container__title {
+    height: 3rem;
+    border: 2px solid var(--secondary-blue);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-container__link {
+    border: 1px solid var(--grey);
+    border-radius: 1rem;
+    margin-top: 1rem;
+  }
+  .main-container__link:hover {
+    border: 1px solid var(--red);
+  }
+  .footer-container {
+    width: 41.5rem;
+  }
 }
 
 /* Media Laptop */
