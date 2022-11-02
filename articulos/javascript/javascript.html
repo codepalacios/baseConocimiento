@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>JavaScript</h1>
+
+    <h2>Introducci&oacute;n a JavaScript</h2>
+
+    <h3>¿Qu&eacute; es JavaScript?</h3>
+    <h4>¿Qu&eacute; es JavaScript?</h4>
+    <p>
+      JavaScript es un lenguaje de programaci&oacute;n din&aacute;mico que tiene
+      la capacidad de ser utilizado en muchos dispositivos diferentes. Puede
+      usarse en ordenadores personales, servidores web y tel&eacute;fonos
+      intelegintes. En un lenguaje interpretado, orientado a objetos, débilmente
+      tipado y din&aacute;mico.
+    </p>
+    <p>
+      JavaScript se emplea com&uacute;nmente para el desarrollo web front-end y
+      m&aacute;s recientemente para algunos desarrollos back-end a trav&eacute;s
+      de frameworks como Nojde.js o Next.js. Tiene caracter&iacute;sticas como
+      la programaci&oacute;n orientada a objetos, funciones y herencia basada en
+      prototipos.
+    </p>
+    <h4>C&oacute;mo nace JavaScript?</h4>
+    <p>
+      Nace con la necesidad de generar dinamismo en las p&aacute;ginas web y que
+      a su vez los usuarios y las empresas pudieran interactuar unos con otros.
+      Fue creado por Brendan Eich en 1995y se convirtio en un est&aacute;ndar
+      oficial del World Wide Web Consortium (W3C) en 1997.
+    </p>
+    <h4>
+      ¿Por qu&eacute; decimos que JavaScript es un lenguaje din&aacute;mico?
+    </h4>
+    <p>
+      Corre directamente en la etapa de Runtime, sin una etapa de
+      compilaci&oacute;n previa. Esto permite probar nuestro c&oacute;digo
+      inmediatamente; pero tambi&eacute;n es lo que hace que los errores no se
+      muestren sino hasta que se ejecuta el programa. Lo que se va a primera
+      vista, cuando se analiza el c&oacute;digo, es muy probable que no sea lo
+      que se va a obtener cuando el programa se ejecute.
+    </p>
+    <p>
+      JavaScript permite declarar (por ejemplo) variables cuyo valor (y tipo)
+      solo se conocer&aacute; al momento de su ejecuci&oacute;n en
+      funci&oacute;n de las condiciones dadas al momento de correrlo en un
+      entorno real. En cambio, los lenguajes est&aacute;ticos no
+      compilar&aacute;n en c&oacute;digo ejecutable a menos que todos los
+      valores (o tipos de valores) se conozcan por adelantado.
+    </p>
+    <h4>¿Por qu&eacute; es d&eacute;bilemente tipado?</h4>
+    <p>
+      Por que los tipos de datos no est&aacute;n bien definidos en el lenguaje y
+      permite, por ejemplo, operaciones entre n&uacute;meros y letras. Esto
+      sucede porque el lenguaje asume tipos de datos que no necesariamente
+      fueron los que se quer&iacute;an representar. Se pueden hacer operaciones
+      entre tipos distintos de datos (enteros con strings, booleanos con
+      enteros, etc.) Ejemplor:
+    </p>
+    <p>
+      4 + "7"; // 47<br />
+      4 * "7"; // 28 <br />
+      2 + true; // 3 <br />
+      false - 3; // -3
+    </p>
+    <h4>¿Realmente es JavaScript un lenguaje interpretado?</h4>
+    <p>
+      S&iacute;, y la raz&oacute;n es que el navegador lee l&iacute;nea por
+      l&iacute;nea nuestro c&oacute;digo, el cual indica lo que tiene que ir
+      haciendo, sin la necesidad de compilar. Todo esto es controlado por el
+      motor de JavaScript V8 del navegador.
+    </p>
+    <h4>Qu&eacute; significa que JavaScript es Backwards Compatible</h4>
+    <p>
+      Todas las funciones nuevas que salen para JavaScript no dañar&aacute;n el
+      trabajo ya hecho previamente, pero no se prodrá utilizar en nuestro
+      entorno de trabajo inmediatamente. Para solucionar esto est&aacute; Babel,
+      que permite usar las nuevas caracter&iacute;sticas del lenguaje, pero lo
+      transforma a una versi&oacute;n que el navegador pueda entender.
+    </p>
+
+    <h3>¿Por qu&eacute; JavaScript</h3>
+    <ol>
+      <li>
+        JavaScript tiene una <b>comunidad enorme</b> de desarrolladores que te
+        pueden ir ayudando a generar diferentes cosas.
+      </li>
+      <li>
+        Si solo estuvieras interesado en trabajar <b>aplicaciones web</b> tienes
+        muchos frameworks y librer&iacute;as contruidas en JavaScript que te van
+        a a ayudar a hacer proyectos de forma mucho m&aacute;s r&aacute;pida,
+        eficiente y robusta (Angular, View, React, entre otros).
+      </li>
+      <li>
+        Si no quieres trabajar solo en aplicaciones Web puedes utilizar
+        JavaScript con un framework que se llama React Native para poder
+        <b>construir apliaciones nativas</b> como Android y IOS.
+      </li>
+      <li>
+        Puedes construir <b>aplicaciones de escritorio</b> con JavaScript,
+        usando un framework llamado Electron, pueden correr en Mac o Windows.
+      </li>
+      <li>
+        Tambi&eacute;n puedes trabajar en la parte del
+        <b>Back-end o IOT (Internet Od Things)</b> es un concepto que se refiere
+        a una interconexion digital de objetos cotidianos con Internet. Esto con
+        un Framework llamado NodeJs, el cual es un entorno de ejecuci&oacute;n
+        de JavaScript que corre directamente en el Back-end.
+      </li>
+    </ol>
+    <!--    Contenido a evaluar para agregarlo.
+        Elementos de un Lenguaje de Programación: Variables, Funciones y Sintaxis.
+        Dos componentes principales:
+        1. Data que guardamos en memoria
+        2. Tareas (funciones) que haremos con esa data
+        En la clase se hablo principalmente sobre los tipos de datos en js (numeros, string, booleam, null, undefined, arrays y objetos). Tambien se hablo de typeof para indicar el tipo de datos. Tambien se hablo como crear un archivo extension .js y seria bueno mencionar como se hacen comentarios.
+     -->
+    <!--   Contenido a evaluar para agregarlo
+        Variables en JavaScript
+        En la clase se siguio aclarando sobre los tipos de datos. Se menciono que una variable era un conetenedor para almacenar datos y como es el proceso de declaración y asignación  de variables.
+        Estaria bueno hablar de buenas prácticas al momento de agregar mas contenido en el articulo.
+      -->
+    <!--  Contenido a evaluar para agregarlo
+        Funciones en JavaScript
+        En clase se hablo de los tipos de funciones (declarativas y expresion) y como mandar a llamarlas, se hablo y explico tema de los parametros, finalmente sobre el uso de retunr y console.log (para imprimir en consola). importante aclara que una funcion es un conjunto o bloque de instrucciones que se pueden mandar a llamar. console.log(`Hola ${nombre}`);
+        Diferencias:
+            A las funciones declarativas se les aplica hoisting, y a la expresión de función, no.Ya que el hoisting solo se aplica en las palabras reservadas var y function.
+            Los que quiere decir que con las funciones declarativas, podemos mandar llamar la función antes de que ésta sea declarada, y con la expresión de función (anonima), no, tendríamos que declarala primero, y después mandarla llamar.
+       -->
+
+    <!-- BASES DE JAVASCRIPT -->
+
+    <!--    Contenido a evaluar para agregarlo
+      Scope
+      Se hablo en clases sobre los alcences globales y locales. Se motros como una funcion puede tener acceso a variables globales pero una parte globar no tiene acceso a los datos locales de una funcion. 
+     -->
+    <!--   Contenido a evaluar para agregarlo
+      Hoisting
+      Se hablo sobre la diferencia entres hosting y hoisting (que no son lo mismo). En cuanto a hoisting indica que es llamar una variable o funcion antes de ser declarada y se mostraron ejemplos practicos al respecto. Adicional cuando se declara una funcion se debe hacer siempre al inicio del codigo ya que no se puede hacer en medio o al final del codigo, esto se condisera una mala práctica. Cuando el navegador compila el codigo lo primero que "reserva" (verificar el termino) seria las variables y las funciones.
+      https://developer.mozilla.org/es/docs/Glossary/Hoisting
+      -->
+    <!--    Contenido a evaluar para agregarlo
+      Coerción
+      Es la forma en la que podemos cambiar un tipo de valor a otro, existen dos tipos de coerción.
+        1. Coerción implicita: es cuando el lenguaje nos ayuda a cambiar el tipo de valor.
+        2. Coerción explicita: es cuando obligamos a que cambi el tipo de valor
+      Nota: evaluar agregar ejemplos prácticos de codigo.
+       -->
+    <!-- Contenido a evaluar para agregalo
+      Valores: Truthy y Falsy
+      ¿Que tipos por default son verdaderos y falsos?. Todo esto lo vamos a usar en condiciones, esto valida si es verdadero o falso para ejecutar cierta acción.
+      Nota: agregar ejemplos prácticos de resultados de valores.
+     -->
+    <!--  Contenido a evaluar para agregarlo
+      Operadores: Asignación, Comparación y Aritméticos.
+      En clase práctica mente se hablo de todos los tipos de operadores y sus funcionamios y/o diferencias entre si mismos.
+      == // === (tiene que ser igual en valor y tipo)
+      https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
+     -->
+
+    <!-- CONDICIONALES -->
+
+    <!-- 
+        Condicionales: If, Else, esle if.
+      Se hablo sobre como funcionan las condicionales y el operador condicional ternario.
+      https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+      -->
+    <!-- 
+        Switch
+      Se hablo sobre como funciona la estructura condicional switch.
+     -->
+
+    <!-- ARRAYS -->
+    <!-- 
+        Arrays
+      Se hablo en clases que es un array, la sintaxis de declaracion, como imprimir sus valores y diferentes metodos para agregar mas elementos al array y eliminarlos. IndexOf para obtener la posición de un elemento. Los arrays pueden tener mas arrays dentro. Lenght.
+      -->
+
+    <!-- Loops -->
+
+    <!-- 
+      Loops: For y For...of
+    Profesor enseño el funcionamiento del loops for y el modificado for...of, ambos con ejemplos de un array de estudiante llamando una function en los loops.
+    Nota: agregar ejemplos de codigos mejoraria los aticulos en general.
+     -->
+    <!-- 
+      Loops: While
+    Profesor enseño el funcionamiento del loops while con un ejemplo de array estudiantes.
+     -->
+
+    <!-- Objects -->
+
+    <!-- 
+        Objects
+      Explicacion de que es un objeto y como llevar cosas del mundo real a la abstraccion de la programación. Se eseño la sintxis de un objeto, mostro un ejemplo de autor, como añadirle propiedades y funciones (llamadas metodos) para luego llamar esas propiedades y la funcion. POO. Sintaxis en JavaScript. Uso de this en el objeto.  
+     -->
+    <!-- 
+        Objects: Función constructora.
+      Explicación de la sintaxis, creación, funcionamiento y utilizacion de un constructor para crear objetos de manera menos manual. Importante dejar en claro el funcionamiento de la palabra reservada New que sirve para crear objetos de un objeto realcionado (?).
+     -->
+    
+    <!-- Métodos de Arrays -->
+
+    <!-- 
+        Métodos de recorridos de Arrays
+      Profesor hablo sobre los metodos filter y map para regresar resultados de un array que contiene datos de tipo objetos. Explico la diferencia entre filtrar y mapear.
+     -->
+    <!-- 
+        Recorriendo Arrays con .find(), .forEach() y .some()
+      Profesor explica y enseña el uso y uso de los distintos metodos asi como sus diferenfias y que es lo que retornan.
+      Nota: estaria bien incluir enlaces a la documentacion oficial.
+     -->
+
+
+
+
+     <!-- INICIO DE CURSO PRÁCTICO DE JAVASCRIPT -->
+
+
+
+
+     <!-- 
+
+      PRUEBA DE JAVASCRIPT
+
+        Variables
+      Hablo principalmente de las diferencias entre var, let y const. Var ya no se usa por que suele dar algunos problemas aunque es valido ocuparlo, pero altualmente se utiliza let. Const no puede cambiar su valor una vez asignado.
+      Aclarando puntos de declarar una variable, inicializarla y reinicializarla.
+
+      Nota: estaria bien detallar las diferencias entre llaves, corchetes y parentesis.
+
+        Condicionales
+      Punto importante a considerar: el uso del return en una condicional que este dentro de una función.
+
+        Ciclos
+      Punto importante aclarar sobre los ciclos infinitos.
+
+        Arrays y objetos
+      Array: es una lista de elementos. Objeto: es una lista de elementos PERO cada elemento tiene un nombre clave.
+
+        Bonus: reducción de condicionales.
+      Profesor untilizo un if que si un objeto con el nombre de la propiedad le retornava un valor ese if se ejecutaria.
+
+
+      MANIPULACION DEL DOM
+
+        Cómo conectar JavaScript con HTML
+      El DOM en HTML y etiqueta para vincular javascript. //Mostrar ejemplo con código.
+      Tambien se hablo sobre lo que es un entorno de ejecución. Backend y Frontend (NodeJS y el navegador web)
+
+        Leyendo HTML desde JavaScript
+      Tenemos funciones o metodos que nos da nuestro entorno de ejecucion (el navegador web en el caso de desarrollo frontend) para seleccionar los elementos que tenemos en el html que esta ejecutando a nuestro código javascritp.
+      document.getElementById();
+      document.getElementByClassName();
+      document.querySelecto();
+      document.querySelectorAll(); // Trae en forma de lista todos los elementos
+      Nota: incluir ejemplos practicos ya que es importante dejar muy en claro la lecutra HTML desde JavaScript.
+
+        Escribiendo HTML desde JavaScript
+      Manipulacion del DOM desde javascritp consiste en editar e incluso crear nuevos elementos para nuestro html utilizando javascript. Tiene sentido que se haga con la intencion de que cuando el usuario haga algo pase algo.
+      En clase se vio como cambiar el contenido de un elemento html, obtener o cambiar un atributo, agregar o remover clases, cambiar valores, finalemente crear nuevos elementos.
+      innerHTML // Importante tener cuidado por temas de seguridad por que escribe HTML no texto.
+      innerText
+      classList.add
+      classList.remove
+      input.value = '123'
+      document.createElement(img);
+
+        Eventos en JavaScript: interactuando con usuarios
+      Profesor muestra en clase como se ejecutan un console.log en html con onClick u onChange (para inputs evaluando el cambio de su contenido interior). Adional informa que no es la forma correcta en html si no mandar a llamar metodos a javascript. En archivo .js crea las variables respectivas y cada click en un boton por clente (escuchando evento) manda a llamar funcion que retorna una suma. Explica que existen varias formas y no es la unica. Atributos en HTML.
+      Nota: reto que deja profesor es transformar un string a entero (Number o parseInt).
+
+        addEventListener
+      Lo ideal es que se agrege un escucha perde desde javascript para mantener nuestro codigo HTML y CSS limpio. Esto se logra agregando element.addEventListener('nombreEvento', funcionALlamarSinParentesisAlFinal) en javascript. También se explico el funcionamiento de un formulario que al último boton que tenga le asiga automaticamente type='submit' y que al interactuar con el recarga la pagina modificando la url. Los valores que se ingresaron en el formulario por ende desaparecera y no mostrara la informacion en la misma paginda. Se hablo que para parar el comportamiento por default se pueden hacer dos cosas: primero seria cambiar el button a type='button' o segundo utilizar el objeto event (nota: explicarlo en el contenido a profundidad) enviado a la funcion al a llamar en el escucha para utilizar event.preventDefault(); evitando que se recargue la pagina y luego cambiando la información en los elementos HTML segun necesitemos.
+      Nota: validar agregar enlace de referencia a mas elementos o eventos de addEventListener.
+
+      
+      CONTRIBUCION A PROYECTOS
+
+        Conectando GitHub a proyectos de JavaScript
+      Profesor hablo sobre como conectar un repositorio ya existente a GitHub haciendo enfasis en confirguar primero el archivo .gitinore (gitignore.io, evaluar si contenido seria mejor colocarlo en articulo git). De tal forma ya podriamos contribuir a otros proyectos de javascript.
+
+        Proyectos con JavaScript y GitHub desde cero
+      Profersor mostro como hacer un nuevo repositorio y las ventajas que tenemos al siempre iniciar un proyecto de esta manera y como clonarlo a nuestra PC. Se enseña como agregar el archivo .ignore con ciertas configuraciones seleccionadas al igual que una licenca.
+      Nota: estaria bien investigar sobre el tema.
+
+        Fork a proyectos en GitHub
+      Profesor mostro como hacer fork del proyecto práctico y clonarlo en nuestro PC. Principalmente aclaro lo que es contribuir en un proyecto. No significa que al ver un código con dudosas practicas hablaremos de que todo esta mal hecho. No hay que llegar a imponer, sino a contribuir y para eso hay que enteder como esta el código con el que estan trabajando, su historia, las posibles fallas, lo que esta bien, lo que esta mal y hasta entonces se prodra contribuir en el proyecto.
+      Nota: estaria bien validar incluir en el articulo de git y GitHub.
+
+        Analizando código de proyectos open-source.
+      Practicamente no tenemos que limitanrnos por que en general no es buena práctica y no es nada profesional. No criticar si no buscar puntos de mejoras.
+
+        Fusión del menú en desktop.
+      Profesor comenzo a fucionar clase 11 y clase7. Como punto importante implemento clase inactive con display none para ocultar menu pequeño y luego con javascript escucho evento click para email del menu y de esa manera activar desktopMenu.classList.toggle('inactive'); para quitar y volver a colocar clase a elemento HTML haciendo que menú aparezca y se oculte.
+
+        Fusión del menu en mobile.
+      Profesor fusiono el menu mobile y lo configuro con clase inactive.
+
+        Carrito de compras.
+      Profesor agrego el aside carrito de compras. Puntos importantes: se agrego color de fondo para que los menus no se superpongan e utilizo menuMobile.classList.contains('inactive'); para validar si un menu estaba abierto y cerrarlo si es estaba abriendo otros (retorana verdadero o faslo);
+
+        Lista de productos: HTML a partir de arrays.
+      Profesor agrego el contenedor principar y el contenedor de cards (que tiene en su interior toda la lista de los productos) si envargo no dejo el código ingresado a mano, sino que solo dejo los contenedores principales para luego desde javascript ingresarlos de forma interactiva mediante un recorrido de array (que simula de momento un API REST). En el cual genera el HTML guardandolas en constantes mediante const nameElement = documente.createElement('div'); luego le agrega clases mediante classList. En cuanto a elementos de imagenes hace productImg.setAttribute('src', product.image); para modificar y traer la src de la imagen del objeto de array. Tambien con innerText agrega precio y nombre del producto. Por ultimo agregar de forma ordenada todo el html mediante cardsContainer.appendChild(productCard);. Tambien aclara que lo ideal seria tener un funcion render para traer no solo un listado si no poder traer el que se seleccione de acuerdo a la interaccion que realice el usuario o lo que seleccione. Nota: dificil de incluir estas notas LOL.
+
+        Detalle de un producto.
+      Profesor agrego el aside de detalles de un producto. Configuro el css de forma especifica utilizando ids y por ultimo configuro javascritp para los nuevos selectores. Nota: configuraciones practicamente.
+
+        Interacción entre todos los componentes.
+      El profesor termino de configurar las interacciones entres los menus para que estos se cierren y no se superpogan. Nota importante: al haber generado elementos HTML desde javascript desde el mismo javascript se le pueden agregar addEventListener() para escuchar sus respectivos eventos que desde HTML no se podrián. Podria ser un buen punto a considerar para agregar al articulo.
+      -->
+
+  </body>
+</html>
