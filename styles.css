@@ -5,7 +5,12 @@
   --red: #ef8354;
   --secondary-blue: #4f5d75;
   --black: #000000;
+  --text-size-normal: 1.4rem;
+  --text-size-hover: 1.6rem;
+  --text-size-title: large;
 }
+
+/* Reset estilos del navegador */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -40,14 +45,14 @@ html {
 .main-container__title {
   width: 100%;
   font-weight: bold;
-  font-size: medium;
+  font-size: var(--text-size-title);
   display: inline-block;
   border-bottom: 2px solid var(--secondary-blue);
 }
 .main-container__link {
   width: 100%;
   height: 5rem;
-  font-size: 1.2rem;
+  font-size: var(--text-size-normal);
   font-weight: bold;
   text-decoration: none;
   border-bottom: 1px solid var(--grey);
@@ -58,7 +63,7 @@ html {
 }
 .main-container__link:hover {
   color: var(--red);
-  font-size: 1.4rem;
+  font-size: var(--text-size-hover);
   border-bottom: 1px solid var(--red);
 }
 .footer-container {
@@ -76,7 +81,7 @@ html {
 .footer-container__date {
   color: var(--white);
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: var(--text-size-normal);
 }
 
 /* Media Tablet */
