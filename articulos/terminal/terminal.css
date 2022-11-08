@@ -48,14 +48,28 @@ html {
   display: inline-block;
   border-bottom: 2px solid var(--secondary-blue);
 }
-.main-container__theme {
-    display: inline-block;
-    font-size: var(--text-size-normal);
-    font-weight: bold;
-    margin: 1rem 0;
+.main-container__topic {
+  display: inline-block;
+  font-size: var(--text-size-normal);
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.main-container__subtopic {
+  font-size: var(--text-size-normal);
+  margin: 1rem 0;
 }
 .main-container__text {
-    font-size: var(--text-size-normal);
+  font-size: var(--text-size-normal);
+}
+.main-container__figure {
+  margin: 1rem 0;
+}
+.main-container__image {
+  width: 100%;
+}
+.main-container__list {
+  font-size: var(--text-size-normal);
+  margin-left: 2rem;
 }
 
 /* Media Tablet */
