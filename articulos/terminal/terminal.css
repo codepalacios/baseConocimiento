@@ -67,6 +67,9 @@ html {
 .main-container__image {
   width: 100%;
 }
+.main-container__description {
+  text-align: center;
+}
 .main-container__list {
   font-size: var(--text-size-normal);
   margin-left: 2rem;
