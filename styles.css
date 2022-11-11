@@ -60,5 +60,14 @@ html {
 
 /* Media Laptop L */
 @media (min-width: 1280px) {
-  
+  .container-header {
+    width: 144rem;
+  }
+  .container-header__title {
+    margin-left: 2rem;
+  }
+  .container-main {
+    width: 144rem;
+    grid-template-columns: 71.5rem 71.5rem;
+  }
 }
