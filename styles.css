@@ -21,7 +21,7 @@ html {
 /* Media Laptop */
 .container-header {
   background-color: var(--primary-blue);
-  width: 76.8rem;
+  width: 102.4rem;
   height: 7rem;
   margin: 7rem auto 4rem;
   padding: 2rem;
@@ -35,20 +35,20 @@ html {
   font-style: italic;
 }
 .container-main {
-  width: 76.8rem;
+  width: 102.4rem;
   height: 14rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 37rem 37rem;
-  grid-template-rows: 6rem 6rem;
-  justify-content: space-evenly;
-  align-content: space-around;
+  grid-template-columns: 50.6rem 50.6rem;
+  grid-template-rows: 6.5rem 6.5rem;
+  justify-content: space-between;
+  align-content: space-between;
 }
 .container-main__link {
   background-color: var(--grey);
   color: var(--primary-blue);
   text-align-last: center;
-  line-height: 6rem;
+  line-height: 6.5rem;
   text-decoration: none;
   font-size: x-large;
   border-radius: 1rem;
@@ -59,7 +59,6 @@ html {
 }
 
 /* Media Laptop L */
-@media (min-width: 1025) {
-
+@media (min-width: 1280px) {
+  
 }
-
