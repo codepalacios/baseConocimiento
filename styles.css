@@ -18,10 +18,10 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Media Laptop */
+/* Media Mobile*/
 .container-header {
   background-color: var(--primary-blue);
-  width: 102.4rem;
+  width: 46rem;
   height: 7rem;
   margin: 7rem auto 4rem;
   padding: 2rem;
@@ -35,20 +35,18 @@ html {
   font-style: italic;
 }
 .container-main {
-  width: 102.4rem;
-  height: 14rem;
+  width: 46rem;
+  height: 30rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 50.6rem 50.6rem;
-  grid-template-rows: 6.5rem 6.5rem;
-  justify-content: space-between;
-  align-content: space-between;
+  grid-template-columns: 46rem;
 }
 .container-main__link {
   background-color: var(--grey);
   color: var(--primary-blue);
-  text-align-last: center;
+  height: 6.5rem;
   line-height: 6.5rem;
+  text-align-last: center;
   text-decoration: none;
   font-size: x-large;
   border-radius: 1rem;
@@ -58,16 +56,27 @@ html {
   font-weight: bold;
 }
 
-/* Media Laptop L */
+/* Media Laptop */
 @media (min-width: 1280px) {
   .container-header {
-    width: 144rem;
-  }
-  .container-header__title {
-    margin-left: 2rem;
+    width: 56rem;
   }
   .container-main {
-    width: 144rem;
-    grid-template-columns: 71.5rem 71.5rem;
+    width: 56rem;
+    grid-template-columns: 56rem;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+}
+
+/* Media Laptop L */
+@media (min-width: 1600px) {
+  .container-header {
+    width: 86rem;
+  }
+  .container-main {
+    width: 86rem;
+    height: 15rem;
+    grid-template-columns: 42rem 42rem;
   }
 }
