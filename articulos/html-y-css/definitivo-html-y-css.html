@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Cosas que debes saber en el mundo del Desarrollo Web -->
+    <h1>Web Developer Fundamentals</h1>
+    <p>
+        Existen tres est&aacute;ndares importantes para generar productos web. 
+        Esto son los lenguajes o est&aacute;ndares que entiende todo navegador 
+        web: 
+    </p>
+    <ul>
+        <li>
+            HTML: estructura de los documentos que se visualizan en los 
+            navegadores (Chrome, Edge, Firefox, Safari, Opera, entre otros).
+        </li>
+        <li>
+            CSS: es el lenguaje con el que le damos estilos a todo el contenido 
+            previamente etiquetado con HTML.
+        </li>
+        <li>
+            JavaScript: es el lenguaje que se emplea para crear o brindad a las 
+            p&aacute;ginas web la capacidad de interactuar con el usuaro y los 
+            recursos asociados a una p&aacute;gina web.
+        </li>
+    </ul>
+    <h3>¿Qu&eacute; es el Frontend?</h3>
+    <p>
+        <b>Frontend</b> es la parte de un programa o dispositivo a la que un 
+        usuario puede acceder directamente. Son todas las tecnolog&iacute;as de 
+        dise&nacute;o y desarrollo eb que corren en el navegador y que se 
+        encargan de la interactividad con los usuarios.<br><br>
+        Un <b>programador Frontend</b> debe saber de c&oacute;digo que entienda 
+        el navegador (HTML, CSS y JavaScript) para poder usar algunos 
+        <i>frameworks</i> o librer&iacute;as que expanden sus capacidades para 
+        crear cualquier tipo de interfaces de usuraios.
+    </p>
+    <h4>Herramientas que maneja un frontend</h4>
+    <p>
+        Debido a que un frontend es el desarrollador que va a manejar las cosas 
+        del lado del cliente, las tecnolog&iacute;as con las que va a trabajar 
+        son:
+    </p>
+    <ul>
+        <li>
+            HTML: 
+            <a href="https://devdocs.io/html/">https://devdocs.io/html/</a>
+        </li>
+        <li>
+            CSS: 
+            <a href="https://devdocs.io/html/">https://devdocs.io/html/</a>
+        </li>
+        <li>
+            JavaScript: 
+            <a href="https://devdocs.io/javascript/">
+                https://devdocs.io/javascript/
+            </a>
+        </li>
+    </ul>
+    <p>Frameworks de CSS para fronted:</p>
+    <ul>
+        <li>
+            Bootstrap: 
+            <a href="https://getbootstrap.com/">https://getbootstrap.com/</a>
+        </li>
+        <li>
+            Foundation CSS: 
+            <a href="https://get.foundation/">https://get.foundation/</a>
+        </li>
+        <li>
+            Materialize CSS: 
+            <a href="https://materializecss.com/">https://materializecss.com/</a>
+        </li>
+    </ul>
+    <p>Frameworks de JavaScript para frontend:</p>
+    <ul>
+        <li>
+            React JS: 
+            <a href="https://es.reactjs.org/">https://es.reactjs.org/</a>
+        </li>
+        <li>
+            Angular JS: 
+            <a href="https://angular.io/">https://angular.io/</a>
+        </li>
+        <li>
+            Vue JS:
+            <a href="https://vuejs.org/">https://vuejs.org/</a>
+        </li>
+    </ul>
+    <p>Preprocesadores de CSS:</p>
+    <ul>
+        <li>
+            Stylus:
+            <a href="https://stylus-lang.com/">https://stylus-lang.com/</a>
+        </li>
+        <li>
+            SASS:
+            <a href="https://sass-lang.com/">https://sass-lang.com/</a>
+        </li>
+    </ul>
+    <p>Compiladores / empaquetadores de JS:</p>
+    <ul>
+        <li>
+            BABEL: 
+            <a href="https://babeljs.io/">https://babeljs.io/</a>
+        </li>
+        <li>
+            Webpack: 
+            <a href="https://webpack.js.org/">https://webpack.js.org/</a>
+        </li>
+    </ul>
+    <h3>¿Qu&eacute; es Backend?</h3>
+    <p>
+        <b>Backend</b> en programaci&oacute;n corresponde al <i>lado opuesto</i> 
+        a un Front-end en un sitio web o aplicación, ya que el Backend trabaja 
+        en el lado del cliente. Es el responsable de <b>manejar toda la 
+        l&oacute;gica</b> que hay detr&aacute;s de una petici&oacute;n dad por 
+        el navegador hacia el servidor. <br><br>
+        Una carecter&iacute;stica que lo diferencia del Frontend es que no tiene 
+        est&aacute;ndares, puesto que tiene varios lenguajes de 
+        programaci&oacute;n (Node.js, Python, PHP, Ruby, GO, Java, .NET entre 
+        otros) con los que debe trabajar. Cada uno de estos lenguajes tiene 
+        su propios frameworks como:
+    </p>
+    <ul>
+        <li>Django (Python)</li>
+        <li>Laravel (PHP)</li>
+        <li>Rails (Ruby)</li>
+        <li>Express (JavaScript)</li>
+        <li>Spring (Java)</li>
+    </ul>
+    <p>
+        El Backend tambi&eacute;n tiene en cuenta la infraestructura donde va a 
+        realizar el deploy de su aplicaci&oacute;n (esto tambi&eacute;n puede 
+        ser tarea de un DevOps, un perfil dedicado a la infraestructura), con 
+        tecnolog&iacute;as como:
+    </p>
+    <ul>
+        <li>Google Cloud</li>
+        <li>DigitalOcena</li>
+        <li>AWS</li>
+        <li>Heroku, entre otras.</li>
+    </ul>
+    <h4>Qu&eacute; es deploy?</h4>
+    <p>
+        Deploy es yb t&eacute;rmino famoso entre los desarrolladores web. Puede 
+        significar muchas cosas, dependiendo del ambiente y de la tecnolog&iacute;a 
+        usada. Sin embargo, los significados que más se refieren a la pr&aacute;ctica 
+        y pueden resumir su funci&oacute;n son: implantar, colocar en posici&oacute;n 
+        habilitar para uso o, simplemente, publicar.<br><br>
+        Por &uacute;ltimo, entramos en <b>base de datos</b>, que son las encargadas 
+        de almacenar toda la informaci&oacute;n del proyecto Los principales tipos 
+        son: 
+    </p>
+    <ul>
+        <li>Bases de datos relacionales (como MySQL)</li>
+        <li>Base de datos no relacionales (como mongoDB)</li>
+    </ul>
+    <h3>¿Qu&eacute; es Full Stack?</h3>
+    <p>
+        <b>Full Stack</b> es un t&eacute;rmino utilizado para describir a los 
+        desarrolladores que conocen <b>tanto los lenguajes de frontend como 
+        de backend</b>. Principalmente, el <b>desarrollador full stack</b> se 
+        refiere al uso de JavaScript en el backend y de HTML/CSS/JavaScript en 
+        el frontend para crear nuevas plataformas.
+    </p>
+    <img 
+        src="http://www.cursosgis.com/wp-content/uploads/2017/06/lenguajes_1.png"
+        alt="html-css-javascript"
+    >
+    <p>
+        El nacimiento de tecnolog&iacute;as que funcionan entre el frontend y el 
+        backend ha dado lugar a la proliferaci&oacute;n de frameworks y 
+        herramientas de desarrollo full stack, que permiten a los desarrolladores 
+        construir sus propias aplicaciones web completas empleando un &uacute;nico 
+        lenguaje de programaci&oacute;n, como Django para Python.
+    </p>
+    <h4>Qu&eacute; es un desarrollador Full Stack</h4>
+    <p>
+        Las y los <b>desarrolladores Full Stack</b> son profesionales que se 
+        encargan tanto de la parte visual y de la interaccion de un sitio 
+        (frontend), como de su l&oacute;gica y funcionamiento del lado del 
+        servidor (backend).<br><br>
+        Un Stack (en ingl&eacute;s: pila o mont&oacute;n) se refiere al grupo de 
+        tecnolog&iacute;as que componene un sitio web en todos los aspectos 
+        (desde la base de datos, hacia el manejo l&oacute;gico y la interfaz 
+        visual). Una o un <b>desarrolador Full Stack</b> en teor&iacute;a es 
+        capaz de manejar la pila completa de un sitio, tanto de frontend como de 
+        backend, además saber utilizar su base de datos.
+    </p>
+    <img
+        src="https://weassemble.team/wp-content/uploads/2020/02/full-stack-devlopment-min-1024x622.png"
+        alt="full-stack-developer"
+    >
+    <h4>Qu&eacute; hace un desarrollador Full Stack</h4>
+    <p>
+        Una <b>desarrolladora o desarrollador Full Stack</b> entiende muy bien 
+        c&oacute;mo funciona un producto web de principio a fin, desde su 
+        dise&nacute;o en mockup y deploy hasta producci&oacute;n.<br><br>
+        Este tipo de programador o programadora no maneja por completo todas las 
+        tecnolog&iacute;as de ambas partes, pues cada una requiere conocimiento 
+        profundo. De hecho, no es recomendado profundizar en tantas especialidades 
+        y no es sano. El desarrollo web evoluciona muy r&aacute;pido y cada dos o 
+        tres meses encotrar&aacute;s algo nuevo.
+    </p>
+    <h4>C&oacute;mo ser un desarrollador Full Stack</h4>
+    <p>
+        Para convertirse en Full Stack developer debes dominar las dos 
+        &aacute;reas b&aacute;sicas: backend y frontend. Esto te ayudar&aacute; 
+        a comprender c&oacute;mo funciona cada uno y a generar una 
+        comunicaci&oacute;n entre s&iacute;. La mayor&iacute;a de la 
+        interacci&oacute;n entre estos dos mundos se basa en consumo de API y 
+        comprender c&oacute;mo consumir una API desde el Frontend te ayudar&aacute; 
+        a entender c&oacute;mo construir una API desde el Backend.<br><br>
+        Adem&aacute;s, aprender de las diferentes formas que tenemos de subir en 
+        internet una aplicaci&oacute;n web te ayudar&aacute; a entender las 
+        diferentes estrategias de <i>deploy</i> que existen y te permitir&aacute; 
+        ampliar tus conocimientos en el mundo del desarrollo web.
+    </p>
+    <h4>Tecnolog&iacute;as Full Stack para desarrolladores</h4>
+    <p>
+        Aprender un <i>stack</i> conocido puede ayudarte a dar tus primeros pasos 
+        como desarrollador Full Stack y a escalar un proyecto a producci&oacute;n 
+        de una manera m&aacute;s r&aacute;pida y con una mayor interacci&oacute;n. 
+        Para eso necesitas estas herramientas.
+    </p>
+    <ul>
+        <li>
+            LAMP (Linux, Apache, MySQK, PHP)<br>
+            <img 
+                src="https://miro.medium.com/max/693/1*FJTQ53A9dCdcmM9g78aaOg.jpeg"
+                alt="stack-lamp"
+            >
+        </li>
+        <li>
+            MERN (MongoDB, Express.js, React, Node)<br>
+            <img 
+                src="https://static.javatpoint.com/blog/images/mern-stack.png"
+                alt="stack-mern"
+            >
+        </li>
+        <li>
+            PERN (PostgreSQL, Express.js, React, Node)<br>
+            <img 
+                src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200402205611/What-is-PERN-Stack.png"
+                alt="stack-pern"
+            >
+        </li>
+    </ul>
+    <h3>P&aacute;ginas Est&aacute;ticas vs. Din&aacute;micas</h3>
+    <p>
+        Los sitios web se comportan de forma diferente dependiendo de la forma 
+        en que fueron diseñados desde su concepci&oacute;n, tomando en cuenta la 
+        interacci&oacute;n con el usuario. Aqu&iacute; veremos las diferencias 
+        entre sitios web est&aacute;ticos y din&aacute;micos:
+    </p>
+    <h4>Sitios Web Est&aacute;ticos</h4>
+    <p>
+        La informaci&oacute;n que contiene se mantiene constante y 
+        est&aacute;tica. No se actualiza con la interacci&oacute;n del usuario. 
+        Es conveniente para realizar landing pages (p&aacute;ginas informativas 
+        o de aterrizaje) o blogs. Se mostrar&aacute;n siempre iguales para todos 
+        los usuarios.
+    </p>
+    <h4>Sitios Web Din&aacute;micos</h4>
+    <p>
+        Tambin&eacute;n conocidos como aplicaciones web, actualizan su 
+        informaci&oacute;n con respecto a la interacci&oacute;n del usuario. 
+        Dependen de una base de datos, de donde extra e ingresa 
+        informaci&oacute;n. Ser&aacute;n diferentes, dependiendo del usuario que 
+        la use y la informaci&oacute;n que se ingrese.
+    </p>
+    <p>Ejemplo de p&aacute;ginas est&aacute;ticas:</p>
+    <ul>
+        <li>Men&uacute; de un restaurante</li>
+        <li>Blog de viajes</li>
+        <li>P&aacute;gina informativa de un negocio</li>
+    </ul>
+    <p>Ejemplo de p&aacute;ginas din&aacute;micas:</p>
+    <ul>
+        <li>Sistema de reporte de ventas</li>
+        <li>Linkedin</li>
+        <li>Banca en l&iacute;nea</li>
+    </ul>
+    <h1>HTML</h1>
+    <h3>HTML: anatom&iacute;a de una p&aacute;gina web</h3>
+    <p>
+        HTML (HyperText Markup Language) es un lenguaje de marcado de texto. Se 
+        utiliza para darle una estructura al sitio web que est&aacute;s visitando.
+    </p>
+    <h3>Estructura b&aacute;sica de HTML en una p&aacute;gina web</h3>
+    <ul>
+        <li>
+            Container: contenedor principal.
+        </li>
+        <li>
+            Header: cabecera de la p&aacute;gina. Aqu&iacute; usualmente 
+            encuentras el logo y el men&uacute; de navegaci&oacute;n del sitio.
+        </li>
+        <li>
+            Main content: estructura principal. Por ejemplo, el feed o lista de 
+            publicaciones de una red social.
+        </li>
+        <li>
+            Sidebear: contenido secundario de una p&aacute;gina, que usualmente 
+            se encuentra a los lados del contenido principal (o main).
+        </li>
+        <li>
+            Footer: pie de p&aacute;gina. Esto se encuentra al fondo del sitio 
+            web, salvo en casos de sitios web donde el scroll (o 
+            navegaci&oacute;n hacia abajo) es infinito, por ende, no tendr&iacute;a 
+            sentido ponerlo al fondo.
+        </li>
+    </ul>
+    <img 
+        src="https://escuelawow.com/content/images/2021/09/anatomia_pag_web.jpg"
+        alt="anatomia-html"
+    >
+    <p>
+        Las etiquetas en HTML nos ayudan a diferencia en qu&eacute; parte del 
+        contenido nos encontramos.
+    </p>
+    <p>
+        La web se conforma de tres conceptos:
+    </p>
+    <ul>
+        <li>
+            URL: Uniform Resource Locator. El identificador &uacute;nico del 
+            sitio en el navegador (por ejemplo: https://platzi.com).
+        </li>
+        <li>
+            HTTP: Protocolo de transferencia de hipertexto. Es el 
+            est&aacute;ndar que se utiliza para enviar datos a trav&eacute;s de 
+            paquetes entre el cliente y el servidor.
+        </li>
+        <li>
+            HTML: es el c&oacute;digo que se emplea para estrucutrar el contenido 
+            de tu web, y darle sentido y propósito.
+        </li>
+    </ul>
+    <p>
+        HTML son las siglas que corresponden a HyperText Markup Languaje 
+        (Lenguaje de Marcado de Hipertexto).
+    </p>
+    <ul>
+        <li>
+            Hyper Text significa que el texto tiene interactividad, conexi&oacute;n 
+            con otros documentos.
+        </li>
+        <li>
+            Markup significa que le pone etiquetas a los elementos. Por eso 
+            tambi&eacute;n se le conoce como un lenguaje de etiquetas.
+        </li>
+        <li>
+            HTML es un lenguaje interpretado. Adem&aacute;s, HTML es un 
+            est&aacute;ndar, as&iacute; que no importa desde qu&eacute; 
+            navegador o dispositivo se ejecute, el c&oacute;digo sigue siendo 
+            el mismo en cualquier sitio.
+        </li>
+    </ul>
+    <!-- Inex y su esctructura basica: head. (sin contendio) -->
+    <h3>Index y su estructura b&aacute;sica: body</h3>
+    <p>
+        <b>Body</b> es la etiqueta que identifica la parte visible de nuestro 
+        sitio web. Dentro del body, se a&nacute;adir&aacute;n las etiquetas para 
+        marcar los elementos visuales del sitio web, como logotipo, men&uacute;s 
+        de navegaci&oacute;n, contenido principal, entre otros. Es muy importante 
+        usar HTML sem&aacute;ntico y no llenar todo de &lt;div> para que nuestro 
+        sitio web sea mejor interpretado por el navegador y, por lo tanto, 
+        m&aacute;s accesible.
+    </p>
+    <!-- Lista de etiquetas no fue incluida por redundancia -->
+    <!-- 
+        Anatomia de una etiqueta HTML
+
+        El siguiente contenido se debe validar para colocarlo en la version final:
+        * Una etiqueta HTML puede tener tantos atributos como desees, y cada 
+        atributo tiene su propia función.
+        * No todas las etiquetas llevan una etiqueta de cierre. Las que llevan 
+        un cierro son aquellas que albergan un contenido que nos dice a dónde 
+        nos va a llegar (nombre de la página, nombre del link).
+    -->
+    <h1>Etiquetas multimedia</h1>
+    <h3>Tipos de im&aacute;genes</h3>
+    <p>
+        Las im&aacute;genes representan una pieza fundamental al momento de 
+        mostrar contenido para web. Aqu&iacute; conoceremos los principales 
+        tipos de tipos de im&aacute;genes web y sus formatos.
+    </p>
+    <h4>Tipos de im&aacute;genes para web</h4>
+    <p>
+        Lossless (sin p&eacute;rdida):
+    </p>
+    <ul>
+        <li>
+            Captura todos los datos del archivo original.
+        </li>
+        <li>
+            No se pieder nada del archivo original.
+        </li>
+        <li>
+            Puede comprimirse, pero podr&aacute; reconstruir su imagen al 
+            estado original.
+        </li>
+    </ul>
+    <p>
+        Lossy (con p&eacute;dida):
+    </p>
+    <ul>
+        <li>
+            Se aproxima a su imagen original.
+        </li>
+        <li>
+            Podr&iacute;a reducir la cantidad de colores en su imagen o analizar 
+            la imagen en busca de datos innecesarios.
+        </li>
+        <li>
+            Por consiguiente puede reducir su tama&nacute;o, lo que mejora el 
+            tiempo de carga de la p&aacute;gina, pero pierde su calidad.
+        </li>
+        <li>
+            Los archivos tipo lossy son mucho m&aacute;s livianos que los 
+            archivos tipo lossless, por lo que son ideales para usar en sitios 
+            en doden el tamaño del archivo y la velocidad de descarga son 
+            importantes
+        </li>
+    </ul>
+    <!-- La siguiente tabla posteriormente se tiene que cambiar -->
+    <img 
+        src="https://static.platzi.com/media/user_upload/table%20for%20diferent%20images-42fdf349-a492-4ff5-afbd-1f437c804e4a.jpg" 
+        alt="Tabla-de-diferencias"
+    >
+    <h4>Formatos de imagen para web</h4>
+    <ul>
+        <li>
+            GIF (Graphics Interchange Format): Formato de imagen si p&eacute;rdida, 
+            no se puede comprimir.
+        </li>
+        <li>
+            PNG 8 (Portable Network Graphics): Formato de imagen si p&eacute;dida, 
+            uso de colores de 256, se utiliza para logotipos e iconos para la 
+            p&aacute;gina.
+        </li>
+        <li>
+            PNG 24 (Portable Network Graphics): Formato de imagen sin p&eacute;dida, 
+            utilizaci&oacute;n de colores ilimitados, alta calidad, si intentamos 
+            comprimir no ayudar&aacute; demasiado por la gran cantidad de colores.
+        </li>
+        <li>
+            JPG / JEPG (Photographic Experts Group): Formato de imagen con 
+            p&eacute;dida, perderemos calidad a la hora de comprimirlas, pero 
+            llegan a ser &oacute;ptimas para la carga en la p&aacute;gina web.
+        </li>
+        <li>
+            SVG - Vector (Scalable Vector Graphics): Formato de imagen muy ligero 
+            sin p&eacute;rdida, con svg no perderemos calidad, ya que est&aacute; 
+            compuesta por vectores.
+        </li>
+        <li>
+            WebP: Es un formato gr&aacute;fico en forma de contenedor que 
+            sustenta tanto compresi&oacute;n con p&eacute;rdida como sin ella. 
+            Fue desarrollado por Google.
+        </li>
+    </ul>
+    <!--
+        Optimización de imágenes.
+
+        Tamaño máximo recomendado para una imagen: 70 kb.
+
+        Herramientas para optimizar imágenes:
+        - Tiny PNG: comprime el tamaño de una imagen, para hacerla más ligera
+        - Verifix: elimina los metadatos de una imagen, para reducir su tamaño
+    -->
+    <h3>Etiqueta img</h3>
+    <p>
+        El elemento HTML &lt;img> incrusta una imagen dentro de un documento. A 
+        continuación, veremos c&oacute;mo funciona.
+    </p>
+    <p>
+        La etiqueta &lt;img> va siempre dentro del contenedor &lt;body>, pues es 
+        un elemento visible.
+    </p>
+    <h4>Funcionamiento de la etiqueta alt:</h4>
+    <p>
+        &lt;img src="ubicacio&oacute;n de la imagen" alt="descripci&oacute;n 
+        de la imagen">
+    </p>
+    <h4>Atributos de la etiqueta img</h4>
+    <p>
+        La etiqueta img cuenta con dos atributos "src" y el segundo atributo es 
+        "alt". Ambos son importantes.
+    </p>
+    <p>
+        El atributo de "src" es para mostrar en d&oacute;nde se encuentra la 
+        imagen que vamos a inscrustar. Las im&aacute;genes se pueden obtener de 
+        alguna carpeta o una URL que obtengamos de internet.
+    </p>
+    <ul>
+        <li>
+            En caso de que el nombre de tu imagen lleve alg&uacute;n espacio, 
+            deber&aacute;s sustituir ese espacio con un guion o guion medio. Caso 
+            contrario, el navegador no podr&aacute; reconocer la ubicaci&oacute;n.
+        </li>
+    </ul>
+    <p>
+        Alt sirve para agregar una descripci&oacute;n a nuestra imagen. Esto es 
+        &uacute;til por cuestiones de SEO y tambi&eacute;n para accesibilidad (por 
+        ejemplo para personas con visi&oacute;n reducida).
+    </p>
+    <ul>
+        <li>
+            &lt;img>, a diferencia de la gran mayor&iacute;a de la dem&aacute;s 
+            etiquetas de HTML, no necesita una etiqueta de cierre.
+        </li>
+    </ul>
+    <h3>Etiqueta figure</h3>
+    <p>
+        Es una etiqueta que permite almacenar una imagen en su interior. Es una 
+        mejor pr&aacute;ctica comparada con usar solamente un contenedor div. 
+        Como complemento al contenedor figure, se utiliza la etiqueta figcaption, 
+        que permite daler una peque&nacute;a descripci&oacute;n a la imagen, como 
+        el autor, fuente o algo por el estilo, que se mostrar&aacute; abajo de 
+        la imagen.
+    </p>
+    <p>
+        Figcaption se diferencia del atributo Alt porque esta &uacute;ltima 
+        muestra su descripci&oacute;n en texto en el navegador solamente al 
+        pasar el mouse por encima de la imagen (de ah&iacute; su utilidad para 
+        personas con discapacidad visual).
+    </p>
+    <p>
+        Es imporante considerar que la etiqueta figure no es &uacute;nicamente 
+        para imagenes, representa contenido independiente, a menudo con un 
+        t&iacute;tulo. Por lo general, se trata de una imagen, una 
+        ilustraci&oacute;n, un diagrama, un fragmento de c&oacute;digo, o un 
+        esquema al que se hace referencia en el texto principal, pero que se 
+        puede mover a otra p&aacute;gina o a un ap&eacute;ndice sin que afecte 
+        al flujo principal.
+    </p>
+    <!-- Ejemplo de etiqueta figure:  -->
+    <h3>Etiqueta video</h3>
+    <p>
+        La etiqueta &lt;video>, tiene algunos atributos como:
+    </p>
+    <ol>
+        <li>
+            Controls: agrega al video los controles necesarios para reproducir, 
+            pausar y adelantar.
+        </li>
+        <li>
+            preload = auto: hace que el navegador descargue el video, en el 
+            momento en el que se acceda a la p&aacute;gina.
+        </li>
+    </ol>
+    <p>
+        La etiqueta &lt;source>, se puede colocar dentro de una etiqueta 
+        &lt;video> varias veces, para especificar diferentes rutas. Esto para 
+        asegurar que cualquier navegador pueda mostrar el video.
+    </p>
+    <!--
+        Formularios
+
+        Tema: etiqueta form e input
+        * No detalla nada de contenido pero se encontro un buen link en 
+        los comentarios https://www.w3schools.com/html/html_form_input_types.asp
+        * Validar colocar texto sobre el tema, solo lo necesario.
+
+        Tema: calendar 
+        https://developer.mozilla.org/es/docs/Web/HTML/Element/input
+        Tema: required - autocomplete
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+        Tema: select (select y list, validar investigar o colocar)
+        Tema: Input type submit vs. Button tag
+        * Importante recalcar la diferencia de cuando utilizar un input vs button
+
+        * Validar incluir en el breve tema de formularios de una vez todos 
+        los temas.
+    -->
+</body>
+</html>
