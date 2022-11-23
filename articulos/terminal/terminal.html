@@ -4,21 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Terminal y l&iacute;nea de comandos</title>
+    <title>Base de Conocimiento: Terminal y l&iacute;nea de comandos</title>
     <link rel="stylesheet" href="/normalize.css" />
-    <link rel="stylesheet" href="./terminal.css" />
+    <link rel="stylesheet" href="/articulos/terminal/terminal.css" />
   </head>
   <body>
-    <header class="headboard">
-      <h1 class="headboard__title">Base de Conocimiento</h1>
+    <header class="container-header">
+      <div class="container-header__box">
+        <h1 class="container-header__title">Base de Conocimiento</h1>
+      </div>
     </header>
-    <main class="main-container">
-      <article class="main-container__article">
-        <h2 class="main-container__title">
+    <main class="container-main">
+      <article>
+        <h2 class="container-main__title">
           Terminal y l&iacute;nea de comandos
         </h2>
-        <span class="main-container__topic">La terminal</span>
-        <p class="main-container__text">
+        <span class="container-main__topic">La terminal</span>
+        <p class="container-main__text">
           Es una interfaz gr&aacute;fica que simula una l&iacute;nea de
           comandos. Cuando hablamos de una l&iacute;nea de comandos nos
           referimos a una shell (int&eacute;rprete de &oacute;rdenes o comandos)
@@ -26,27 +28,27 @@
           sistema operativo (toma comandos y los pasa al sistema operativo para
           hacer algo).
         </p>
-        <figure class="main-container__figure">
+        <figure class="container-main__figure">
           <img
-            class="main-container__image"
-            src="./imagenes/terminal.jpg"
+            class="container-main__image"
+            src="/articulos/terminal/imagenes/terminal.jpg"
             alt="Ejemplo-de-terminal"
           />
         </figure>
-        <p class="main-container__text">
+        <p class="container-main__text">
           Un comando es: un programa que se puede ejecutar desde la terminal.
           Este puede recibir par&aacute;metros y opciones.
         </p>
-        <p class="main-container__subtopic">
+        <p class="container-main__subtopic">
           ¿Por qué aprender a usar la terminal?
         </p>
-        <ul class="main-container__list">
+        <ul class="container-main__list">
           <li>Flexibilidad</li>
           <li>Velocidad</li>
           <li>No siempre se cuenta con una interfaz gr&aacute;fica</li>
         </ul>
-        <p class="main-container__subtopic">Tipos de Shells:</p>
-        <ul class="main-container__list">
+        <p class="container-main__subtopic">Tipos de Shells:</p>
+        <ul class="container-main__list">
           <li>Bourne Shell</li>
           <li>Bash Shell</li>
           <li>Z Shell</li>
@@ -55,19 +57,81 @@
           <li>Fish Shell</li>
           <li>PowerShell</li>
         </ul>
-        <span class="main-container__topic">Sistema de archivos</span>
-        <p class="main-container__text">
-          Un sistema de archivos o sistema de ficheros, en inform&aacute;tica, es un elemento que controla c&oacute;mo se almacenan y recuperan los datos.
+        <span class="container-main__topic">Sistema de archivos</span>
+        <p class="container-main__text">
+          Un sistema de archivos o sistema de ficheros, en inform&aacute;tica,
+          es un elemento que controla c&oacute;mo se almacenan y recuperan los
+          datos.
         </p>
-        <figure class="main-container__figure">
-          <img class="main-container__image" src="./imagenes/filesystem_structure.jpg" alt="Estructura-sistema-archivo-linux">
-          <figcaption class="main-container__description">Sistema de ficheros GNU/Linux</figcaption>
+        <figure class="container-main__figure">
+          <img
+            class="container-main__image"
+            src="/articulos/terminal/imagenes/filesystem-linux.jpg"
+            alt="Estructura-sistema-archivo-linux"
+          />
+          <figcaption class="container-main__description">
+            Sistema de ficheros GNU/Linux
+          </figcaption>
         </figure>
-        <p class="main-container__text">
-          Para navegar en el sistema de archivos mediante el uso de la terminal se utilizan descriptores, atajos y operaciones.
-        </p>
-        <figure class="main-container__figure">
-          <img class="main-container__image" src="./imagenes/filesystem-command.png" alt="commandos-para-sistema-de-archivos">
+        <span class="container-main__topic container-main__topic--code">
+          Descriptores de rutas
+        </span>
+        <figure class="container-main__figure">
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/descriptores-ruta.png"
+            alt="Descriptores-de-rutas"
+          />
+        </figure>
+        <span class="container-main__topic container-main__topic--code">
+          Atajos de teclado
+        </span>
+        <figure class="container-main__figure">
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/atajos-teclado.png"
+            alt="Atajos-de-teclado"
+          />
+        </figure>
+        <span class="container-main__topic container-main__topic--code">
+          Operaciones con directorios
+        </span>
+        <figure class="container-main__figure">
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/operaciones-directorios.png"
+            alt="Operaciones-con-directorios"
+          />
+        </figure>
+        <span class="container-main__topic container-main__topic--code">
+          Operaciones de ls
+        </span>
+        <figure class="container-main__figure">
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/operaciones-ls.png"
+            alt="Operaciones-de-ls"
+          />
+        </figure>
+        <span class="container-main__topic container-main__topic--code">
+          Manipulaci&oacute;n de archivos y directorios
+        </span>
+        <figure class="container-main__figure">
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/manipulacion-archivos-directorios.png"
+            alt="Manipulacion-de-archivos-y-directorios"
+          />
+        </figure>
+        <span class="container-main__topic container-main__topic--code">
+          Manipulaci&oacute;n de archivos de texto
+        </span>
+        <figure class="container-main__figure">
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/manipulacion-archivos-texto.png"
+            alt="Manipulacion-de-archivos-de-texto"
+          />
         </figure>
       </article>
     </main>
