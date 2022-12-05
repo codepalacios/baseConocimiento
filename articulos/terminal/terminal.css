@@ -20,7 +20,6 @@ html {
 .container-header {
   background-color: var(--primary-blue);
   width: 100%;
-  height: 5rem;
 }
 .container-header__box {
   width: 46rem;
@@ -28,11 +27,27 @@ html {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .container-header__title {
   color: var(--red);
   font-size: x-large;
   margin: 0;
+}
+.container-header__enlace {
+  background-color: var(--grey);
+  color: var(--primary-blue);
+  font-size: var(--sizeText);
+  width: 8rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+.container-header__enlace:hover {
+  background-color: var(--red);
+  font-weight: bold;
 }
 .container-main {
   width: 46rem;
@@ -76,4 +91,24 @@ html {
 .container-main__list {
   font-size: var(--sizeText);
   margin-left: 2rem;
+}
+.container-footer {
+  background-color: var(--primary-blue);
+  width: 100%;
+}
+.container-footer__box {
+  width: 46rem;
+  height: 4rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-footer__enlace {
+  color: var(--grey);
+  font-size: var(--sizeText);
+  text-decoration: none;
+}
+.container-footer__enlace:hover {
+  text-decoration: underline;
 }
