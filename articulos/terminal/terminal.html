@@ -4,21 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Terminal y l&iacute;nea de comandos</title>
+    <title>Base de Conocimiento: Terminal y l&iacute;nea de comandos</title>
     <link rel="stylesheet" href="/normalize.css" />
-    <link rel="stylesheet" href="./terminal.css" />
+    <link rel="stylesheet" href="/articulos/terminal/terminal.css" />
   </head>
   <body>
-    <header class="headboard">
-      <h1 class="headboard__title">Base de Conocimiento</h1>
+    <header class="container-header">
+      <div class="container-header__box">
+        <h1 class="container-header__title">Base de Conocimiento</h1>
+        <a class="container-header__enlace" href="/index.html">Inicio</a>
+      </div>
     </header>
-    <main class="main-container">
-      <article class="main-container__article">
-        <h2 class="main-container__title">
+    <main class="container-main">
+      <article>
+        <h2 class="container-main__title">
           Terminal y l&iacute;nea de comandos
         </h2>
-        <span class="main-container__topic">La terminal</span>
-        <p class="main-container__text">
+        <span class="container-main__topic">La terminal</span>
+        <p class="container-main__text">
           Es una interfaz gr&aacute;fica que simula una l&iacute;nea de
           comandos. Cuando hablamos de una l&iacute;nea de comandos nos
           referimos a una shell (int&eacute;rprete de &oacute;rdenes o comandos)
@@ -26,27 +29,31 @@
           sistema operativo (toma comandos y los pasa al sistema operativo para
           hacer algo).
         </p>
-        <figure class="main-container__figure">
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/terminal/imagenes/terminal-laptop.jpg"
+          />
           <img
-            class="main-container__image"
-            src="./imagenes/terminal.jpg"
+            class="container-main__image"
+            src="/articulos/terminal/imagenes/terminal.jpg"
             alt="Ejemplo-de-terminal"
           />
-        </figure>
-        <p class="main-container__text">
+        </picture>
+        <p class="container-main__text">
           Un comando es: un programa que se puede ejecutar desde la terminal.
           Este puede recibir par&aacute;metros y opciones.
         </p>
-        <p class="main-container__subtopic">
+        <p class="container-main__subtopic">
           ¿Por qué aprender a usar la terminal?
         </p>
-        <ul class="main-container__list">
+        <ul class="container-main__list">
           <li>Flexibilidad</li>
           <li>Velocidad</li>
           <li>No siempre se cuenta con una interfaz gr&aacute;fica</li>
         </ul>
-        <p class="main-container__subtopic">Tipos de Shells:</p>
-        <ul class="main-container__list">
+        <p class="container-main__subtopic">Tipos de Shells:</p>
+        <ul class="container-main__list">
           <li>Bourne Shell</li>
           <li>Bash Shell</li>
           <li>Z Shell</li>
@@ -55,32 +62,320 @@
           <li>Fish Shell</li>
           <li>PowerShell</li>
         </ul>
-        <span class="main-container__topic">Sistema de archivos</span>
-        <p class="main-container__text">
-          Un sistema de archivos o sistema de ficheros, en inform&aacute;tica, es un elemento que controla c&oacute;mo se almacenan y recuperan los datos.
+        <span class="container-main__topic">Sistema de archivos</span>
+        <p class="container-main__text">
+          Un sistema de archivos o sistema de ficheros, en inform&aacute;tica,
+          es un elemento que controla c&oacute;mo se almacenan y recuperan los
+          datos.
         </p>
-        <figure class="main-container__figure">
-          <img class="main-container__image" src="./imagenes/filesystem_structure.jpg" alt="Estructura-sistema-archivo-linux">
-          <figcaption class="main-container__description">Sistema de ficheros GNU/Linux</figcaption>
-        </figure>
-        <p class="main-container__text">
-          Para navegar en el sistema de archivos mediante el uso de la terminal se utilizan descriptores, atajos y operaciones.
-        </p>
-        <figure class="main-container__figure">
-          <img class="main-container__image" src="./imagenes/filesystem-command.png" alt="commandos-para-sistema-de-archivos">
-        </figure>
+        <picture class="container-main__picture">
+          <img
+            class="container-main__image"
+            src="/articulos/terminal/imagenes/filesystem-linux.jpg"
+            alt="Estructura-sistema-archivo-linux"
+          />
+          <span class="container-main__description">
+            Sistema de ficheros GNU/Linux
+          </span>
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Descriptores de rutas
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/terminal/imagenes/descriptores-ruta-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/terminal/imagenes/descriptores-ruta-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/descriptores-ruta.png"
+            alt="Descriptores-de-rutas"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Atajos de teclado
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/terminal/imagenes/atajos-teclado-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/terminal/imagenes/atajos-teclado-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/atajos-teclado.png"
+            alt="Atajos-de-teclado"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Operaciones con directorios
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/terminal/imagenes/operaciones-directorios-lapto-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/terminal/imagenes/operaciones-directorios-lapto.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/operaciones-directorios.png"
+            alt="Operaciones-con-directorios"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Operaciones de ls
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/terminal/imagenes/operaciones-ls-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/terminal/imagenes/operaciones-ls-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/operaciones-ls.png"
+            alt="Operaciones-de-ls"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Manipulaci&oacute;n de archivos y directorios
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/terminal/imagenes/manipulacion-archivos-directorios-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/terminal/imagenes/manipulacion-archivos-directorios-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/manipulacion-archivos-directorios.png"
+            alt="Manipulacion-de-archivos-y-directorios"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Manipulaci&oacute;n de archivos de texto
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/terminal/imagenes/manipulacion-archivos-texto-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/terminal/imagenes/manipulacion-archivos-texto-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/manipulacion-archivos-texto.png"
+            alt="Manipulacion-de-archivos-de-texto"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Exploraci&oacute;n de comandos y ayuda dentro de la terminal
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/terminal/imagenes/exploracion-comandos-ayuda-terminal-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/terminal/imagenes/exploracion-comandos-ayuda-terminal-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/exploracion-comandos-ayuda-terminal.png"
+            alt="Exploracion-de-comandos-y-ayuda-dentro-de-la-terminal"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Clases dentro de los Wildcards
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/terminal/imagenes/clases-wildcards-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/terminal/imagenes/clases-wildcards-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/clases-wildcards.png"
+            alt="Clases-dentro-de-los-wildcards"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Redirecciones I/O y operadores de control
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/terminal/imagenes/redirecciones-operadores-control-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/terminal/imagenes/redirecciones-operadores-control-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/redirecciones-operadores-control.png"
+            alt="Redirecciones-I/O-y-operadores-de-control"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Manejo de permisos y usuarios
+        </span>
+        <picture class="container-main__picture">
+          <img
+            class="container-main__image"
+            src="/articulos/terminal/imagenes/manejo-permisos-usuarios.png"
+            alt="Manejo-de-permisos-y-usuarios"
+          />
+        </picture>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/terminal/imagenes/manejo-permisos-usuarios-ejemplo-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/terminal/imagenes/manejo-permisos-usuarios-ejemplo-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/manejo-permisos-usuarios-ejemplo.png"
+            alt="Manejo-de-permisos-y-usuarios-ejemplo"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Variables de entorno
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/terminal/imagenes/variables-entorno-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/terminal/imagenes/variables-entorno-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/variables-entorno.png"
+            alt="Variables-de-entorno"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Comandos de b&uacute;squeda
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/terminal/imagenes/comandos-busqueda-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/terminal/imagenes/comandos-busqueda-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/comandos-busqueda.png"
+            alt="Comandos-de-busqueda"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Utilidades de red
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/terminal/imagenes/utilidades-red-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/terminal/imagenes/utilidades-red-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/utilidades-red.png"
+            alt="Utilidades-de-red"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Comprimir y descomprimir archivos
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/terminal/imagenes/comprimir-descomprimir-archivos-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/terminal/imagenes/comprimir-descomprimir-archivos-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/terminal/imagenes/comprimir-descomprimir-archivos.png"
+            alt="Comprimir-y-descomprimir-archivos"
+          />
+        </picture>
       </article>
     </main>
+    <footer class="container-footer">
+      <div class="container-footer__box">
+        <a
+          class="container-footer__enlace"
+          href="https://github.com/codepalacios"
+        >
+          Desarrollado por codepalacios
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
-
-<!-- 
-
-    Terminal y línea de comandos.
-
-    Notas para apuntes del artículo:
-    * Debe ser orientado a ser práctico
-    * Incluir el contenido teórico necesario y organizarlo
-    * Establecer una lista de comandos sencilla de leer y clara
-
- -->
