@@ -51,7 +51,7 @@
         <picture class="container-main__picture">
           <img
             class="container-main__image"
-            src="/articulos/git-github/imagenes/git-vs-github.png"
+            src="/articulos/git-github/imagenes/git-github-logo.jpg"
             alt="Git-y-Github"
           />
         </picture>
@@ -59,22 +59,63 @@
           Ciclo de vida o estados de los archivos en Git
         </span>
         <p class="container-main__subtopic">
-            Cuando se trabaja con Git los archivos pueden vivir y moverse en 4 diferentes estados (con repositorios remotos pueden ser m&aacute;s estados):
+          Cuando se trabaja con Git los archivos pueden vivir y moverse en 4
+          diferentes estados (con repositorios remotos pueden ser m&aacute;s
+          estados):
         </p>
         <ul class="container-main__list">
-            <li>
-                Archivos Tracked
-            </li>
-            <li>
-                Archivos Staged
-            </li>
-            <li>
-                Archivos Unstaged
-            </li>
-            <li>
-                Archivos Untraked
-            </li>
-          </ul>
+          <li>
+            <span class="container-main__text-bold">
+              Archivos Tracked:
+            </span>
+            son archivos que viven dentro de Git, no tienen
+            cambios pendientes y sus &uacute;ltimas actualizaciones han sigo
+            guardadas en el repositorio gracias a los comandos git add y git
+            commit.
+          </li>
+          <li>
+            <span class="container-main__text-bold">
+              Archivos Staged:
+            </span>
+            son archivos en Staging. Viven dentro de Git y hay
+            registro de ellos porque han sido afectados por el comando git add,
+            aunque no sus &uacute;ltimos cambios, pero todav&iacute;a no han
+            sido guardados definitivamente en el repositorio por que falta
+            ejecutar el comando git commit.
+          </li>
+          <li>
+            <span class="container-main__text-bold">
+              Archivos Unstaged:
+            </span>
+            entendi&eacute;ndolos como archivos "Tracked pero
+            Unstaged". Son archivos que viven dentro de Git, pero no han sido
+            afectados por el comando git add ni mucho menos por git commit. Git
+            tiene un registro de estos archivos, pero está desactualizado, sus
+            &uacute;ltimas versiones solo est&aacute;n guardadas en el disco
+            duro.
+          </li>
+          <li>
+            <span class="container-main__text-bold">
+              Archivos Untraked: 
+            </span>
+            son archivos que no viven dentro de Git, solo en
+            el disco duro. Nunca han sido afectados por git add, as&iacute; que
+            Git no tiene registro de su existencia. Existe un caso muy raro
+            donde los archivos tiene dos estados al mismo tiempo: staged y
+            untraked. Esto pasa cuando se guardan los cambios en el &aacute;rea
+            de Staging (con el comando git add), pero antes de hacer commit para
+            guardar los cambios en el repositorio se realizan nuevos cambios que
+            todav&iacute;a no han sigo guardados en el &aacute;rea de Staging
+            (pero todo sigue funcionando igual).
+          </li>
+        </ul>
+        <picture class="container-main__picture">
+          <img
+            class="container-main__image"
+            src="/articulos/git-github/imagenes/git-ciclo.png"
+            alt="Git-y-Github"
+          />
+        </picture>
       </article>
     </main>
     <!-- <footer class="container-footer">
