@@ -74,6 +74,10 @@ html {
 .container-main__text {
   font-size: var(--sizeText);
 }
+.container-main__text-bold {
+  font-size: var(--sizeText);
+  font-weight: bold;
+}
 .container-main__picture {
   display: block;
   margin: 1rem 0;

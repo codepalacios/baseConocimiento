@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base de Conocimiento: Git y GitHub</title>
+    <link rel="stylesheet" href="/estilos/normalize.css" />
+    <link rel="stylesheet" href="/estilos/articulos.css" />
+  </head>
+  <body>
+    <header class="container-header">
+      <div class="container-header__box">
+        <h1 class="container-header__title">Base de Conocimiento</h1>
+        <a class="container-header__enlace" href="/index.html">Inicio</a>
+      </div>
+    </header>
+    <main class="container-main">
+      <article>
+        <h2 class="container-main__title">Git y GitHub</h2>
+        <span class="container-main__topic">¿Qu&eacute; es Git?</span>
+        <p class="container-main__text">
+          Git es un sistema de control de versiones distribuido, dese&ntilde;ado
+          por Linus Torvalds. Est&aacute; pensado en la eficiencia y la
+          confiabilidad del mantenimiento de versiones de aplicaciones cuando
+          estas tienen un gran n&uacute;mero de archivos de c&oacute;digo
+          fuente. Git est&aacute; optimizado para guardar todos esto cambios de
+          forma atómica e incremental.
+        </p>
+        <span class="container-main__topic">
+          ¿Qu&eacute; es un sistema de control de versiones?
+        </span>
+        <p class="container-main__text">
+          El SCV o VCS (por sus siglas en ingl&eacute;s) es un sistema que
+          registra los cambios realizados sobre un archivo o conjunto de
+          archivos a lo largo del tiempo, de modo que se pueda llevar el
+          historial del ciclo de vida de un proyecto, comparar cambios a lo
+          largo del tiempo, ver qui&eacute;n los realiz&oacute; o revertir el
+          proyecto entero a un estado anterior.
+        </p>
+        <span class="container-main__topic">¿Qu&eacute; es GitHub?</span>
+        <p class="container-main__text">
+          Es una plataforma de desarrollo colaborativo para alojar proyectos
+          utilizando el sistema de control de versiones de Git. Se emplea
+          principalmente para la creaci&oacute;n de c&oacute;digo fuente de
+          programas de computadora. GitHub puede considerarse como la red social
+          para los pragramadores y en muchos casos es visto como tu curriculum
+          vitae, pues aqu&iacute; guardas tu portafolio de proyectos de
+          programaci&oacute;n.
+        </p>
+        <picture class="container-main__picture">
+          <img
+            class="container-main__image"
+            src="/articulos/git-github/imagenes/git-github-logo.jpg"
+            alt="Git-y-Github"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Ciclo de vida o estados de los archivos en Git
+        </span>
+        <p class="container-main__subtopic">
+          Cuando se trabaja con Git los archivos pueden vivir y moverse en 4
+          diferentes estados (con repositorios remotos pueden ser m&aacute;s
+          estados):
+        </p>
+        <ul class="container-main__list">
+          <li>
+            <span class="container-main__text-bold"> Archivos Tracked: </span>
+            son archivos que viven dentro de Git, no tienen cambios pendientes y
+            sus &uacute;ltimas actualizaciones han sigo guardadas en el
+            repositorio gracias a los comandos git add y git commit.
+          </li>
+          <li>
+            <span class="container-main__text-bold"> Archivos Staged: </span>
+            son archivos en Staging. Viven dentro de Git y hay registro de ellos
+            porque han sido afectados por el comando git add, aunque no sus
+            &uacute;ltimos cambios, pero todav&iacute;a no han sido guardados
+            definitivamente en el repositorio por que falta ejecutar el comando
+            git commit.
+          </li>
+          <li>
+            <span class="container-main__text-bold"> Archivos Unstaged: </span>
+            entendi&eacute;ndolos como archivos "Tracked pero Unstaged". Son
+            archivos que viven dentro de Git, pero no han sido afectados por el
+            comando git add ni mucho menos por git commit. Git tiene un registro
+            de estos archivos, pero está desactualizado, sus &uacute;ltimas
+            versiones solo est&aacute;n guardadas en el disco duro.
+          </li>
+          <li>
+            <span class="container-main__text-bold"> Archivos Untraked: </span>
+            son archivos que no viven dentro de Git, solo en el disco duro.
+            Nunca han sido afectados por git add, as&iacute; que Git no tiene
+            registro de su existencia. Existe un caso muy raro donde los
+            archivos tiene dos estados al mismo tiempo: staged y untraked. Esto
+            pasa cuando se guardan los cambios en el &aacute;rea de Staging (con
+            el comando git add), pero antes de hacer commit para guardar los
+            cambios en el repositorio se realizan nuevos cambios que
+            todav&iacute;a no han sigo guardados en el &aacute;rea de Staging
+            (pero todo sigue funcionando igual).
+          </li>
+        </ul>
+        <picture class="container-main__picture">
+          <img
+            class="container-main__image"
+            src="/articulos/git-github/imagenes/git-ciclo.png"
+            alt="Git-y-Github"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Configuraciones
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/git-github/imagenes/configuraciones-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/git-github/imagenes/configuraciones-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/git-github/imagenes/configuraciones.png"
+            alt="Configuraciones-en-git"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Flujo de trabajo
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/git-github/imagenes/flujo-trabajo-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/git-github/imagenes/flujo-trabajo-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/git-github/imagenes/flujo-trabajo.png"
+            alt="Flujo-de-trabajo"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Etiquetas
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/git-github/imagenes/tags-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/git-github/imagenes/tags-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/git-github/imagenes/tags.png"
+            alt="Etiquetas"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Registros
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/git-github/imagenes/logs-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/git-github/imagenes/logs-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/git-github/imagenes/logs.png"
+            alt="Registros"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Comparaciones
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/git-github/imagenes/comparaciones-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/git-github/imagenes/comparaciones-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/git-github/imagenes/comparaciones.png"
+            alt="Comparaciones"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Deshacer cambios
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/git-github/imagenes/deshacer-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/git-github/imagenes/deshacer-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/git-github/imagenes/deshacer.png"
+            alt="Deshacer-cambios"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Ramas
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/git-github/imagenes/ramas-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/git-github/imagenes/ramas-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/git-github/imagenes/ramas.png"
+            alt="Ramas"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Guardar estados
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/git-github/imagenes/guardado-estados-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/git-github/imagenes/guardado-estados-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/git-github/imagenes/guardado-estados.png"
+            alt="Guardar-estados"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Aplicar cambios guardados
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/git-github/imagenes/cherry-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/git-github/imagenes/cherry-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/git-github/imagenes/cherry.png"
+            alt="Aplicar-cambios-guardados"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Repositorio remoto
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/git-github/imagenes/clonando-repo-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/git-github/imagenes/clonando-repo-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/git-github/imagenes/clonando-repo.png"
+            alt="Repositorio-remoto"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Limpiar repositorio
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/git-github/imagenes/limpiar-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/git-github/imagenes/limpiar-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/git-github/imagenes/limpiar.png"
+            alt="Limpiar-repositorio"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Buscar en repositorio
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/git-github/imagenes/buscar-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/git-github/imagenes/buscar-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/git-github/imagenes/buscar.png"
+            alt="Buscar-en-repositorio"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Otros comandos &uacute;tiles
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/git-github/imagenes/otros-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/git-github/imagenes/otros-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/git-github/imagenes/otros.png"
+            alt="Otros-comandos-utiles"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Llaves p&uacute;blicas y privadas
+        </span>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/git-github/imagenes/llaves-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/git-github/imagenes/llaves-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/git-github/imagenes/llaves.png"
+            alt="Llaves-publicas-y-privadas"
+          />
+        </picture>
+      </article>
+    </main>
+    <footer class="container-footer">
+      <div class="container-footer__box">
+        <a
+          class="container-footer__enlace"
+          href="https://github.com/codepalacios"
+        >
+          Desarrollado por codepalacios
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
