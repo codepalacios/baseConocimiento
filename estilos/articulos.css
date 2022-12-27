@@ -71,8 +71,14 @@ html {
   font-size: var(--sizeText);
   margin: 1rem 0;
 }
+.container-main__subtopic--bold {
+  font-weight: bold;
+}
 .container-main__text {
   font-size: var(--sizeText);
+}
+.container-main__text--margin-bottom {
+  margin-bottom: 1rem;
 }
 .container-main__text-bold {
   font-size: var(--sizeText);
