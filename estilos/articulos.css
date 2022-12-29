@@ -67,22 +67,17 @@ html {
 .container-main__topic--code {
   margin: 0;
 }
-.container-main__subtopic {
-  font-size: var(--sizeText);
-  margin: 1rem 0;
-}
-.container-main__subtopic--bold {
-  font-weight: bold;
-}
 .container-main__text {
   font-size: var(--sizeText);
 }
-.container-main__text--margin-bottom {
+.container-main__text--bold {
+  font-weight: bold;
+}
+.container-main__text--bottom {
   margin-bottom: 1rem;
 }
-.container-main__text-bold {
-  font-size: var(--sizeText);
-  font-weight: bold;
+.container-main__text--top-bottom {
+  margin: 1rem 0;
 }
 .container-main__picture {
   display: block;

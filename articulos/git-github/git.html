@@ -58,20 +58,24 @@
         <span class="container-main__topic container-main__topic--code">
           Ciclo de vida o estados de los archivos en Git
         </span>
-        <p class="container-main__subtopic">
+        <p class="container-main__text container-main__text--top-bottom">
           Cuando se trabaja con Git los archivos pueden vivir y moverse en 4
           diferentes estados (con repositorios remotos pueden ser m&aacute;s
           estados):
         </p>
         <ul class="container-main__list">
           <li>
-            <span class="container-main__text-bold"> Archivos Tracked: </span>
+            <span class="container-main__text container-main__text--bold">
+              Archivos Tracked:
+            </span>
             son archivos que viven dentro de Git, no tienen cambios pendientes y
             sus &uacute;ltimas actualizaciones han sigo guardadas en el
             repositorio gracias a los comandos git add y git commit.
           </li>
           <li>
-            <span class="container-main__text-bold"> Archivos Staged: </span>
+            <span class="container-main__text container-main__text--bold">
+              Archivos Staged:
+            </span>
             son archivos en Staging. Viven dentro de Git y hay registro de ellos
             porque han sido afectados por el comando git add, aunque no sus
             &uacute;ltimos cambios, pero todav&iacute;a no han sido guardados
@@ -79,7 +83,9 @@
             git commit.
           </li>
           <li>
-            <span class="container-main__text-bold"> Archivos Unstaged: </span>
+            <span class="container-main__text container-main__text--bold">
+              Archivos Unstaged:
+            </span>
             entendi&eacute;ndolos como archivos "Tracked pero Unstaged". Son
             archivos que viven dentro de Git, pero no han sido afectados por el
             comando git add ni mucho menos por git commit. Git tiene un registro
@@ -87,7 +93,9 @@
             versiones solo est&aacute;n guardadas en el disco duro.
           </li>
           <li>
-            <span class="container-main__text-bold"> Archivos Untraked: </span>
+            <span class="container-main__text container-main__text--bold">
+              Archivos Untraked:
+            </span>
             son archivos que no viven dentro de Git, solo en el disco duro.
             Nunca han sido afectados por git add, as&iacute; que Git no tiene
             registro de su existencia. Existe un caso muy raro donde los
