@@ -67,6 +67,9 @@ html {
 .container-main__topic--code {
   margin: 0;
 }
+.container-main__topic--bottom{
+  margin: 0 0 1rem 0;
+}
 .container-main__text {
   font-size: var(--sizeText);
 }

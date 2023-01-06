@@ -57,7 +57,9 @@
             alt="html-css-javascript"
           />
         </picture>
-        <span class="container-main__topic">¿Qu&eacute; es el Frontend?</span>
+        <span class="container-main__topic container-main__topic--bottom"
+          >¿Qu&eacute; es el Frontend?</span
+        >
         <p class="container-main__text">
           Frontend es la parte de un programa o dispositivo a la que un usuario
           puede acceder directamente. Son todas las tecnolog&iacute;as de
@@ -694,13 +696,187 @@
           Anatom&iacute;a de una declaraci&oacute;n CSS
         </span>
         <p class="container-main__text">
-          Una declaraci&oacute;n CSS est&aacute; compuesta por selector, propiedad y valor.
+          Una declaraci&oacute;n CSS est&aacute; compuesta por: selector,
+          propiedad y valor.
         </p>
         <picture class="container-main__picture">
           <img
             class="container-main__image"
             src="/articulos/html-y-css/imagenes/regla-css.jpg"
             alt="anatomia-declaracion-css"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bold">
+          Selectores b&aacute;sicos y combinadores
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Los selectores definenen sobre qu&eacute; elementos se aplicar&aacute;
+          un conjunto de reglas CSS.
+        </p>
+        <p class="container-main__text">Selectores b&aacute;sicos:</p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/html-y-css/imagenes/selectores-basicos-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/html-y-css/imagenes/selectores-basicos-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/html-y-css/imagenes/selectores-basicos.png"
+            alt="selectores-basicos-css"
+          />
+        </picture>
+        <p class="container-main__text">Selectores combinadores:</p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/html-y-css/imagenes/selectores-combinadores-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/html-y-css/imagenes/selectores-combinadores-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/html-y-css/imagenes/selectores-combinadores.png"
+            alt="selectores-combinadores-css"
+          />
+        </picture>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--bottom"
+        >
+          Selectores de pseudoclases y pseudoelementos
+        </p>
+        <p class="container-main__text">
+          Las pseudoclases permiten llegar a las actividades o acciones que
+          realiza el usuario, por ejemplo: darle clic a un bot&oacute;n, pasar
+          el mouse sobre una imagen, bot&oacute;n o texto; para poder
+          estilizarlo. Los pseudoelementos permiten acceder a los elementos de
+          HTML que no son accesibles por otros selectores, por ejemplo: la
+          primera letra de un texto, agregar contenido antes o depu&eacute;s de
+          un texto, entre otros; para poder estilizarlo. Ambos se diferencian
+          por que las pseudoclases se escriben con dos puntos y los
+          pseudoelementos con dobles dos puntos.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/html-y-css/imagenes/pseudoclases-pseudoelementos-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/html-y-css/imagenes/pseudoclases-pseudoelementos-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/html-y-css/imagenes/pseudoclases-pseudoelementos.png"
+            alt="selectores-pseudoclases-y-pseudoelementos-css"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--bottom">
+          Cascada y especificidad en CSS
+        </span>
+        <p class="container-main__text">
+          Hojas de Estilo en Cascada (del ingl&eacute;s Cascading Style Sheets)
+          o CSS es el lenguaje de estilos utilizado para describir la
+          presentaci&oacute;n de documentos HTML. Cascada significa que el orden
+          de las reglas en CSS, importa. Los navegadores determinan que reglas
+          de CSS deben aplicarse a las etiquetas HTML. El orden y el origen de
+          clasificaci&oacute;n del CSS, intervienen en el proceso. Sin embargo,
+          no todo es color de rosa. A veces los navegadores entran en conflicto
+          porque no saben que regla aplicar. La especificidad de los selectores
+          es la manera que tiene CSS de lidiar con los conflictos. Entre mayor
+          especificidad, mayor va a ser la probabilidad de que sus declaraciones
+          se usen sobre las dem&aacute;s.
+        </p>
+        <picture class="container-main__picture">
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/html-y-css/imagenes/especificidad-css.png"
+            alt="cascada-y-especificidad-css"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--bottom">
+          Tipos de display m&aacute;s usados
+        </span>
+        <p class="container-main__text container-main__text--bottom">
+          Display es el tipo de visualizaci&oacute;n (el tipo de cuadro de
+          representaci&oacute;n) que tienen los elementos.
+        </p>
+        <ul class="container-main__list">
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Block:
+            </span>
+            muestra un elemento como un elemento de bloque (como &#60;p>).
+            Comienza en una nueva l&iacute;nea y ocupa todo el ancho.
+          </li>
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Inline:
+            </span>
+            muestra un elemento como un elemento en l&iacute;nea (como
+            &#60;span>). Cualquier propiedad de alto y ancho no tendr&aacute;
+            efecto.
+          </li>
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Inline-block:
+            </span>
+            muestra un elemento como un contenedor de bloques de nivel en
+            l&iacute;nea. El elemento en s&iacute; est&aacute; formateado como
+            un elemento en l&iacute;nea, pero puede aplicar valores de alto y
+            ancho.
+          </li>
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Flex:
+            </span>
+            muestra un elemento como un contenedor flexible a nivel de bloque.
+          </li>
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Grid:
+            </span>
+            muestra un elemento como un contenedor de cuadr&iacute;cula a nivel
+            de bloque.
+          </li>
+        </ul>
+        <span class="container-main__topic">
+          Modelo de cajas
+        </span>
+        <p class="container-main__text">
+          Todo en CSS tiene una caja alrededor, y comprender estas cajas es
+          clave para poder crear diseños con CSS o para alinear elementos con
+          otros elementos. En CSS, en general, hay dos tipos de cajas: cajas en
+          bloque y cajas en l&iacute;nea. El modelo de cajas CSS completo se
+          aplica a cajas que representan comportamiento en bloque; las cajas con
+          comportamiento en l&iacute;nea solo usan una parte del comportamiento
+          definido en el modelo de cajas. El modelo define c&oacute;mo funcionan
+          juntas las diferentes partes de una caja (margen, border, relleno y
+          contenido) para crear una caja que se pueda ver en una p&aacute;gina
+          web.
+        </p>
+        <picture class="container-main__picture">
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/html-y-css/imagenes/modelo-de-cajas.png"
+            alt="modelo-de-cajas"
           />
         </picture>
       </article>
