@@ -1,0 +1,11 @@
+/* Media Laptop L */
+@media (min-width: 1600px) {
+  .container-header {
+    width: 86rem;
+  }
+  .container-main {
+    width: 86rem;
+    height: 15rem;
+    grid-template-columns: 42rem 42rem;
+  }
+}

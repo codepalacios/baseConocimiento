@@ -4,9 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Proyecto recopilatorio de diversos apuntes sobre programación"
+    />
     <title>Base de Conocimiento: HTML y CSS</title>
     <link rel="stylesheet" href="/estilos/normalize.css" />
     <link rel="stylesheet" href="/estilos/articulos.css" />
+    <link
+      rel="stylesheet"
+      href="/estilos/articulos-laptop.css"
+      media="screen and (min-width: 1280px)"
+    />
+    <link
+      rel="stylesheet"
+      href="/estilos/articulos-laptop-l.css"
+      media="screen and (min-width: 1600px)"
+    />
   </head>
   <body>
     <header class="container-header">
@@ -788,7 +803,47 @@
             alt="selectores-pseudoclases-y-pseudoelementos-css"
           />
         </picture>
-        <span class="container-main__topic container-main__topic--bottom">
+        <p class="container-main__text container-main__text--bold">
+          Etiquetas de HTML m&aacute;s usadas
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Existen una amplia variedad de propiedades en CSS, pero ciertas
+          propiedades presentan un uso m&aacute;s recurrente por parte de los
+          desarrolladores:
+        </p>
+        <ul class="container-main__list">
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Layout:
+            </span>
+            display.
+          </li>
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Textos:
+            </span>
+            font-size, font-weight, font-family, text-align , color.
+          </li>
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Modelo de caja:
+            </span>
+            margin, padding, border.
+          </li>
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Colores de fondo:
+            </span>
+            background, background-color.
+          </li>
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Tama&ntilde;os:
+            </span>
+            width, height.
+          </li>
+        </ul>
+        <span class="container-main__topic">
           Cascada y especificidad en CSS
         </span>
         <p class="container-main__text">
@@ -857,9 +912,7 @@
             de bloque.
           </li>
         </ul>
-        <span class="container-main__topic">
-          Modelo de cajas
-        </span>
+        <span class="container-main__topic">Modelo de cajas</span>
         <p class="container-main__text">
           Todo en CSS tiene una caja alrededor, y comprender estas cajas es
           clave para poder crear diseños con CSS o para alinear elementos con
@@ -879,9 +932,199 @@
             alt="modelo-de-cajas"
           />
         </picture>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--bottom"
+        >
+          Colapso de m&aacute;rgenes
+        </p>
+        <p class="container-main__text">
+          Cuando dos elementos de bloque HTML tienen m&aacute;rgenes verticiales
+          que se tocan entre s&iacute;, estos dos m&aacute;rgenes colapsan en
+          uno o se fusionan entre s&iacute;, y aqui dominar&aacute; el
+          m&aacute;s grande. En otras palabras el colapso de m&aacute;rgenes
+          sucede cuando hay dos elementos bloque adyacentes y no sucede cuando
+          existe un contenedor tipo flexbox, grid o elementos que no sean
+          bloque.
+        </p>
+        <picture class="container-main__picture">
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/html-y-css/imagenes/colapso-margenes-css.png"
+            alt="colapso-de-margenes-en-css"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bold">
+          Posicionamiento
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          La propiedad de CSS position o posicionamiento ayuda a ubicar
+          elementos en un espacio determinado. En CSS existen diferentes tipos
+          de position:
+        </p>
+        <ul class="container-main__list">
+          <li>Relative</li>
+          <li>Absolute</li>
+          <li>Fixed</li>
+          <li>Stiky</li>
+          <li>Static</li>
+          <li>Inherital</li>
+        </ul>
+        <span class="container-main__topic">
+          Z-index y el contexto de apilamiento
+        </span>
+        <p class="container-main__text">
+          El contexto de apilamiento habla sobre el eje Z que es invisible, sin
+          embargo es un eje desde la pantalla del navegador hacia el usuario en
+          donde se tienen varios elementos HTML uno encima de otro. El contexto
+          de apilamiento puede suceder por el orden de los elementos del
+          documento HTML o por la propiedad z-index. La propiedad CSS z-index
+          indica el orden de un elemento posicionado y sus descendientes. Cuando
+          varios elementos se superponen, los elementos con mayor valor z-index
+          cubren aquellos con menor valor.
+        </p>
+        <picture class="container-main__picture">
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/html-y-css/imagenes/z-index.gif"
+            alt="z-index-css"
+          />
+        </picture>
+        <span class="container-main__topic">Unidades de medida</span>
+        <p class="container-main__text container-main__text--bottom">
+          Las medidas en CSS se emplean, entre otras, para definir altura,
+          anchura y m&aacute;rgenes de los elementos y para establecer el
+          tama&ntilde;o de letra del texto. Todas las medidas se indican como un
+          valor númerico entero o decimal seguido de una unidad de medida (sin
+          ning&uacute;n espacio en blanco entre el número y la unidad de
+          medida). CSS divide las unidades de medida en dos grupos: absolutas y
+          relativas. Las medidas relativas definen su valor en relaci&oacute;n
+          con otra medida, por lo que para obtener su valor real, se debe
+          realizar alguna operaci&oacute;n con el valor indicado. Las unidades
+          absolutas establecen de forma completa el valor de una medida, por lo
+          que su valor real es directamente el valor indicado.
+        </p>
+        <ul class="container-main__list">
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Absolutas:
+            </span>
+            px, pt, pc, in, cm, mm.
+          </li>
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Relativas:
+            </span>
+            rem, em, vm, vh, vmin, vmax, ex, ch.
+          </li>
+        </ul>
+        <span class="container-main__topic">Responsive Design</span>
+        <p class="container-main__text">
+          El dise&ntilde;o responsivo se refiere a que los sitios web se vean
+          bien en varias medidas de pantalla. Para eso en CSS se utiliza @media
+          que son los media queries que ayudan b&aacute;sicamente a cambiar los
+          estilos en los sitio web para determinadas medidas o resoluciones de
+          pantalla que se necesiten utilizar.
+        </p>
+        <picture class="container-main__picture">
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/html-y-css/imagenes/responsive-website-design.jpeg"
+            alt="Responsive-design"
+          />
+        </picture>
+        <span class="container-main__topic">
+          ¿Qu&eacute; son y para qu&eacute; nos sirven las arquitecturas CSS?
+        </span>
+        <p class="container-main__text">
+          Las arquitecturas CSS son metodolog&iacute;as que ayudan a escribir
+          c&oacute;digo CSS m&aacute;s predecible, reutilizable, mantenible y
+          esclabe; y tambien ayudan a realizar buenas pr&aacute;cticas de
+          lineamientos, documentaci&oacute;n, est&aacute;ndares y componentes.
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Arquitecturas de CSS:
+        </p>
+        <ul class="container-main__list">
+          <li>OOCSS (Oriented Object CSS)</li>
+          <li>BEM (Bloque, Elemento, Modificador)</li>
+          <li>SMACSS (Scalable and Modular Architecture for CSS)</li>
+          <li>ITCSS (Inverted Triangle CSS)</li>
+          <li>Atomic Desing</li>
+        </ul>
+        <span class="container-main__topic">
+          Enlaces complementearios de HTML y CSS
+        </span>
+        <ul class="container-main__list">
+          <li>
+            <a href="https://htmlreference.io/">
+              HTML Reference - A free guide to all HTML elements and attributes
+            </a>
+          </li>
+          <li>
+            <a href="https://htmlcolorcodes.com/es/">
+              C&oacute;digos de Colores HTML
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/es/docs/Web/HTML/Element/input"
+            >
+              Elemento input
+            </a>
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/html/html_form_input_types.asp">
+              HTML Input Types
+            </a>
+          </li>
+          <li>
+            <a href="https://cssreference.io/">
+              CSS Reference - A free visual guide to CSS
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements"
+            >
+              Pseudoclases y pseudoelementos
+            </a>
+          </li>
+          <li>
+            <a href="https://developer.mozilla.org/es/docs/Web/CSS/Specificity">
+              Especificidad - CSS - MDN Web Docs
+            </a>
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/cssref/pr_class_display.asp">
+              CSS display property - W3Schools
+            </a>
+          </li>
+          <li>
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
+              A Complete Guide to Flexbox | CSS-Tricks
+            </a>
+          </li>
+          <li>
+            <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">
+              A Complete Guide to Grid | CSS-Stricks
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model"
+            >
+              El modelo de caja - Aprende sobre desarrollo web | MDN
+            </a>
+          </li>
+          <li>
+            <a href="https://www.joshwcomeau.com/css/rules-of-margin-collapse/">
+              The Rules of Margin Collapse
+            </a>
+          </li>
+        </ul>
       </article>
     </main>
-    <!-- <footer class="container-footer">
+    <footer class="container-footer">
       <div class="container-footer__box">
         <a
           class="container-footer__enlace"
@@ -890,6 +1133,6 @@
           Desarrollado por codepalacios
         </a>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>

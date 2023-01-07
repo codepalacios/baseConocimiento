@@ -1,0 +1,12 @@
+/* Media Laptop L */
+@media (min-width: 1600px) {
+  .container-header__box {
+    width: 86rem;
+  }
+  .container-main {
+    width: 86rem;
+  }
+  .container-footer__box {
+    width: 86rem;
+  }
+}

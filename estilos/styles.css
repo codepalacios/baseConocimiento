@@ -52,28 +52,3 @@ html {
   background-color: var(--red);
   font-weight: bold;
 }
-
-/* Media Laptop */
-@media (min-width: 1280px) {
-  .container-header {
-    width: 56rem;
-  }
-  .container-main {
-    width: 56rem;
-    grid-template-columns: 56rem;
-    justify-content: space-between;
-    align-content: space-between;
-  }
-}
-
-/* Media Laptop L */
-@media (min-width: 1600px) {
-  .container-header {
-    width: 86rem;
-  }
-  .container-main {
-    width: 86rem;
-    height: 15rem;
-    grid-template-columns: 42rem 42rem;
-  }
-}
