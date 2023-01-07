@@ -67,16 +67,20 @@ html {
 .container-main__topic--code {
   margin: 0;
 }
-.container-main__subtopic {
-  font-size: var(--sizeText);
-  margin: 1rem 0;
+.container-main__topic--bottom {
+  margin: 0 0 1rem 0;
 }
 .container-main__text {
   font-size: var(--sizeText);
 }
-.container-main__text-bold {
-  font-size: var(--sizeText);
+.container-main__text--bold {
   font-weight: bold;
+}
+.container-main__text--bottom {
+  margin-bottom: 1rem;
+}
+.container-main__text--top-bottom {
+  margin: 1rem 0;
 }
 .container-main__picture {
   display: block;
@@ -117,30 +121,4 @@ html {
 }
 .container-footer__enlace:hover {
   text-decoration: underline;
-}
-
-/* Media Laptop */
-@media (min-width: 1280px) {
-  .container-header__box {
-    width: 56rem;
-  }
-  .container-main {
-    width: 56rem;
-  }
-  .container-footer__box {
-    width: 56rem;
-  }
-}
-
-/* Media Laptop L */
-@media (min-width: 1600px) {
-  .container-header__box {
-    width: 86rem;
-  }
-  .container-main {
-    width: 86rem;
-  }
-  .container-footer__box {
-    width: 86rem;
-  }
 }
