@@ -49,7 +49,7 @@
         <p class="container-main__text container-main__text--bottom">
           JavaScript se emplea com&uacute;nmente para el desarrollo web
           front-end y m&aacute;s recientemente para algunos desarrollos back-end
-          a trav&eacute;s de frameworks como Nojde.js o Next.js. Tiene
+          a trav&eacute;s de frameworks como Node.js o Next.js. Tiene
           caracter&iacute;sticas como la programaci&oacute;n orientada a
           objetos, funciones y herencia basada en prototipos.
         </p>
@@ -70,7 +70,7 @@
           JavaScript corre directamente en la etapa de Runtime, sin una etapa de
           compilaci&oacute;n previa. Esto permite probar el c&oacute;digo
           inmediatamente; pero tambi&eacute;n es lo que hace que los errores no
-          se muestren sino hasta que se ejecuta el programa. Lo que se va a
+          se muestren sino hasta que se ejecuta el programa. Lo que se ve a
           primera vista, cuando se analiza el c&oacute;digo, es muy probable que
           no sea lo que se va a obtener cuando el programa se ejecute.
         </p>
@@ -85,6 +85,83 @@
         <p class="container-main__text container-main__text--bold">
           ¿Por qu&eacute; JavaScript es d&eacute;bilemente tipado?
         </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Por que los tipos de datos no est&aacute;n bien definidos en el
+          lenguaje y permite, por ejemplo, operaciones entre n&uacute;meros y
+          letras. Esto sucede porque el lenguaje asume tipos de datos que no
+          necesariamente fueron los que se quer&iacute;an representar. Se pueden
+          hacer operaciones entre tipos distintos de datos (enteros con strings,
+          booleanos con enteros, etc.). Ejemplo:
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/tipado-js-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/tipado-js-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/tipado-js.png"
+            alt="tipado-javascript"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bold">
+          ¿Es JavaScript un lenguaje interpretado?
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          S&iacute;, y la raz&oacute;n es que el navegador lee l&iacute;nea por
+          l&iacute;nea el c&oacute;digo, el cual indica lo que tiene que ir
+          haciendo, sin la necesidad de compilar. Todo esto es controlado por el
+          motor de JavaScript V8 del navegador.
+        </p>
+        <p class="container-main__text container-main__text--bold">
+          ¿Qu&eacute; significa que JavaScript es Backwards Compatible?
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Todas las funciones nuevas que se agregan para JavaScript no
+          dañar&aacute;n el trabajo ya hecho previamente, pero no se prodrá
+          utilizar en el entorno de trabajo inmediatamente. Para solucionar esto
+          est&aacute; Babel, que permite usar las nuevas caracter&iacute;sticas
+          del lenguaje, pero lo transforma a una versi&oacute;n que el navegador
+          pueda entender.
+        </p>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--bottom"
+        >
+          ¿Por qu&eacute; JavaScript?
+        </p>
+        <ol class="container-main__list">
+          <li>
+            JavaScript tiene una comunidad enorme de desarrolladores que pueden
+            ayudar a generar diferentes cosas.
+          </li>
+          <li>
+            Si se desea solo trabajar en aplicaciones web existen muchos
+            frameworks y librer&iacute;as contruidas en JavaScript que ayudan a
+            hacer proyectos de forma mucho m&aacute;s r&aacute;pida, eficiente y
+            robusta (Angular, View, React, entre otros).
+          </li>
+          <li>
+            Si no desea trabajar solo en aplicaciones web se puede utilizar
+            JavaScript con un framework que se llama React Native para poder
+            construir apliaciones nativas para Android e IOS.
+          </li>
+          <li>
+            Se puede construir aplicaciones de escritorio con JavaScript, usando
+            un framework llamado Electron, pueden correr en Mac o Windows.
+          </li>
+          <li>
+            Tambi&eacute;n se puede trabajar en la parte del Back-end o IOT
+            (Internet Od Things). Internet de las cosas es un concepto que se
+            refiere a una interconexion digital de objetos cotidianos con
+            Internet. Esto con un Framework llamado Node.js, el cual es un
+            entorno de ejecuci&oacute;n de JavaScript que corre directamente en
+            el Back-end.
+          </li>
+        </ol>
       </article>
     </main>
     <!-- <footer class="container-footer">
@@ -98,66 +175,6 @@
       </div>
     </footer> -->
 
-    <h4></h4>
-    <p>
-      Por que los tipos de datos no est&aacute;n bien definidos en el lenguaje y
-      permite, por ejemplo, operaciones entre n&uacute;meros y letras. Esto
-      sucede porque el lenguaje asume tipos de datos que no necesariamente
-      fueron los que se quer&iacute;an representar. Se pueden hacer operaciones
-      entre tipos distintos de datos (enteros con strings, booleanos con
-      enteros, etc.) Ejemplor:
-    </p>
-    <p>
-      4 + "7"; // 47<br />
-      4 * "7"; // 28 <br />
-      2 + true; // 3 <br />
-      false - 3; // -3
-    </p>
-    <h4>¿Realmente es JavaScript un lenguaje interpretado?</h4>
-    <p>
-      S&iacute;, y la raz&oacute;n es que el navegador lee l&iacute;nea por
-      l&iacute;nea nuestro c&oacute;digo, el cual indica lo que tiene que ir
-      haciendo, sin la necesidad de compilar. Todo esto es controlado por el
-      motor de JavaScript V8 del navegador.
-    </p>
-    <h4>Qu&eacute; significa que JavaScript es Backwards Compatible</h4>
-    <p>
-      Todas las funciones nuevas que salen para JavaScript no dañar&aacute;n el
-      trabajo ya hecho previamente, pero no se prodrá utilizar en nuestro
-      entorno de trabajo inmediatamente. Para solucionar esto est&aacute; Babel,
-      que permite usar las nuevas caracter&iacute;sticas del lenguaje, pero lo
-      transforma a una versi&oacute;n que el navegador pueda entender.
-    </p>
-
-    <h3>¿Por qu&eacute; JavaScript</h3>
-    <ol>
-      <li>
-        JavaScript tiene una <b>comunidad enorme</b> de desarrolladores que te
-        pueden ir ayudando a generar diferentes cosas.
-      </li>
-      <li>
-        Si solo estuvieras interesado en trabajar <b>aplicaciones web</b> tienes
-        muchos frameworks y librer&iacute;as contruidas en JavaScript que te van
-        a a ayudar a hacer proyectos de forma mucho m&aacute;s r&aacute;pida,
-        eficiente y robusta (Angular, View, React, entre otros).
-      </li>
-      <li>
-        Si no quieres trabajar solo en aplicaciones Web puedes utilizar
-        JavaScript con un framework que se llama React Native para poder
-        <b>construir apliaciones nativas</b> como Android y IOS.
-      </li>
-      <li>
-        Puedes construir <b>aplicaciones de escritorio</b> con JavaScript,
-        usando un framework llamado Electron, pueden correr en Mac o Windows.
-      </li>
-      <li>
-        Tambi&eacute;n puedes trabajar en la parte del
-        <b>Back-end o IOT (Internet Od Things)</b> es un concepto que se refiere
-        a una interconexion digital de objetos cotidianos con Internet. Esto con
-        un Framework llamado NodeJs, el cual es un entorno de ejecuci&oacute;n
-        de JavaScript que corre directamente en el Back-end.
-      </li>
-    </ol>
     <!--    Contenido a evaluar para agregarlo.
         Elementos de un Lenguaje de Programación: Variables, Funciones y Sintaxis.
         Dos componentes principales:
