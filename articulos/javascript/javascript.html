@@ -4,56 +4,101 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Proyecto recopilatorio de diversos apuntes sobre programación"
+    />
     <title>JavaScript</title>
+    <link rel="stylesheet" href="/estilos/normalize.css" />
+    <link rel="stylesheet" href="/estilos/articulos.css" />
+    <link
+      rel="stylesheet"
+      href="/estilos/articulos-laptop.css"
+      media="screen and (min-width: 1280px)"
+    />
+    <link
+      rel="stylesheet"
+      href="/estilos/articulos-laptop-l.css"
+      media="screen and (min-width: 1600px)"
+    />
   </head>
   <body>
-    <h1>JavaScript</h1>
+    <header class="container-header">
+      <div class="container-header__box">
+        <h1 class="container-header__title">Base de Conocimiento</h1>
+        <a class="container-header__enlace" href="/index.html">Inicio</a>
+      </div>
+    </header>
+    <main class="container-main">
+      <article>
+        <h2 class="container-main__title">JavaScript</h2>
+        <span class="container-main__topic">
+          Introducci&oacute;n a JavaScript
+        </span>
+        <p class="container-main__text container-main__text--bold">
+          ¿Qu&eacute; es JavaScript?
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          JavaScript es un lenguaje de programaci&oacute;n din&aacute;mico que
+          tiene la capacidad de ser utilizado en muchos dispositivos diferentes.
+          Puede usarse en ordenadores personales, servidores web y
+          tel&eacute;fonos intelegintes. Es un lenguaje interpretado, orientado
+          a objetos, débilmente tipado y din&aacute;mico.
+        </p>
+        <p class="container-main__text container-main__text--bottom">
+          JavaScript se emplea com&uacute;nmente para el desarrollo web
+          front-end y m&aacute;s recientemente para algunos desarrollos back-end
+          a trav&eacute;s de frameworks como Nojde.js o Next.js. Tiene
+          caracter&iacute;sticas como la programaci&oacute;n orientada a
+          objetos, funciones y herencia basada en prototipos.
+        </p>
+        <p class="container-main__text container-main__text--bold">
+          ¿C&oacute;mo nace JavaScript?
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Nace con la necesidad de generar dinamismo en las p&aacute;ginas web y
+          que a su vez tanto los usuarios como las empresas pudieran interactuar
+          unos con otros. Fue creado por Brendan Eich en 1995 y se convirtio en
+          un est&aacute;ndar oficial del World Wide Web Consortium (W3C) en
+          1997.
+        </p>
+        <p class="container-main__text container-main__text--bold">
+          ¿Por qu&eacute; JavaScript es un lenguaje din&aacute;mico?
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          JavaScript corre directamente en la etapa de Runtime, sin una etapa de
+          compilaci&oacute;n previa. Esto permite probar el c&oacute;digo
+          inmediatamente; pero tambi&eacute;n es lo que hace que los errores no
+          se muestren sino hasta que se ejecuta el programa. Lo que se va a
+          primera vista, cuando se analiza el c&oacute;digo, es muy probable que
+          no sea lo que se va a obtener cuando el programa se ejecute.
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          JavaScript permite declarar (por ejemplo) variables cuyo valor (y
+          tipo) solo se conocer&aacute; al momento de su ejecuci&oacute;n en
+          funci&oacute;n de las condiciones dadas al momento de correrlo en un
+          entorno real. En cambio, los lenguajes est&aacute;ticos no
+          compilar&aacute;n en c&oacute;digo ejecutable a menos que todos los
+          valores (o tipos de valores) se conozcan por adelantado.
+        </p>
+        <p class="container-main__text container-main__text--bold">
+          ¿Por qu&eacute; JavaScript es d&eacute;bilemente tipado?
+        </p>
+      </article>
+    </main>
+    <!-- <footer class="container-footer">
+      <div class="container-footer__box">
+        <a
+          class="container-footer__enlace"
+          href="https://github.com/codepalacios"
+        >
+          Desarrollado por codepalacios
+        </a>
+      </div>
+    </footer> -->
 
-    <h2>Introducci&oacute;n a JavaScript</h2>
-
-    <h3>¿Qu&eacute; es JavaScript?</h3>
-    <h4>¿Qu&eacute; es JavaScript?</h4>
-    <p>
-      JavaScript es un lenguaje de programaci&oacute;n din&aacute;mico que tiene
-      la capacidad de ser utilizado en muchos dispositivos diferentes. Puede
-      usarse en ordenadores personales, servidores web y tel&eacute;fonos
-      intelegintes. En un lenguaje interpretado, orientado a objetos, débilmente
-      tipado y din&aacute;mico.
-    </p>
-    <p>
-      JavaScript se emplea com&uacute;nmente para el desarrollo web front-end y
-      m&aacute;s recientemente para algunos desarrollos back-end a trav&eacute;s
-      de frameworks como Nojde.js o Next.js. Tiene caracter&iacute;sticas como
-      la programaci&oacute;n orientada a objetos, funciones y herencia basada en
-      prototipos.
-    </p>
-    <h4>C&oacute;mo nace JavaScript?</h4>
-    <p>
-      Nace con la necesidad de generar dinamismo en las p&aacute;ginas web y que
-      a su vez los usuarios y las empresas pudieran interactuar unos con otros.
-      Fue creado por Brendan Eich en 1995y se convirtio en un est&aacute;ndar
-      oficial del World Wide Web Consortium (W3C) en 1997.
-    </p>
-    <h4>
-      ¿Por qu&eacute; decimos que JavaScript es un lenguaje din&aacute;mico?
-    </h4>
-    <p>
-      Corre directamente en la etapa de Runtime, sin una etapa de
-      compilaci&oacute;n previa. Esto permite probar nuestro c&oacute;digo
-      inmediatamente; pero tambi&eacute;n es lo que hace que los errores no se
-      muestren sino hasta que se ejecuta el programa. Lo que se va a primera
-      vista, cuando se analiza el c&oacute;digo, es muy probable que no sea lo
-      que se va a obtener cuando el programa se ejecute.
-    </p>
-    <p>
-      JavaScript permite declarar (por ejemplo) variables cuyo valor (y tipo)
-      solo se conocer&aacute; al momento de su ejecuci&oacute;n en
-      funci&oacute;n de las condiciones dadas al momento de correrlo en un
-      entorno real. En cambio, los lenguajes est&aacute;ticos no
-      compilar&aacute;n en c&oacute;digo ejecutable a menos que todos los
-      valores (o tipos de valores) se conozcan por adelantado.
-    </p>
-    <h4>¿Por qu&eacute; es d&eacute;bilemente tipado?</h4>
+    <h4></h4>
     <p>
       Por que los tipos de datos no est&aacute;n bien definidos en el lenguaje y
       permite, por ejemplo, operaciones entre n&uacute;meros y letras. Esto
@@ -203,7 +248,7 @@
         Objects: Función constructora.
       Explicación de la sintaxis, creación, funcionamiento y utilizacion de un constructor para crear objetos de manera menos manual. Importante dejar en claro el funcionamiento de la palabra reservada New que sirve para crear objetos de un objeto realcionado (?).
      -->
-    
+
     <!-- Métodos de Arrays -->
 
     <!-- 
@@ -216,15 +261,9 @@
       Nota: estaria bien incluir enlaces a la documentacion oficial.
      -->
 
+    <!-- INICIO DE CURSO PRÁCTICO DE JAVASCRIPT -->
 
-
-
-     <!-- INICIO DE CURSO PRÁCTICO DE JAVASCRIPT -->
-
-
-
-
-     <!-- 
+    <!-- 
 
       PRUEBA DE JAVASCRIPT
 
@@ -314,6 +353,5 @@
         Interacción entre todos los componentes.
       El profesor termino de configurar las interacciones entres los menus para que estos se cierren y no se superpogan. Nota importante: al haber generado elementos HTML desde javascript desde el mismo javascript se le pueden agregar addEventListener() para escuchar sus respectivos eventos que desde HTML no se podrián. Podria ser un buen punto a considerar para agregar al articulo.
       -->
-
   </body>
 </html>
