@@ -23,6 +23,7 @@
       media="screen and (min-width: 1600px)"
     />
   </head>
+
   <body>
     <header class="container-header">
       <div class="container-header__box">
@@ -167,7 +168,12 @@
         >
           Tipos de datos en JavaScript
         </p>
-        <p class="container-main__text container-main__text--bottom">
+        <p class="container-main__text">
+          Los elementos que se utilizan en un lenguaje de programaci&oacute;n
+          son: data que se guardan en memoria y tareas (funciones) que se
+          realizaran con esa data.
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
           Tipos primitivos:
         </p>
         <ul class="container-main__list">
@@ -210,7 +216,8 @@
             <span class="container-main__text container-main__text--bold">
               Tipos predefinidos de JavaScript:
             </span>
-            Date (fechas), RegExp (expresiones regulares), Error (datos de error).
+            Date (fechas), RegExp (expresiones regulares), Error (datos de
+            error).
           </li>
           <li>
             <span class="container-main__text container-main__text--bold">
@@ -222,7 +229,8 @@
             <span class="container-main__text container-main__text--bold">
               Arrays:
             </span>
-            serie de elementos o formaci&oacute;n tipo vector o matriz. Se considera un objeto especial que carece de m&eacute;todos.
+            serie de elementos o formaci&oacute;n tipo vector o matriz. Se
+            considera un objeto especial que carece de m&eacute;todos.
           </li>
           <li>
             <span class="container-main__text container-main__text--bold">
@@ -231,6 +239,119 @@
             objeto global, objeto prototipo, otros.
           </li>
         </ul>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--top-bottom"
+        >
+          Operador typeof
+        </p>
+        <p class="container-main__text">
+          El operador typeof devuelve una cadena que indica el tipo de valor o
+          dato del operando en JavaScript.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/typeof-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/typeof-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/typeof.png"
+            alt="operador-typeof-javascript"
+          />
+        </picture>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--bottom"
+        >
+          ¿Qu&eacute; es una variable en JavaScript?
+        </p>
+        <p class="container-main__text">
+          Una variable puede considerarse como un contenedor donde se puede
+          almacenar datos, una vez guardados se pueden acceder a ellos a
+          trav&eacute;s del nombre de variable que se haya asignado. Dentro de
+          JavaScript existen tres formas de declarar una variable: var, const
+          (constante) y let.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/variable-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/variable-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/variable.png"
+            alt="variables-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bottom">
+          Buenas pr&aacute;cticas para la declaraci&oacute;n de variables:
+        </p>
+        <ol class="container-main__list">
+          <li>
+            El nombre de la variable debe ser un nombre descriptivo que se pueda
+            identificar con el c&oacute;digo.
+          </li>
+          <li>
+            Los nombres de variables no se pueden iniciar con n&uacute;meros.
+          </li>
+          <li>
+            No se pueden usar caracteres especiales, ni es recomendable empezar
+            una variable el nombre de una variable con may&uacute;scula.
+          </li>
+          <li>
+            Los tipos de escritura de una variable son: lowerCamelCase,
+            UpperCamelCase y snake_case.
+          </li>
+          <li>
+            Se debe tener en cuenta que existen nombres que no se pueden
+            utilizar porque se encuentran como palabras reservadas para el
+            lenguaje.
+          </li>
+        </ol>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--top-bottom"
+        >
+          ¿Qu&eacute; es una funci&oacute;n en JavaScript?
+        </p>
+        <p class="container-main__text container-main__text--bottom">
+          Una funci&oacute;n es un trozo o bloque de c&oacute;digo reutilizable
+          en el que hay un conjunto de instrucciones, dicho c&oacute;digo solo
+          se ejecuta cuando se llama o invoca dicha funci&oacute;n. Las
+          funciones pueden utilizar o no par&aacute;metros, que son los datos
+          necesarios que se env&iacute;an al llamar una funci&oacute;n
+          seg&uacute;n el caso para la correcta ejecuci&oacute;n del mismo.
+        </p>
+        <p class="container-main__text">
+          Existen dos tipos de funciones: declarativas y expresivas. Las
+          funciones declarativas se les declara con la palabra reservada
+          function y las funciones expresivas o an&oacute;nimas consisten en
+          guardar la funci&oacute;n en una variable. Ambas tienen la misma
+          declaraci&oacute;n e invocaci&oacute;n, pero la diferencia consiste en
+          no especificar un nombre en la funci&oacute;n expresiva, sino que
+          utilizar el nombre de la variable.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/funciones-javascript-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/funciones-javascript-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/funciones-javascript.png"
+            alt="funciones-en-javascript"
+          />
+        </picture>
       </article>
     </main>
     <!-- <footer class="container-footer">
@@ -241,24 +362,12 @@
         >
           Desarrollado por codepalacios
         </a>
-      </div>
+      </div><p class="container-main__text container-main__text--bold container-main__text--top-bottom">
+        Operador typeof
+      </p>
     </footer> -->
 
-    <!--    Contenido a evaluar para agregarlo.
-        Elementos de un Lenguaje de Programación: Variables, Funciones y Sintaxis.
-        Dos componentes principales:
-        1. Data que guardamos en memoria
-        2. Tareas (funciones) que haremos con esa data
-        En la clase se hablo principalmente sobre los tipos de datos en js (numeros, string, booleam, null, undefined, arrays y objetos). Tambien se hablo de typeof para indicar el tipo de datos. Tambien se hablo como crear un archivo extension .js y seria bueno mencionar como se hacen comentarios.
-     -->
-    <!--   Contenido a evaluar para agregarlo
-        Variables en JavaScript
-        En la clase se siguio aclarando sobre los tipos de datos. Se menciono que una variable era un conetenedor para almacenar datos y como es el proceso de declaración y asignación  de variables.
-        Estaria bueno hablar de buenas prácticas al momento de agregar mas contenido en el articulo.
-      -->
-    <!--  Contenido a evaluar para agregarlo
-        Funciones en JavaScript
-        En clase se hablo de los tipos de funciones (declarativas y expresion) y como mandar a llamarlas, se hablo y explico tema de los parametros, finalmente sobre el uso de retunr y console.log (para imprimir en consola). importante aclara que una funcion es un conjunto o bloque de instrucciones que se pueden mandar a llamar. console.log(`Hola ${nombre}`);
+    <!--  Contenido a evaluar para agregarlo en BASES DE JAVASCRIPT HOISTING
         Diferencias:
             A las funciones declarativas se les aplica hoisting, y a la expresión de función, no.Ya que el hoisting solo se aplica en las palabras reservadas var y function.
             Los que quiere decir que con las funciones declarativas, podemos mandar llamar la función antes de que ésta sea declarada, y con la expresión de función (anonima), no, tendríamos que declarala primero, y después mandarla llamar.
