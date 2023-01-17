@@ -340,11 +340,15 @@
         <picture class="container-main__picture">
           <source
             media="(min-width:1600px)"
-            srcset="/articulos/javascript/imagenes/funciones-javascript-laptop-l.png"
+            srcset="
+              /articulos/javascript/imagenes/funciones-javascript-laptop-l.png
+            "
           />
           <source
             media="(min-width:1280px)"
-            srcset="/articulos/javascript/imagenes/funciones-javascript-laptop.png"
+            srcset="
+              /articulos/javascript/imagenes/funciones-javascript-laptop.png
+            "
           />
           <img
             class="container-main__image container-main__image--code"
@@ -352,6 +356,106 @@
             alt="funciones-en-javascript"
           />
         </picture>
+        <span class="container-main__topic container-main__topic--bottom">
+          Bases de JavaScript
+        </span>
+        <p class="container-main__text container-main__text--bold">Scope</p>
+        <p class="container-main__text container-main__text--top-bottom">
+          El scope es el alcance que una variable tiene en el c&oacute;digo,
+          decide a qu&eacute; variables tiene acceso cada parte del
+          c&oacute;digo desarrollado. Existen dos tipos de scope, el escope
+          global y el scope local.
+        </p>
+        <p class="container-main__text">
+          El scope local permite acceder a una variable &uacute;nicamente en
+          cierta parte del c&oacute;digo y la variable es conocida como una
+          variable local. Un ejemplo es cuando una variable est&aacute;
+          declarada dentro de un bloque o funci&oacute;n y solo puede ser
+          invocada por el mismo bloque o funci&oacute;n
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/scope-local-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/scope-local-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/scope-local.png"
+            alt="scope-local-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text">
+          En el scope global la variable est&aacute; declarada fuera de un
+          bloque o funci&oacute;n y es conocida como variable global. Puede ser
+          accedida desde cualquier parte del c&oacute;digo desarrollado, ya sea
+          dentro y fuera de un bloque o funci&oacute;n.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/scope-global-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/scope-global-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/scope-global.png"
+            alt="scope-global-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text">
+          Las variables declaradas con let o const dentro de un bloque, el
+          alcance o scope que tendr&aacute;n ser&aacute; solo dentro de ese
+          bloque. Sin embargo, las variables declaradas con var, su valor se
+          puede sobreescribir. Motivo por el cual no es recomendable utilizar
+          este tipo de variables, ya que puede generar bugs.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/scope-lcv-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/scope-lcv-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/scope-lcv.png"
+            alt="let-const-y-var-scope-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text">
+          Tambi&eacute;n es importante saber que en el caso se tenga una
+          funci&oacute;n dentro de otra, la funci&oacute;n externa no tiene
+          acceso a las variables de la funci&oacute;n interna, pero la
+          funci&oacute;n interna si tiene acceso a las variables de la
+          funci&oacute;n externa.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/scope-funciones-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/scope-funciones-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/scope-funciones.png"
+            alt="funciones-y-scope-en-javascript"
+          />
+        </picture>
+        <!-- <p class="container-main__text container-main__text--bold">
+          Hoisting
+        </p> -->
       </article>
     </main>
     <!-- <footer class="container-footer">
@@ -374,11 +478,6 @@
        -->
 
     <!-- BASES DE JAVASCRIPT -->
-
-    <!--    Contenido a evaluar para agregarlo
-      Scope
-      Se hablo en clases sobre los alcences globales y locales. Se motros como una funcion puede tener acceso a variables globales pero una parte globar no tiene acceso a los datos locales de una funcion. 
-     -->
     <!--   Contenido a evaluar para agregarlo
       Hoisting
       Se hablo sobre la diferencia entres hosting y hoisting (que no son lo mismo). En cuanto a hoisting indica que es llamar una variable o funcion antes de ser declarada y se mostraron ejemplos practicos al respecto. Adicional cuando se declara una funcion se debe hacer siempre al inicio del codigo ya que no se puede hacer en medio o al final del codigo, esto se condisera una mala práctica. Cuando el navegador compila el codigo lo primero que "reserva" (verificar el termino) seria las variables y las funciones.
