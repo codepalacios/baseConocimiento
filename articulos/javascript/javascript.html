@@ -453,9 +453,180 @@
             alt="funciones-y-scope-en-javascript"
           />
         </picture>
-        <!-- <p class="container-main__text container-main__text--bold">
-          Hoisting
-        </p> -->
+        <p class="container-main__text container-main__text--bold">Hoisting</p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Hoisting es un t&eacute;rmino para describir que las declaraciones de
+          variables y funciones son desplazadas a la parte superior del scope
+          m&aacute;s cercano, scope global o local. Esto sucede solamente con
+          las declaraciones y no con las asignaciones.
+        </p>
+        <p class="container-main__text container-main__text--bottom">
+          El c&oacute;digo permanece igual, solo es una interpretaci&oacute;n
+          del motor de JavaScript. En el caso de las variables solamente sucede
+          cuando son declaradas con la palabra reservada var. Lo que sucede es
+          que las declaraciones de variables y funciones son asignadas en
+          memoria durante la fase de compilaci&oacute;n, pero quedan exactamente
+          en d&oacute;nde se han escrito en el c&oacute;digo.
+        </p>
+        <p class="container-main__text">
+          Por lo tanto, debido al hoisting se puede utilizar una variable antes
+          de declararla:
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/hoisting-var-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/hoisting-var-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/hoisting-var.png"
+            alt="hoisting-var-en-javascritp"
+          />
+        </picture>
+        <p class="container-main__text">
+          Pero lo que en realidad sucede es que gracias al hoisting se eleva la
+          declaraci&oacute;n de la variable asign&aacute;ndole un valor
+          undefined:
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/hoisting-var-declaracion-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/hoisting-var-declaracion-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/hoisting-var-declaracion.png"
+            alt="hoisting-var-declaracion-en-javascritp"
+          />
+        </picture>
+        <p class="container-main__text">
+          Tambi&eacute;n el hoisting permite utilizar una funci&oacute;n sin
+          problemas antes de que sea declarada en el c&oacute;digo:
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/hoisting-funciones-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/hoisting-funciones-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/hoisting-funciones.png"
+            alt="hoisting-funciones-en-javascritp"
+          />
+        </picture>
+        <p class="container-main__text">
+          Pero es importante recordar que lo que sucede es que JavaScript guarda
+          la función en memoria en la fase de creaci&oacute;n de un contexto de
+          ejecuci&oacute;n. No asigna un valor undefined como con las variables.
+          Tambi&eacute;n se puede primero declara la funci&oacute;n y luego
+          llamarla con normalidad.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/hoisting-funciones-declaracion-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/hoisting-funciones-declaracion-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/hoisting-funciones-declaracion.png"
+            alt="hoisting-funciones-declaracion-normal-en-javascritp"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bottom">
+          El hoisting solo sucede con las declaraciones de variables y
+          funciones, por lo que se recomienda declarar las variables y funciones
+          lo m&aacute;s arriba posible del c&oacute;digo, ya que se considera
+          buena pr&aacute;ctica.
+        </p>
+        <p class="container-main__text container-main__text--bold">
+          Coerci&oacute;n
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          La coerci&oacute;n consiste en transformar de un tipo de dato a otro
+          de una variable. Existen dos tipos de coerci&oacute;n:
+          impl&iacute;cita y expl&iacute;cita.
+        </p>
+        <p class="container-main__text">
+          La coerci&oacute;n impl&iacute;cita es cuando el lenguaje JavaScript
+          ayuda con la transformaci&oacute;n de tipos. Esto ocurre en
+          operaciones de diferentes tipos, ya que es un lenguaje d&eacute;bil y
+          din&aacute;micamente tipado. Esto implica que el motor de JavaScript
+          lo interpreta a su manera y podr&iacute;a arrojar un valor que puede
+          ser err&oacute;neo, por lo cual es importante tener cuidado.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/coercion-implicita-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/coercion-implicita-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/coercion-implicita.png"
+            alt="coercion-implicita-javascritp"
+          />
+        </picture>
+        <p class="container-main__text">
+          La coerci&oacute;n expl&iacute;cita es cuando se obliga a que
+          transforme un tipo de dato. Para realizar estas transformaciones se
+          utilizan funciones como: Number(), String() y Boolean(); parar
+          convertir un dato a tipo n&uacute;mero, string y l&oacute;gico
+          respectivamente.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/coercion-explicita-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/coercion-explicita-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/coercion-explicita.png"
+            alt="coercion-explicita-javascritp"
+          />
+        </picture>
       </article>
     </main>
     <!-- <footer class="container-footer">
@@ -471,18 +642,7 @@
       </p>
     </footer> -->
 
-    <!--  Contenido a evaluar para agregarlo en BASES DE JAVASCRIPT HOISTING
-        Diferencias:
-            A las funciones declarativas se les aplica hoisting, y a la expresión de función, no.Ya que el hoisting solo se aplica en las palabras reservadas var y function.
-            Los que quiere decir que con las funciones declarativas, podemos mandar llamar la función antes de que ésta sea declarada, y con la expresión de función (anonima), no, tendríamos que declarala primero, y después mandarla llamar.
-       -->
-
     <!-- BASES DE JAVASCRIPT -->
-    <!--   Contenido a evaluar para agregarlo
-      Hoisting
-      Se hablo sobre la diferencia entres hosting y hoisting (que no son lo mismo). En cuanto a hoisting indica que es llamar una variable o funcion antes de ser declarada y se mostraron ejemplos practicos al respecto. Adicional cuando se declara una funcion se debe hacer siempre al inicio del codigo ya que no se puede hacer en medio o al final del codigo, esto se condisera una mala práctica. Cuando el navegador compila el codigo lo primero que "reserva" (verificar el termino) seria las variables y las funciones.
-      https://developer.mozilla.org/es/docs/Glossary/Hoisting
-      -->
     <!--    Contenido a evaluar para agregarlo
       Coerción
       Es la forma en la que podemos cambiar un tipo de valor a otro, existen dos tipos de coerción.
