@@ -4,316 +4,1781 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Proyecto recopilatorio de diversos apuntes sobre programación"
+    />
     <title>JavaScript</title>
+    <link rel="stylesheet" href="/estilos/normalize.css" />
+    <link rel="stylesheet" href="/estilos/articulos.css" />
+    <link
+      rel="stylesheet"
+      href="/estilos/articulos-laptop.css"
+      media="screen and (min-width: 1280px)"
+    />
+    <link
+      rel="stylesheet"
+      href="/estilos/articulos-laptop-l.css"
+      media="screen and (min-width: 1600px)"
+    />
   </head>
+
   <body>
-    <h1>JavaScript</h1>
-
-    <h2>Introducci&oacute;n a JavaScript</h2>
-
-    <h3>¿Qu&eacute; es JavaScript?</h3>
-    <h4>¿Qu&eacute; es JavaScript?</h4>
-    <p>
-      JavaScript es un lenguaje de programaci&oacute;n din&aacute;mico que tiene
-      la capacidad de ser utilizado en muchos dispositivos diferentes. Puede
-      usarse en ordenadores personales, servidores web y tel&eacute;fonos
-      intelegintes. En un lenguaje interpretado, orientado a objetos, débilmente
-      tipado y din&aacute;mico.
-    </p>
-    <p>
-      JavaScript se emplea com&uacute;nmente para el desarrollo web front-end y
-      m&aacute;s recientemente para algunos desarrollos back-end a trav&eacute;s
-      de frameworks como Nojde.js o Next.js. Tiene caracter&iacute;sticas como
-      la programaci&oacute;n orientada a objetos, funciones y herencia basada en
-      prototipos.
-    </p>
-    <h4>C&oacute;mo nace JavaScript?</h4>
-    <p>
-      Nace con la necesidad de generar dinamismo en las p&aacute;ginas web y que
-      a su vez los usuarios y las empresas pudieran interactuar unos con otros.
-      Fue creado por Brendan Eich en 1995y se convirtio en un est&aacute;ndar
-      oficial del World Wide Web Consortium (W3C) en 1997.
-    </p>
-    <h4>
-      ¿Por qu&eacute; decimos que JavaScript es un lenguaje din&aacute;mico?
-    </h4>
-    <p>
-      Corre directamente en la etapa de Runtime, sin una etapa de
-      compilaci&oacute;n previa. Esto permite probar nuestro c&oacute;digo
-      inmediatamente; pero tambi&eacute;n es lo que hace que los errores no se
-      muestren sino hasta que se ejecuta el programa. Lo que se va a primera
-      vista, cuando se analiza el c&oacute;digo, es muy probable que no sea lo
-      que se va a obtener cuando el programa se ejecute.
-    </p>
-    <p>
-      JavaScript permite declarar (por ejemplo) variables cuyo valor (y tipo)
-      solo se conocer&aacute; al momento de su ejecuci&oacute;n en
-      funci&oacute;n de las condiciones dadas al momento de correrlo en un
-      entorno real. En cambio, los lenguajes est&aacute;ticos no
-      compilar&aacute;n en c&oacute;digo ejecutable a menos que todos los
-      valores (o tipos de valores) se conozcan por adelantado.
-    </p>
-    <h4>¿Por qu&eacute; es d&eacute;bilemente tipado?</h4>
-    <p>
-      Por que los tipos de datos no est&aacute;n bien definidos en el lenguaje y
-      permite, por ejemplo, operaciones entre n&uacute;meros y letras. Esto
-      sucede porque el lenguaje asume tipos de datos que no necesariamente
-      fueron los que se quer&iacute;an representar. Se pueden hacer operaciones
-      entre tipos distintos de datos (enteros con strings, booleanos con
-      enteros, etc.) Ejemplor:
-    </p>
-    <p>
-      4 + "7"; // 47<br />
-      4 * "7"; // 28 <br />
-      2 + true; // 3 <br />
-      false - 3; // -3
-    </p>
-    <h4>¿Realmente es JavaScript un lenguaje interpretado?</h4>
-    <p>
-      S&iacute;, y la raz&oacute;n es que el navegador lee l&iacute;nea por
-      l&iacute;nea nuestro c&oacute;digo, el cual indica lo que tiene que ir
-      haciendo, sin la necesidad de compilar. Todo esto es controlado por el
-      motor de JavaScript V8 del navegador.
-    </p>
-    <h4>Qu&eacute; significa que JavaScript es Backwards Compatible</h4>
-    <p>
-      Todas las funciones nuevas que salen para JavaScript no dañar&aacute;n el
-      trabajo ya hecho previamente, pero no se prodrá utilizar en nuestro
-      entorno de trabajo inmediatamente. Para solucionar esto est&aacute; Babel,
-      que permite usar las nuevas caracter&iacute;sticas del lenguaje, pero lo
-      transforma a una versi&oacute;n que el navegador pueda entender.
-    </p>
-
-    <h3>¿Por qu&eacute; JavaScript</h3>
-    <ol>
-      <li>
-        JavaScript tiene una <b>comunidad enorme</b> de desarrolladores que te
-        pueden ir ayudando a generar diferentes cosas.
-      </li>
-      <li>
-        Si solo estuvieras interesado en trabajar <b>aplicaciones web</b> tienes
-        muchos frameworks y librer&iacute;as contruidas en JavaScript que te van
-        a a ayudar a hacer proyectos de forma mucho m&aacute;s r&aacute;pida,
-        eficiente y robusta (Angular, View, React, entre otros).
-      </li>
-      <li>
-        Si no quieres trabajar solo en aplicaciones Web puedes utilizar
-        JavaScript con un framework que se llama React Native para poder
-        <b>construir apliaciones nativas</b> como Android y IOS.
-      </li>
-      <li>
-        Puedes construir <b>aplicaciones de escritorio</b> con JavaScript,
-        usando un framework llamado Electron, pueden correr en Mac o Windows.
-      </li>
-      <li>
-        Tambi&eacute;n puedes trabajar en la parte del
-        <b>Back-end o IOT (Internet Od Things)</b> es un concepto que se refiere
-        a una interconexion digital de objetos cotidianos con Internet. Esto con
-        un Framework llamado NodeJs, el cual es un entorno de ejecuci&oacute;n
-        de JavaScript que corre directamente en el Back-end.
-      </li>
-    </ol>
-    <!--    Contenido a evaluar para agregarlo.
-        Elementos de un Lenguaje de Programación: Variables, Funciones y Sintaxis.
-        Dos componentes principales:
-        1. Data que guardamos en memoria
-        2. Tareas (funciones) que haremos con esa data
-        En la clase se hablo principalmente sobre los tipos de datos en js (numeros, string, booleam, null, undefined, arrays y objetos). Tambien se hablo de typeof para indicar el tipo de datos. Tambien se hablo como crear un archivo extension .js y seria bueno mencionar como se hacen comentarios.
-     -->
-    <!--   Contenido a evaluar para agregarlo
-        Variables en JavaScript
-        En la clase se siguio aclarando sobre los tipos de datos. Se menciono que una variable era un conetenedor para almacenar datos y como es el proceso de declaración y asignación  de variables.
-        Estaria bueno hablar de buenas prácticas al momento de agregar mas contenido en el articulo.
-      -->
-    <!--  Contenido a evaluar para agregarlo
-        Funciones en JavaScript
-        En clase se hablo de los tipos de funciones (declarativas y expresion) y como mandar a llamarlas, se hablo y explico tema de los parametros, finalmente sobre el uso de retunr y console.log (para imprimir en consola). importante aclara que una funcion es un conjunto o bloque de instrucciones que se pueden mandar a llamar. console.log(`Hola ${nombre}`);
-        Diferencias:
-            A las funciones declarativas se les aplica hoisting, y a la expresión de función, no.Ya que el hoisting solo se aplica en las palabras reservadas var y function.
-            Los que quiere decir que con las funciones declarativas, podemos mandar llamar la función antes de que ésta sea declarada, y con la expresión de función (anonima), no, tendríamos que declarala primero, y después mandarla llamar.
-       -->
-
-    <!-- BASES DE JAVASCRIPT -->
-
-    <!--    Contenido a evaluar para agregarlo
-      Scope
-      Se hablo en clases sobre los alcences globales y locales. Se motros como una funcion puede tener acceso a variables globales pero una parte globar no tiene acceso a los datos locales de una funcion. 
-     -->
-    <!--   Contenido a evaluar para agregarlo
-      Hoisting
-      Se hablo sobre la diferencia entres hosting y hoisting (que no son lo mismo). En cuanto a hoisting indica que es llamar una variable o funcion antes de ser declarada y se mostraron ejemplos practicos al respecto. Adicional cuando se declara una funcion se debe hacer siempre al inicio del codigo ya que no se puede hacer en medio o al final del codigo, esto se condisera una mala práctica. Cuando el navegador compila el codigo lo primero que "reserva" (verificar el termino) seria las variables y las funciones.
-      https://developer.mozilla.org/es/docs/Glossary/Hoisting
-      -->
-    <!--    Contenido a evaluar para agregarlo
-      Coerción
-      Es la forma en la que podemos cambiar un tipo de valor a otro, existen dos tipos de coerción.
-        1. Coerción implicita: es cuando el lenguaje nos ayuda a cambiar el tipo de valor.
-        2. Coerción explicita: es cuando obligamos a que cambi el tipo de valor
-      Nota: evaluar agregar ejemplos prácticos de codigo.
-       -->
-    <!-- Contenido a evaluar para agregalo
-      Valores: Truthy y Falsy
-      ¿Que tipos por default son verdaderos y falsos?. Todo esto lo vamos a usar en condiciones, esto valida si es verdadero o falso para ejecutar cierta acción.
-      Nota: agregar ejemplos prácticos de resultados de valores.
-     -->
-    <!--  Contenido a evaluar para agregarlo
-      Operadores: Asignación, Comparación y Aritméticos.
-      En clase práctica mente se hablo de todos los tipos de operadores y sus funcionamios y/o diferencias entre si mismos.
-      == // === (tiene que ser igual en valor y tipo)
-      https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
-     -->
-
-    <!-- CONDICIONALES -->
-
-    <!-- 
-        Condicionales: If, Else, esle if.
-      Se hablo sobre como funcionan las condicionales y el operador condicional ternario.
-      https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
-      -->
-    <!-- 
-        Switch
-      Se hablo sobre como funciona la estructura condicional switch.
-     -->
-
-    <!-- ARRAYS -->
-    <!-- 
-        Arrays
-      Se hablo en clases que es un array, la sintaxis de declaracion, como imprimir sus valores y diferentes metodos para agregar mas elementos al array y eliminarlos. IndexOf para obtener la posición de un elemento. Los arrays pueden tener mas arrays dentro. Lenght.
-      -->
-
-    <!-- Loops -->
-
-    <!-- 
-      Loops: For y For...of
-    Profesor enseño el funcionamiento del loops for y el modificado for...of, ambos con ejemplos de un array de estudiante llamando una function en los loops.
-    Nota: agregar ejemplos de codigos mejoraria los aticulos en general.
-     -->
-    <!-- 
-      Loops: While
-    Profesor enseño el funcionamiento del loops while con un ejemplo de array estudiantes.
-     -->
-
-    <!-- Objects -->
-
-    <!-- 
-        Objects
-      Explicacion de que es un objeto y como llevar cosas del mundo real a la abstraccion de la programación. Se eseño la sintxis de un objeto, mostro un ejemplo de autor, como añadirle propiedades y funciones (llamadas metodos) para luego llamar esas propiedades y la funcion. POO. Sintaxis en JavaScript. Uso de this en el objeto.  
-     -->
-    <!-- 
-        Objects: Función constructora.
-      Explicación de la sintaxis, creación, funcionamiento y utilizacion de un constructor para crear objetos de manera menos manual. Importante dejar en claro el funcionamiento de la palabra reservada New que sirve para crear objetos de un objeto realcionado (?).
-     -->
-    
-    <!-- Métodos de Arrays -->
-
-    <!-- 
-        Métodos de recorridos de Arrays
-      Profesor hablo sobre los metodos filter y map para regresar resultados de un array que contiene datos de tipo objetos. Explico la diferencia entre filtrar y mapear.
-     -->
-    <!-- 
-        Recorriendo Arrays con .find(), .forEach() y .some()
-      Profesor explica y enseña el uso y uso de los distintos metodos asi como sus diferenfias y que es lo que retornan.
-      Nota: estaria bien incluir enlaces a la documentacion oficial.
-     -->
-
-
-
-
-     <!-- INICIO DE CURSO PRÁCTICO DE JAVASCRIPT -->
-
-
-
-
-     <!-- 
-
-      PRUEBA DE JAVASCRIPT
-
-        Variables
-      Hablo principalmente de las diferencias entre var, let y const. Var ya no se usa por que suele dar algunos problemas aunque es valido ocuparlo, pero altualmente se utiliza let. Const no puede cambiar su valor una vez asignado.
-      Aclarando puntos de declarar una variable, inicializarla y reinicializarla.
-
-      Nota: estaria bien detallar las diferencias entre llaves, corchetes y parentesis.
-
-        Condicionales
-      Punto importante a considerar: el uso del return en una condicional que este dentro de una función.
-
-        Ciclos
-      Punto importante aclarar sobre los ciclos infinitos.
-
-        Arrays y objetos
-      Array: es una lista de elementos. Objeto: es una lista de elementos PERO cada elemento tiene un nombre clave.
-
-        Bonus: reducción de condicionales.
-      Profesor untilizo un if que si un objeto con el nombre de la propiedad le retornava un valor ese if se ejecutaria.
-
-
-      MANIPULACION DEL DOM
-
-        Cómo conectar JavaScript con HTML
-      El DOM en HTML y etiqueta para vincular javascript. //Mostrar ejemplo con código.
-      Tambien se hablo sobre lo que es un entorno de ejecución. Backend y Frontend (NodeJS y el navegador web)
-
-        Leyendo HTML desde JavaScript
-      Tenemos funciones o metodos que nos da nuestro entorno de ejecucion (el navegador web en el caso de desarrollo frontend) para seleccionar los elementos que tenemos en el html que esta ejecutando a nuestro código javascritp.
-      document.getElementById();
-      document.getElementByClassName();
-      document.querySelecto();
-      document.querySelectorAll(); // Trae en forma de lista todos los elementos
-      Nota: incluir ejemplos practicos ya que es importante dejar muy en claro la lecutra HTML desde JavaScript.
-
-        Escribiendo HTML desde JavaScript
-      Manipulacion del DOM desde javascritp consiste en editar e incluso crear nuevos elementos para nuestro html utilizando javascript. Tiene sentido que se haga con la intencion de que cuando el usuario haga algo pase algo.
-      En clase se vio como cambiar el contenido de un elemento html, obtener o cambiar un atributo, agregar o remover clases, cambiar valores, finalemente crear nuevos elementos.
-      innerHTML // Importante tener cuidado por temas de seguridad por que escribe HTML no texto.
-      innerText
-      classList.add
-      classList.remove
-      input.value = '123'
-      document.createElement(img);
-
-        Eventos en JavaScript: interactuando con usuarios
-      Profesor muestra en clase como se ejecutan un console.log en html con onClick u onChange (para inputs evaluando el cambio de su contenido interior). Adional informa que no es la forma correcta en html si no mandar a llamar metodos a javascript. En archivo .js crea las variables respectivas y cada click en un boton por clente (escuchando evento) manda a llamar funcion que retorna una suma. Explica que existen varias formas y no es la unica. Atributos en HTML.
-      Nota: reto que deja profesor es transformar un string a entero (Number o parseInt).
-
-        addEventListener
-      Lo ideal es que se agrege un escucha perde desde javascript para mantener nuestro codigo HTML y CSS limpio. Esto se logra agregando element.addEventListener('nombreEvento', funcionALlamarSinParentesisAlFinal) en javascript. También se explico el funcionamiento de un formulario que al último boton que tenga le asiga automaticamente type='submit' y que al interactuar con el recarga la pagina modificando la url. Los valores que se ingresaron en el formulario por ende desaparecera y no mostrara la informacion en la misma paginda. Se hablo que para parar el comportamiento por default se pueden hacer dos cosas: primero seria cambiar el button a type='button' o segundo utilizar el objeto event (nota: explicarlo en el contenido a profundidad) enviado a la funcion al a llamar en el escucha para utilizar event.preventDefault(); evitando que se recargue la pagina y luego cambiando la información en los elementos HTML segun necesitemos.
-      Nota: validar agregar enlace de referencia a mas elementos o eventos de addEventListener.
-
-      
-      CONTRIBUCION A PROYECTOS
-
-        Conectando GitHub a proyectos de JavaScript
-      Profesor hablo sobre como conectar un repositorio ya existente a GitHub haciendo enfasis en confirguar primero el archivo .gitinore (gitignore.io, evaluar si contenido seria mejor colocarlo en articulo git). De tal forma ya podriamos contribuir a otros proyectos de javascript.
-
-        Proyectos con JavaScript y GitHub desde cero
-      Profersor mostro como hacer un nuevo repositorio y las ventajas que tenemos al siempre iniciar un proyecto de esta manera y como clonarlo a nuestra PC. Se enseña como agregar el archivo .ignore con ciertas configuraciones seleccionadas al igual que una licenca.
-      Nota: estaria bien investigar sobre el tema.
-
-        Fork a proyectos en GitHub
-      Profesor mostro como hacer fork del proyecto práctico y clonarlo en nuestro PC. Principalmente aclaro lo que es contribuir en un proyecto. No significa que al ver un código con dudosas practicas hablaremos de que todo esta mal hecho. No hay que llegar a imponer, sino a contribuir y para eso hay que enteder como esta el código con el que estan trabajando, su historia, las posibles fallas, lo que esta bien, lo que esta mal y hasta entonces se prodra contribuir en el proyecto.
-      Nota: estaria bien validar incluir en el articulo de git y GitHub.
-
-        Analizando código de proyectos open-source.
-      Practicamente no tenemos que limitanrnos por que en general no es buena práctica y no es nada profesional. No criticar si no buscar puntos de mejoras.
-
-        Fusión del menú en desktop.
-      Profesor comenzo a fucionar clase 11 y clase7. Como punto importante implemento clase inactive con display none para ocultar menu pequeño y luego con javascript escucho evento click para email del menu y de esa manera activar desktopMenu.classList.toggle('inactive'); para quitar y volver a colocar clase a elemento HTML haciendo que menú aparezca y se oculte.
-
-        Fusión del menu en mobile.
-      Profesor fusiono el menu mobile y lo configuro con clase inactive.
-
-        Carrito de compras.
-      Profesor agrego el aside carrito de compras. Puntos importantes: se agrego color de fondo para que los menus no se superpongan e utilizo menuMobile.classList.contains('inactive'); para validar si un menu estaba abierto y cerrarlo si es estaba abriendo otros (retorana verdadero o faslo);
-
-        Lista de productos: HTML a partir de arrays.
-      Profesor agrego el contenedor principar y el contenedor de cards (que tiene en su interior toda la lista de los productos) si envargo no dejo el código ingresado a mano, sino que solo dejo los contenedores principales para luego desde javascript ingresarlos de forma interactiva mediante un recorrido de array (que simula de momento un API REST). En el cual genera el HTML guardandolas en constantes mediante const nameElement = documente.createElement('div'); luego le agrega clases mediante classList. En cuanto a elementos de imagenes hace productImg.setAttribute('src', product.image); para modificar y traer la src de la imagen del objeto de array. Tambien con innerText agrega precio y nombre del producto. Por ultimo agregar de forma ordenada todo el html mediante cardsContainer.appendChild(productCard);. Tambien aclara que lo ideal seria tener un funcion render para traer no solo un listado si no poder traer el que se seleccione de acuerdo a la interaccion que realice el usuario o lo que seleccione. Nota: dificil de incluir estas notas LOL.
-
-        Detalle de un producto.
-      Profesor agrego el aside de detalles de un producto. Configuro el css de forma especifica utilizando ids y por ultimo configuro javascritp para los nuevos selectores. Nota: configuraciones practicamente.
-
-        Interacción entre todos los componentes.
-      El profesor termino de configurar las interacciones entres los menus para que estos se cierren y no se superpogan. Nota importante: al haber generado elementos HTML desde javascript desde el mismo javascript se le pueden agregar addEventListener() para escuchar sus respectivos eventos que desde HTML no se podrián. Podria ser un buen punto a considerar para agregar al articulo.
-      -->
-
+    <header class="container-header">
+      <div class="container-header__box">
+        <h1 class="container-header__title">Base de Conocimiento</h1>
+        <a class="container-header__enlace" href="/index.html">Inicio</a>
+      </div>
+    </header>
+    <main class="container-main">
+      <article>
+        <h2 class="container-main__title">JavaScript</h2>
+        <span class="container-main__topic">
+          Introducci&oacute;n a JavaScript
+        </span>
+        <p class="container-main__text container-main__text--bold">
+          ¿Qu&eacute; es JavaScript?
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          JavaScript es un lenguaje de programaci&oacute;n din&aacute;mico que
+          tiene la capacidad de ser utilizado en muchos dispositivos diferentes.
+          Puede usarse en ordenadores personales, servidores web y
+          tel&eacute;fonos intelegintes. Es un lenguaje interpretado, orientado
+          a objetos, débilmente tipado y din&aacute;mico.
+        </p>
+        <p class="container-main__text container-main__text--bottom">
+          JavaScript se emplea com&uacute;nmente para el desarrollo web
+          front-end y m&aacute;s recientemente para algunos desarrollos back-end
+          a trav&eacute;s de frameworks como Node.js o Next.js. Tiene
+          caracter&iacute;sticas como la programaci&oacute;n orientada a
+          objetos, funciones y herencia basada en prototipos.
+        </p>
+        <p class="container-main__text container-main__text--bold">
+          ¿C&oacute;mo nace JavaScript?
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Nace con la necesidad de generar dinamismo en las p&aacute;ginas web y
+          que a su vez tanto los usuarios como las empresas pudieran interactuar
+          unos con otros. Fue creado por Brendan Eich en 1995 y se convirtio en
+          un est&aacute;ndar oficial del World Wide Web Consortium (W3C) en
+          1997.
+        </p>
+        <p class="container-main__text container-main__text--bold">
+          ¿Por qu&eacute; JavaScript es un lenguaje din&aacute;mico?
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          JavaScript corre directamente en la etapa de Runtime, sin una etapa de
+          compilaci&oacute;n previa. Esto permite probar el c&oacute;digo
+          inmediatamente; pero tambi&eacute;n es lo que hace que los errores no
+          se muestren sino hasta que se ejecuta el programa. Lo que se ve a
+          primera vista, cuando se analiza el c&oacute;digo, es muy probable que
+          no sea lo que se va a obtener cuando el programa se ejecute.
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          JavaScript permite declarar (por ejemplo) variables cuyo valor (y
+          tipo) solo se conocer&aacute; al momento de su ejecuci&oacute;n en
+          funci&oacute;n de las condiciones dadas al momento de correrlo en un
+          entorno real. En cambio, los lenguajes est&aacute;ticos no
+          compilar&aacute;n en c&oacute;digo ejecutable a menos que todos los
+          valores (o tipos de valores) se conozcan por adelantado.
+        </p>
+        <p class="container-main__text container-main__text--bold">
+          ¿Por qu&eacute; JavaScript es d&eacute;bilemente tipado?
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Por que los tipos de datos no est&aacute;n bien definidos en el
+          lenguaje y permite, por ejemplo, operaciones entre n&uacute;meros y
+          letras. Esto sucede porque el lenguaje asume tipos de datos que no
+          necesariamente fueron los que se quer&iacute;an representar. Se pueden
+          hacer operaciones entre tipos distintos de datos (enteros con strings,
+          booleanos con enteros, etc.). Ejemplo:
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/tipado-js-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/tipado-js-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/tipado-js.png"
+            alt="tipado-javascript"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bold">
+          ¿Es JavaScript un lenguaje interpretado?
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          S&iacute;, y la raz&oacute;n es que el navegador lee l&iacute;nea por
+          l&iacute;nea el c&oacute;digo, el cual indica lo que tiene que ir
+          haciendo, sin la necesidad de compilar. Todo esto es controlado por el
+          motor de JavaScript V8 del navegador.
+        </p>
+        <p class="container-main__text container-main__text--bold">
+          ¿Qu&eacute; significa que JavaScript es Backwards Compatible?
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Todas las funciones nuevas que se agregan para JavaScript no
+          dañar&aacute;n el trabajo ya hecho previamente, pero no se prodrá
+          utilizar en el entorno de trabajo inmediatamente. Para solucionar esto
+          est&aacute; Babel, que permite usar las nuevas caracter&iacute;sticas
+          del lenguaje, pero lo transforma a una versi&oacute;n que el navegador
+          pueda entender.
+        </p>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--bottom"
+        >
+          ¿Por qu&eacute; JavaScript?
+        </p>
+        <ol class="container-main__list">
+          <li>
+            JavaScript tiene una comunidad enorme de desarrolladores que pueden
+            ayudar a generar diferentes cosas.
+          </li>
+          <li>
+            Si se desea solo trabajar en aplicaciones web existen muchos
+            frameworks y librer&iacute;as contruidas en JavaScript que ayudan a
+            hacer proyectos de forma mucho m&aacute;s r&aacute;pida, eficiente y
+            robusta (Angular, View, React, entre otros).
+          </li>
+          <li>
+            Si no desea trabajar solo en aplicaciones web se puede utilizar
+            JavaScript con un framework que se llama React Native para poder
+            construir apliaciones nativas para Android e IOS.
+          </li>
+          <li>
+            Se puede construir aplicaciones de escritorio con JavaScript, usando
+            un framework llamado Electron, pueden correr en Mac o Windows.
+          </li>
+          <li>
+            Tambi&eacute;n se puede trabajar en la parte del Back-end o IOT
+            (Internet Od Things). Internet de las cosas es un concepto que se
+            refiere a una interconexion digital de objetos cotidianos con
+            Internet. Esto con un Framework llamado Node.js, el cual es un
+            entorno de ejecuci&oacute;n de JavaScript que corre directamente en
+            el Back-end.
+          </li>
+        </ol>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--top-bottom"
+        >
+          Tipos de datos en JavaScript
+        </p>
+        <p class="container-main__text">
+          Los elementos que se utilizan en un lenguaje de programaci&oacute;n
+          son: data que se guardan en memoria y tareas (funciones) que se
+          realizaran con esa data.
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Tipos primitivos:
+        </p>
+        <ul class="container-main__list">
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              String:
+            </span>
+            cadena de texto.
+          </li>
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Number:
+            </span>
+            valores num&eacute;ricos.
+          </li>
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Boolean:
+            </span>
+            true &oacute; false.
+          </li>
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Null:
+            </span>
+            tipo especial, contiene null.
+          </li>
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Undefined:
+            </span>
+            tipo especial, contiene undefined.
+          </li>
+        </ul>
+        <p class="container-main__text container-main__text--top-bottom">
+          Tipos objetos:
+        </p>
+        <ul class="container-main__list">
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Tipos predefinidos de JavaScript:
+            </span>
+            Date (fechas), RegExp (expresiones regulares), Error (datos de
+            error).
+          </li>
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Tipos definidos por el programador / usuario:
+            </span>
+            funciones simples y clases.
+          </li>
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Arrays:
+            </span>
+            serie de elementos o formaci&oacute;n tipo vector o matriz. Se
+            considera un objeto especial que carece de m&eacute;todos.
+          </li>
+          <li>
+            <span class="container-main__text container-main__text--bold">
+              Objetos especiales:
+            </span>
+            objeto global, objeto prototipo, otros.
+          </li>
+        </ul>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--top-bottom"
+        >
+          Operador typeof
+        </p>
+        <p class="container-main__text">
+          El operador typeof devuelve una cadena que indica el tipo de valor o
+          dato del operando en JavaScript.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/typeof-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/typeof-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/typeof.png"
+            alt="operador-typeof-javascript"
+          />
+        </picture>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--bottom"
+        >
+          ¿Qu&eacute; es una variable en JavaScript?
+        </p>
+        <p class="container-main__text">
+          Una variable puede considerarse como un contenedor donde se puede
+          almacenar datos, una vez guardados se pueden acceder a ellos a
+          trav&eacute;s del nombre de variable que se haya asignado. Dentro de
+          JavaScript existen tres formas de declarar una variable: var, const
+          (constante) y let.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/variable-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/variable-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/variable.png"
+            alt="variables-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bottom">
+          Buenas pr&aacute;cticas para la declaraci&oacute;n de variables:
+        </p>
+        <ol class="container-main__list">
+          <li>
+            El nombre de la variable debe ser un nombre descriptivo que se pueda
+            identificar con el c&oacute;digo.
+          </li>
+          <li>
+            Los nombres de variables no se pueden iniciar con n&uacute;meros.
+          </li>
+          <li>
+            No se pueden usar caracteres especiales, ni es recomendable empezar
+            una variable el nombre de una variable con may&uacute;scula.
+          </li>
+          <li>
+            Los tipos de escritura de una variable son: lowerCamelCase,
+            UpperCamelCase y snake_case.
+          </li>
+          <li>
+            Se debe tener en cuenta que existen nombres que no se pueden
+            utilizar porque se encuentran como palabras reservadas para el
+            lenguaje.
+          </li>
+        </ol>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--top-bottom"
+        >
+          ¿Qu&eacute; es una funci&oacute;n en JavaScript?
+        </p>
+        <p class="container-main__text container-main__text--bottom">
+          Una funci&oacute;n es un trozo o bloque de c&oacute;digo reutilizable
+          en el que hay un conjunto de instrucciones, dicho c&oacute;digo solo
+          se ejecuta cuando se llama o invoca dicha funci&oacute;n. Las
+          funciones pueden utilizar o no par&aacute;metros, que son los datos
+          necesarios que se env&iacute;an al llamar una funci&oacute;n
+          seg&uacute;n el caso para la correcta ejecuci&oacute;n del mismo.
+        </p>
+        <p class="container-main__text">
+          Existen dos tipos de funciones: declarativas y expresivas. Las
+          funciones declarativas se les declara con la palabra reservada
+          function y las funciones expresivas o an&oacute;nimas consisten en
+          guardar la funci&oacute;n en una variable. Ambas tienen la misma
+          declaraci&oacute;n e invocaci&oacute;n, pero la diferencia consiste en
+          no especificar un nombre en la funci&oacute;n expresiva, sino que
+          utilizar el nombre de la variable.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/funciones-javascript-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/funciones-javascript-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/funciones-javascript.png"
+            alt="funciones-en-javascript"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--bottom">
+          Bases de JavaScript
+        </span>
+        <p class="container-main__text container-main__text--bold">Scope</p>
+        <p class="container-main__text container-main__text--top-bottom">
+          El scope es el alcance que una variable tiene en el c&oacute;digo,
+          decide a qu&eacute; variables tiene acceso cada parte del
+          c&oacute;digo desarrollado. Existen dos tipos de scope, el escope
+          global y el scope local.
+        </p>
+        <p class="container-main__text">
+          El scope local permite acceder a una variable &uacute;nicamente en
+          cierta parte del c&oacute;digo y la variable es conocida como una
+          variable local. Un ejemplo es cuando una variable est&aacute;
+          declarada dentro de un bloque o funci&oacute;n y solo puede ser
+          invocada por el mismo bloque o funci&oacute;n
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/scope-local-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/scope-local-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/scope-local.png"
+            alt="scope-local-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text">
+          En el scope global la variable est&aacute; declarada fuera de un
+          bloque o funci&oacute;n y es conocida como variable global. Puede ser
+          accedida desde cualquier parte del c&oacute;digo desarrollado, ya sea
+          dentro y fuera de un bloque o funci&oacute;n.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/scope-global-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/scope-global-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/scope-global.png"
+            alt="scope-global-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text">
+          Las variables declaradas con let o const dentro de un bloque, el
+          alcance o scope que tendr&aacute;n ser&aacute; solo dentro de ese
+          bloque. Sin embargo, las variables declaradas con var, su valor se
+          puede sobreescribir. Motivo por el cual no es recomendable utilizar
+          este tipo de variables, ya que puede generar bugs.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/scope-lcv-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/scope-lcv-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/scope-lcv.png"
+            alt="let-const-y-var-scope-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text">
+          Tambi&eacute;n es importante saber que en el caso se tenga una
+          funci&oacute;n dentro de otra, la funci&oacute;n externa no tiene
+          acceso a las variables de la funci&oacute;n interna, pero la
+          funci&oacute;n interna si tiene acceso a las variables de la
+          funci&oacute;n externa.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/scope-funciones-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/scope-funciones-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/scope-funciones.png"
+            alt="funciones-y-scope-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bold">Hoisting</p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Hoisting es un t&eacute;rmino para describir que las declaraciones de
+          variables y funciones son desplazadas a la parte superior del scope
+          m&aacute;s cercano, scope global o local. Esto sucede solamente con
+          las declaraciones y no con las asignaciones.
+        </p>
+        <p class="container-main__text container-main__text--bottom">
+          El c&oacute;digo permanece igual, solo es una interpretaci&oacute;n
+          del motor de JavaScript. En el caso de las variables solamente sucede
+          cuando son declaradas con la palabra reservada var. Lo que sucede es
+          que las declaraciones de variables y funciones son asignadas en
+          memoria durante la fase de compilaci&oacute;n, pero quedan exactamente
+          en d&oacute;nde se han escrito en el c&oacute;digo.
+        </p>
+        <p class="container-main__text">
+          Por lo tanto, debido al hoisting se puede utilizar una variable antes
+          de declararla:
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/hoisting-var-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/hoisting-var-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/hoisting-var.png"
+            alt="hoisting-var-en-javascritp"
+          />
+        </picture>
+        <p class="container-main__text">
+          Pero lo que en realidad sucede es que gracias al hoisting se eleva la
+          declaraci&oacute;n de la variable asign&aacute;ndole un valor
+          undefined:
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/hoisting-var-declaracion-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/hoisting-var-declaracion-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/hoisting-var-declaracion.png"
+            alt="hoisting-var-declaracion-en-javascritp"
+          />
+        </picture>
+        <p class="container-main__text">
+          Tambi&eacute;n el hoisting permite utilizar una funci&oacute;n sin
+          problemas antes de que sea declarada en el c&oacute;digo:
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/hoisting-funciones-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/hoisting-funciones-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/hoisting-funciones.png"
+            alt="hoisting-funciones-en-javascritp"
+          />
+        </picture>
+        <p class="container-main__text">
+          Pero es importante recordar que lo que sucede es que JavaScript guarda
+          la función en memoria en la fase de creaci&oacute;n de un contexto de
+          ejecuci&oacute;n. No asigna un valor undefined como con las variables.
+          Tambi&eacute;n se puede primero declara la funci&oacute;n y luego
+          llamarla con normalidad.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/hoisting-funciones-declaracion-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/hoisting-funciones-declaracion-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/hoisting-funciones-declaracion.png"
+            alt="hoisting-funciones-declaracion-normal-en-javascritp"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bottom">
+          El hoisting solo sucede con las declaraciones de variables y
+          funciones, por lo que se recomienda declarar las variables y funciones
+          lo m&aacute;s arriba posible del c&oacute;digo, ya que se considera
+          buena pr&aacute;ctica.
+        </p>
+        <p class="container-main__text container-main__text--bold">
+          Coerci&oacute;n
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          La coerci&oacute;n consiste en transformar de un tipo de dato a otro
+          de una variable. Existen dos tipos de coerci&oacute;n:
+          impl&iacute;cita y expl&iacute;cita.
+        </p>
+        <p class="container-main__text">
+          La coerci&oacute;n impl&iacute;cita es cuando el lenguaje JavaScript
+          ayuda con la transformaci&oacute;n de tipos. Esto ocurre en
+          operaciones de diferentes tipos, ya que es un lenguaje d&eacute;bil y
+          din&aacute;micamente tipado. Esto implica que el motor de JavaScript
+          lo interpreta a su manera y podr&iacute;a arrojar un valor que puede
+          ser err&oacute;neo, por lo cual es importante tener cuidado.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/coercion-implicita-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/coercion-implicita-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/coercion-implicita.png"
+            alt="coercion-implicita-javascritp"
+          />
+        </picture>
+        <p class="container-main__text">
+          La coerci&oacute;n expl&iacute;cita es cuando se obliga a que
+          transforme un tipo de dato. Para realizar estas transformaciones se
+          utilizan funciones como: Number(), String() y Boolean(); parar
+          convertir un dato a tipo n&uacute;mero, string y l&oacute;gico
+          respectivamente.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/coercion-explicita-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/coercion-explicita-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/coercion-explicita.png"
+            alt="coercion-explicita-javascritp"
+          />
+        </picture>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--bottom"
+        >
+          Valores: Truthy y Falsy.
+        </p>
+        <p class="container-main__text">
+          Un valor trythy es aquel que es verdadero y un valor falsy es aquel
+          que es falso cuando se realiza una coerci&oacute;n de cualquier tipo
+          de dato en un contexto booleano. Esto es importante para manejar
+          condicionales, ya que una estructura condicional eval&uacute;a si un
+          valor es verdadero o falso en un contexto booleano.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/truthy-falsy-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/truthy-falsy-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/truthy-falsy.png"
+            alt="valores-truthy-y-falsy-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bold">
+          Operadores: asignaci&oacute;n, comparaci&oacute;n y
+          aritm&eacute;ticos.
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Los operadores permiten manipular el valor de las variables, realizar
+          operaciones matem&aacute;ticas con sus valores y comparar diferentes
+          variables. De esta forma, los operadores permiten a los programas
+          realizar c&aacute;lculos complejos y tomar decisiones l&oacute;gicas
+          en funci&oacute;n de comparaciones y otros tipos de condiciones.
+        </p>
+        <p class="container-main__text">
+          Un operador de asignaci&oacute;n asigna un valor a su operando
+          izquierdo bas&aacute;ndose en el valor de su operando derecho. El
+          operando de asignaci&oacute;n simple es igual (=), que asigna el valor
+          de su operando derecho a su operando izquierdo.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/operador-asignacion-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/operador-asignacion-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/operador-asignacion.png"
+            alt="operador-de-asignacion-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text">
+          Un operador de comparaci&oacute;n compara sus operandos y devuelve un
+          valor l&oacute;gico en funci&oacute;n de si la comparaci&oacute;n es
+          verdadera (true) o falsa (false). Los operandos pueden ser valores
+          num&eacute;ricos, de cadena, l&oacute;gicos u objetos. En la
+          mayor&iacute;a de los casos, si los dos operandos no son del mismo
+          tipo, JavaScript intenta convertirlos a un tipo apropiado para la
+          comparaci&oacute;n. Este comportamiento generalmente resulta en
+          comparar los operandos num&eacute;ricamente.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/operadores-comparacion-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/operadores-comparacion-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/operadores-comparacion.png"
+            alt="operador-de-comparacion-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text">
+          Un operador aritm&eacute;tico toma valores num&eacute;ricos (ya sean
+          literales o variables) como sus operandos y devuelve un solo valor
+          num&eacute;rico. Estos operadores funcionan como lo hacen en la
+          mayor&iacute;a de los otros lenguajes de programaci&oacute;n cuando se
+          usan con n&uacute;meros de punto flotante.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/operadores-aritmeticos-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/operadores-aritmeticos-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/operadores-aritmeticos.png"
+            alt="operadores-artimeticos-en-javascript"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--bottom">
+          Condicionales
+        </span>
+        <p class="container-main__text container-main__text--bold">
+          If, else, else if.
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          En cualquier lenguaje de programaci&oacute;n, el c&oacute;digo
+          necesita realizar decisiones y llevar a cabo diferentes acciones
+          acordes dependiendo de distintas entradas. Los condicionales son
+          estructuras de control que permiten evaluar diferentes expresiones y
+          realizar determinadas acciones en JavaScript.
+        </p>
+        <p class="container-main__text">
+          If...else ejecuta una sentencia si una condici&oacute;n especificada
+          es evaluada como verdadera. Si la condici&oacute;n es evaluada como
+          falsa, otra sentencia puede ser ejecutada. M&uacute;ltiples sentencias
+          if..else pueden ser anidadas para crear una cl&aacute;usula else if.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/if-else-js-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/if-else-js-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/if-else-js.png"
+            alt="if-else-javascript"
+          />
+        </picture>
+        <p class="container-main__text">
+          El operador condicional (ternario) es el &uacute;nico operador en
+          JavaScript que tiene tres operandos. Este operador se usa con
+          frecuencia como atajo para la instrucci&oacute;n if. Si la
+          condici&oacute;n es true, el operador retorna el valor de la
+          expresi&oacute;n 1; de lo contrario, retorna el valor de la
+          expresi&oacute;n 2.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/operador-condicional-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/operador-condicional-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/operador-condicional.png"
+            alt="operador-condicional-javascript"
+          />
+        </picture>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--bottom"
+        >
+          Switch
+        </p>
+        <p class="container-main__text">
+          La declaraci&oacute;n switch eval&uacute;a una expresi&oacute;n,
+          comparando el valor de esa expresi&oacute;n con una instancia case, y
+          ejecuta declaraciones asociadas a ese case, as&iacute; como las
+          declaraciones en los case que siguen. Una instancia default, cuando es
+          declarada, es ejecutada si el valor de la expresi&oacute;n no coincide
+          con cualquiera de las otras instancias case.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/switch-js-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/switch-js-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/switch-js.png"
+            alt="switch-javascript"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--bottom">
+          Arrays
+        </span>
+        <p class="container-main__text">
+          Un array es una estructura de datos (objetos tipo lista de alto nivel)
+          que permite almacenar una serie de datos localizados por
+          &iacute;ndices y separados por comas.
+        </p>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--top-bottom"
+        >
+          ¿Qu&eacute; son los &iacute;ndices?
+        </p>
+        <p class="container-main__text">
+          El &iacute;ndice es la forma en que se accede a los elementos de los
+          arrays. En JavaScript, los &iacute;ndices empiezan desde 0, es decir,
+          la primera posición es el &iacute;ndice 0. Un array se inicia mediante
+          la sintaxis de corchetes [ ] y es un tipo de dato objeto.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/array-js-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/array-js-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/array-js.png"
+            alt="array-javascript"
+          />
+        </picture>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--top-bottom"
+        >
+          ¿C&oacute;mo acceder a los elementos de un array?
+        </p>
+        <p class="container-main__text">
+          Para acceder a los elementos de un array se utiliza la estructura:
+          array[&iacute;ndice]. Para saber la cantidad de elementos de un array
+          se utiliza la propiedad length. Es importante tener en cuenta que la
+          posici&oacute;n de los elementos del array es diferente al
+          &iacute;ndice del mismo. Entonces, para acceder a un elemento del
+          array, &uacute;nicamente se podr&aacute; utilizar los &iacute;ndices
+          desde el 0 hasta array.length -1. Si se accede a un &iacute;ndice que
+          no existe, retornara undefined.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/arrays-elementos-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/arrays-elementos-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/arrays-elementos.png"
+            alt="acceder-a-elementos-de-un-array-en-javascript"
+          />
+        </picture>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--bottom"
+        >
+          ¿Qu&eacute; es la mutabilidad en los arrays?
+        </p>
+        <p class="container-main__text">
+          La mutabilidad hace referencia a la capacidad de una estructura de
+          datos a cambiar. Lo cual permite cambiar los valores de los elementos
+          de un array cuando se accede a sus elementos mediante un
+          &iacute;ndice.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/arrays-elementos-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/arrays-mutabilidad-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/arrays-mutabilidad.png"
+            alt="arrays-mutabilidad-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bold">
+          M&eacute;todos de arrays: push, unshift, pop, shift e indexOf.
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Existen m&eacute;todos mutables, es decir, que cambian el array
+          original. Los m&eacute;todos de arrays son funcionalidades extras. Son
+          semejantes a las funciones, pero se acceden mediante la
+          notaci&oacute;n: array.metodo(argumentos).
+        </p>
+        <p class="container-main__text">
+          El m&eacute;todo push() agrega uno o varios elementos al final del
+          array original y el m&eacute;todo unshift() ejecuta la misma
+          acci&oacute;n, pero agrega elementos al inicio del array original.
+          Ambos m&eacute;todos reciben como argumentos los valores a agregar. En
+          cambio, el m&eacute;todo pop() extrae elementos del final del array
+          original y el m&eacute;todo shift() ejecuta la misma acci&oacute;n de
+          extraer elementos pero del inicio del array original.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/arrays-metodos-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/arrays-metodos-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/arrays-metodos.png"
+            alt="arrays-metodos-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text">
+          El m&eacute;todo indexOf() retorna el primer &iacute;ndice en el que
+          se puede encontrar un elemento dado en el array, o retorna -1 si el
+          elemento no est&aacute; presente.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/arrays-indexof-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/arrays-indexof-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/arrays-indexof.png"
+            alt="arrays-metodo-indexof-en-javascript"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Loops
+        </span>
+        <p class="container-main__text container-main__text--top-bottom">
+          Un bucle (loop) o ciclo repetitivo es una estructura de control que
+          permite realizar una o varias instrucciones mientras una
+          condici&oacute;n sea verdadera. Los bucles ofrecen una forma
+          r&aacute;pida y sencilla de hacer algo repetidamente.
+        </p>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--bottom"
+        >
+          Ciclo for
+        </p>
+        <p class="container-main__text">
+          Crea un bucle que consiste en tres expresiones opcionales, encerradas
+          en par&eacute;ntesis y separadas por puntos y comas, seguidas de una
+          sentencia ejecutada en bucle.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/ciclo-for-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/ciclo-for-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/ciclo-for.png"
+            alt="sintaxis-ciclo-for-javascript"
+          />
+        </picture>
+        <p class="container-main__text">
+          La expersión-inicial t&iacute;picamente se utiliza como variable
+          contador. La condici&oacute;n se eval&uacute;a antes de cada
+          iteraci&oacute;n del bucle. Si la condici&oacute;n se eval&uacute;a
+          como verdadera, se ejecuta la sentencia. Si la expresi&oacute;n se
+          eval&uacute;a como falsa, termina la ejecuci&oacute;n de la estructura
+          for. La expresi&oacute;n-final generalmente se usa para actualizar o
+          incrementar la variable contador y es evaluada al final de cada
+          iteraci&oacute;n del bucle.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/for-ejemplo-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/for-ejemplo-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/for-ejemplo.png"
+            alt="ciclo-for-ejemplo-javascript"
+          />
+        </picture>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--bottom"
+        >
+          Ciclo for...of
+        </p>
+        <p class="container-main__text">
+          El ciclo for...of es una variaci&oacute;n del ciclo for que se utiliza
+          para recorrer los valores de los elementos de un array. El ciclo
+          ejecuta un bloque de c&oacute;digo para cada elemento del array.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/ciclo-for-of-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/ciclo-for-of-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/ciclo-for-of.png"
+            alt="ciclo-for-of-javascript"
+          />
+        </picture>
+        <p class="container-main__text">
+          La variable elemento es la referencia a cada uno de los elementos del
+          array. Este puede tener cualquier nombre, pero por convenci&oacute;n
+          se escribe la variable elemento en singular con respecto al nombre del
+          array.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/for-of-ejemplo-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/for-of-ejemplo-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/for-of-ejemplo.png"
+            alt="for-of-ejemplo-javascript"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bottom">
+          Una limitaci&oacute;n del ciclo for...of es que solo accede al valor
+          de cada uno de los elementos de un array. Por consiguiente, si se
+          quiere cambiar el array original, no se podr&aacute;, ya que se
+          necesita el &iacute;ndice para acceder y cambiar los valores de cada
+          elemento respectivamente.
+        </p>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--top-bottom"
+        >
+          Ciclo while
+        </p>
+        <p class="container-main__text">
+          Crea un bucle que ejecuta una sentencia especificada mientras cierta
+          condici&oacute;n se eval&uacute;e como verdadera. Dicha
+          condici&oacute;n es evaluada antes de ejecutar la sentencia. Cuando la
+          condici&oacute;n se eval&uacute;a como falsa, termina la
+          ejecuci&oacute;n de la estructura while.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/ciclo-while-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/ciclo-while-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/ciclo-while.png"
+            alt="ciclo-while-javascript"
+          />
+        </picture>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--top-bottom"
+        >
+          Ciclo do..while
+        </p>
+        <p class="container-main__text">
+          Crear un bucle que ejecuta una sentencia especificada, hasta que la
+          condici&oacute;n de comprobaci&oacute;n se eval&uacute;a como falsa.
+          La condici&oacute;n se eval&uacute;a despu&eacute;s de ejecutar la
+          sentencia, dando como resultado que la sentencia especificada se
+          ejecute al menos una vez.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/ciclo-do-while-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/ciclo-do-while-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/ciclo-do-while.png"
+            alt="ciclo-do-while-javascript"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Objetos
+        </span>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--top-bottom"
+        >
+          ¿Qu&eacute; es un objeto en JavaScript?
+        </p>
+        <p class="container-main__text">
+          Los objetos en JavaScript, como en tantos otros lenguajes de
+          programaci&oacute;n, se pueden comparar con objetos de la vida real.
+          Un objeto es una colecci&oacute;n de propiedades, y una propiedad es
+          una asociaci&oacute;n entre un nombre (o clave) y valor.
+          Tambi&eacute;n es importante saber que los arrays son objetos en
+          JavaScript.
+        </p>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--top-bottom"
+        >
+          ¿Qu&eacute; son los atributos y m&eacute;todos?
+        </p>
+        <p class="container-main__text">
+          En programaci&oacute;n orientada a objetos, un objeto es una
+          representaci&oacute;n de la realidad, en el cual sus
+          caracter&iacute;sticas propias se definen como atributos y sus
+          acciones se definen como m&eacute;todos. En otras palabras, los
+          atributos son las variables y los m&eacute;todos son las funciones
+          propias de cada objeto.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/objeto-js-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/objeto-js-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/objeto-js.png"
+            alt="objeto-en-javascript"
+          />
+        </picture>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--bottom"
+        >
+          C&oacute;mo acceder a los valores de un objeto
+        </p>
+        <p class="container-main__text">
+          A diferencia de los arrays, &uacute;nicamente es necesario saber la
+          propiedad del objeto para acceder a su valor. Se puede acceder al los
+          valores de un objeto mediante la notaci&oacute;n de corchetes y de
+          punto.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/acceder-valores-obj-js-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/acceder-valores-obj-js-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/acceder-valores-obj-js.png"
+            alt="acceder-a-valores-de-objetos-en-javascript"
+          />
+        </picture>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--bottom"
+        >
+          C&oacute;mo a&ntilde;adir propiedades a un objeto
+        </p>
+        <p class="container-main__text">
+          Para a&ntilde;adir propiedades a un objeto se utiliza la
+          notaci&oacute;n de corchetes o punto con la nueva propiedad,
+          asign&aacute;ndole su respectivo valor.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/agregar-propiedad-obj-js-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/acceder-valores-obj-js-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/agregar-propiedad-obj-js.png"
+            alt="agregar-propiedad-a-objeto-en-javascript"
+          />
+        </picture>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--bottom"
+        >
+          C&oacute;mo modificar propiedades de un objeto
+        </p>
+        <p class="container-main__text">
+          Para modificar propiedades de un objeto se utiliza la notaci&oacute;n
+          de corchetes o punto con la propiedad espec&iacute;fica,
+          asign&aacute;ndole su nuevo valor.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/modificar-propiedad-obj-js-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/modificar-propiedad-obj-js-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/modificar-propiedad-obj-js.png"
+            alt="modificar-propiedad-de-objeto-en-javascript"
+          />
+        </picture>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--bottom"
+        >
+          C&oacute;mo eliminar propiedades de un objeto
+        </p>
+        <p class="container-main__text">
+          Para eliminar propiedades de un objeto se utiliza la palabra reservada
+          delete seguido de la propiedad del objeto.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/eliminar-propiedad-obj-js-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/eliminar-propiedad-obj-js-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/eliminar-propiedad-obj-js.png"
+            alt="eliminar-propiedad-de-objeto-en-javascript"
+          />
+        </picture>
+        <p
+          class="container-main__text container-main__text--bold container-main__text--bottom"
+        >
+          El objeto contexto this
+        </p>
+        <p class="container-main__text">
+          En javascript, el objeto contexto this hace referencia a diferentes
+          valores según su contexto de ejecuci&oacute;n. En objetos, el contexto
+          this hace referencia al propio objeto. Esto sirve para acceder a los
+          atributos y m&eacute;todos propios del objeto. Gracias al contexto
+          this se pueden crear varios objetos sin la necesidad de cambiar una y
+          otra vez la referencia al objeto, por tanto, se puede acceder a los
+          atributos y m&eacute;todos, independientemente del objeto creado.
+          Crear varios objetos a partir de un c&oacute;digo base se denomina
+          crear una instancia.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/this-js-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/this-js-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/this-js.png"
+            alt="contexto-this-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bold">
+          Funci&oacute;n constructora
+        </p>
+        <p
+          class="container-main__text contian container-main__text--top-bottom"
+        >
+          Existe un problema al momento de construir varios objetos a partir de
+          un c&oacute;digo base (clase), los atributos deben cambiar con
+          respecto a la nueva informaci&oacute;n. Para esto se utiliza una
+          funci&oacute;n constructora. Una funci&oacute;n constructora sirve
+          para crear varios objetos a partir de nueva informaci&oacute;n, esto
+          es recibiendo argumentos.
+        </p>
+        <p class="container-main__text">
+          Para generar varios objetos a partir de una funci&oacute;n
+          constructora, se deben definir los par&aacute;metros correspondientes,
+          que ser&aacute;n los atributos del objeto, que cambiar&aacute;n con la
+          nueva informaci&oacute;n mediante los argumentos recibidos. Estos
+          argumentos deben hacer referencia a cada uno de los atributos del
+          objeto, esto mediante el objeto contexto this. El operador new
+          permitir&aacute; crear nuevas instancias de los objetos (crear nuevos
+          objetos) a partir de la función constructora.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/funcion-constructora-js-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/funcion-constructora-js-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/funcion-constructora-js.png"
+            alt="funcion-constructora-en-javascript"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          M&eacute;todos de Arrays
+        </span>
+        <p class="container-main__text container-main__text--top-bottom">
+          Existen m&eacute;todos de arrays para recorrerlos y devolver un valor
+          o un array con nuevos resultados.
+        </p>
+        <p class="container-main__text container-main__text--bold">
+          M&eacute;todo filter
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          El m&eacute;todo filter consiste en crear un nuevo array (no modifica
+          el que ya est&aacute; creado) a partir de los elementos originales
+          filtrados mediante una funci&oacute;n (callback) que indica la
+          condici&oacute;n a cumplir y es inmutable. Si la condici&oacute;n se
+          cumple, retorna el elemento completo.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/metodo-filter-js-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/metodo-filter-js-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/metodo-filter-js.png"
+            alt="metodo-filter-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bold">
+          M&eacute;todo map
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          El m&eacute;todo map es inmutable y consiste en crear un nuevo array
+          (no modifica el que ya est&aacute; creado) a partir de los elementos
+          originales transformados mediante una funci&oacute;n (callback). Mapea
+          todo el contenido del array y retorna solo los resultados solicitados.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/metodo-map-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/metodo-map-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/metodo-map.png"
+            alt="metodo-map-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bold">
+          M&eacute;todo find
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          El m&eacute;todo find consiste en encontrar el primer elemento de un
+          array que cumpla con la condici&oacute;n especificada en la
+          funci&oacute;n (callback). Si ning&uacute;n elemento cumple con la
+          condici&oacute;n, retornar&aacute; undefined. El m&eacute;todo no
+          modifica el array que ya est&aacute; creado.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/metodo-find-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/metodo-find-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/metodo-find.png"
+            alt="metodo-find-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bold">
+          M&eacute;todo forEach
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          El m&eacute;todo forEach de los arrays consiste en ejecutar una
+          funci&oacute;n (callback) para cada uno de los elementos iterados.
+          Iterar significa repetir una acci&oacute;n varias veces. Este
+          m&eacute;todo no retorna ning&uacute;n array solamente realizas sobre
+          el array ya creado un filtrado y regresar&aacute; lo que se le indique
+          o solicite.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/metodo-forEach-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/metodo-forEach-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/metodo-forEach.png"
+            alt="metodo-forEach-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bold">
+          M&eacute;todo some
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          El m&eacute;todo some es inmutable y consiste en retornar un valor
+          l&oacute;gico verdadero si existe al menos un elemento que cumpla la
+          condici&oacute;n establecida en la funci&oacute;n (callback). El
+          m&eacute;todo no modifica el array que ya est&aacute; creado.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/metodo-some-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/metodo-some-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/metodo-some.png"
+            alt="metodo-some-en-javascript"
+          />
+        </picture>
+        <span class="container-main__topic container-main__topic--code">
+          Manipulaci&oacute;n del DOM
+        </span>
+        <p class="container-main__text container-main__text--top-bottom">
+          Las siglas DOM significan Document Object Model, o lo que es lo mismo,
+          la estructura del documento HTML. Una p&aacute;gina HTML est&aacute;
+          formada por m&uacute;ltiples etiquetas HTML, anidadas una dentro de
+          otra, formando un &aacute;rbol de etiquetas relacionadas entre
+          s&iacute;, que se denomina &aacute;rbol DOM (o simplemente DOM).
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          En JavaScript, cuando se habla del DOM se refiere a la estructura del
+          documento HTML, que se puede modificar de forma din&aacute;mica desde
+          JavaScript, a&ntilde;adiendo nuevas etiquetas, modificando o
+          eliminando otras, cambiando sus atributos HTML; a&ntilde;adiendo
+          clases, cambiando el contenido de textos, etc.
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Gracias a JavaScript el cambiar la estructura del documento HTML o DOM
+          se puede automatizar, incluso indicando que se realicen cambios cuando
+          el usuario haga acciones determinadas, como por ejemplo: pulsar un
+          bot&oacute;n, mover el rat&oacute;n, hacer clic en una parte del
+          documento, escribir un texto, etc.
+        </p>
+        <picture class="container-main__picture">
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/DOM.png"
+            alt="DOM-en-javascript"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bold">
+          C&oacute;mo conectar JavaScript con HTML
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Existen varias formas de ejecutar JavaScript, pero es necesario un
+          entorno de ejecuci&oacute;n y se puede desarrollar tanto para frontend
+          como para el backend. El entorno de desarrollo para frontend puede ser
+          un navegador web y para el backend puede ser Node.js. Lo que se suele
+          tener en frontend son aplicaciones web que tienen HTML, CSS y
+          JavaScript. En el desarrollo web, el HTML es el que debe ejecutar el
+          c&oacute;digo JavaScript autom&aacute;ticamente.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/etiqueta-script-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/etiqueta-script-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/etiqueta-script.png"
+            alt="conectar-javascript-con-HTML"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bold">
+          Leyendo HTML desde JavaScript
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          En JavaScript, la forma de acceder al DOM es a trav&eacute;s de un
+          objeto llamado document, que representa el &aacute;rbol DOM de la
+          p&aacute;gina o pestaña del navegador donde se encuentra el usuario.
+          Existen funciones o m&eacute;todos que brinda el entorno de
+          ejecuci&oacute;n (el navegador web en el caso del desarrollo frontend)
+          para seleccionar los elementos del documento HTML que est&aacute;
+          ejecutando el c&oacute;digo del archivo de JavaScript.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/leyendo-html-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/leyendo-html-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/leyendo-html.png"
+            alt="leyendo-html-desde-javascript"
+          />
+        </picture>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/leyendo-html-js-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/leyendo-html-js-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/leyendo-html-js.png"
+            alt="leyendo-html-desde-javascript-ejemplo"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bold">
+          Escribir HTML desde JavaScript
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          La manipulaci&oacute;n del DOM desde JavaScript consiste en editar e
+          incluso crear nuevos elementos para el documento HMLT utilizando
+          JavaScript. Tiene sentido que la manipulaci&oacute;n del DOM se haga
+          con la intenci&oacute;n de que cuando el usuario realice una
+          acci&oacute;n, el funcionamiento del sitio web cambie de forma
+          din&aacute;mica.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/modificando-html-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/modificando-html-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/modificando-html.png"
+            alt="mostrando-html-desde-javascript"
+          />
+        </picture>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/modificando-html-js-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/modificando-html-js-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/modificando-html-js.png"
+            alt="mostrando-html-desde-javascript-ejemplo"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bold">
+          Eventos en JavaScript
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Los eventos de JavaScript permiten la interacci&oacute;n entre las
+          aplicaciones JavaScript y los usuarios. Cada vez que se pulsa un
+          bot&oacute;n, se produce un evento. Cuando se pulsa una tecla,
+          tambi&eacute;n se produce un evento. No obstante, para que se produzca
+          un evento no es obligatorio que intervenga el usuario, por ejemplo,
+          cada vez que se carga una p&aacute;gina, tambi&eacute;n se produce un
+          evento.
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          El evento onclick en JavaScript permite ejecutar una funci&oacute;n
+          cuando se da clic a un elemento. El evento onchange llama una
+          funci&oacute;n cuando el usuario cambia la opci&oacute;n o valor de un
+          elemento. Tambi&eacute;n para prevenir el comportamiento por defecto
+          de un elemento se puede utilizar event.preventDefault().
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="/articulos/javascript/imagenes/eventos-js-laptop-l.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/eventos-js-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/eventos-js.png"
+            alt="eventos-en-javascript"
+          />
+        </picture>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/evento-js-ejemplo-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="/articulos/javascript/imagenes/evento-js-ejemplo-laptop.png"
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/evento-js-ejemplo.png"
+            alt="eventos-en-javascript-ejemplo"
+          />
+        </picture>
+        <p class="container-main__text container-main__text--bold">
+          Escuchar eventos desde JavaScript
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          Los escuchadores de eventos se encuentran entre las estructuras de
+          JavaScript que se usan m&aacute;s frecuentemente en el diseño web.
+          Estos permiten a&ntilde;adir funcionalidad interactiva a los elementos
+          HTML "escuchando" diferentes eventos que tiene lugar en la
+          p&aacute;gina web, como cuando el usuario hace clic en un
+          bot&oacute;n, cuando presiona una tecla o cuando se carga un elemento.
+        </p>
+        <p class="container-main__text container-main__text--top-bottom">
+          El m&eacute;todo addEventListener(), es un escuchador que indica al
+          navegador que est&eacute; atento a la interacci&oacute;n del usuario.
+          La ventaja es que se escribe totalmente en el archivo de JavaScript,
+          sin necesidad de añadir c&oacute;digo en el archivo HTML.
+        </p>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/addeventlistener-js-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/addeventlistener-js-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/addeventlistener-js.png"
+            alt="escuchar-eventos-en-javascript"
+          />
+        </picture>
+        <picture class="container-main__picture">
+          <source
+            media="(min-width:1600px)"
+            srcset="
+              /articulos/javascript/imagenes/addeventlistener-js-ejemplo-laptop-l.png
+            "
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /articulos/javascript/imagenes/addeventlistener-js-ejemplo-laptop.png
+            "
+          />
+          <img
+            class="container-main__image container-main__image--code"
+            src="/articulos/javascript/imagenes/addeventlistener-js-ejemplo.png"
+            alt="escuchar-eventos-en-javascript-ejemplo"
+          />
+        </picture>
+      </article>
+    </main>
+    <footer class="container-footer">
+      <div class="container-footer__box">
+        <a
+          class="container-footer__enlace"
+          href="https://github.com/codepalacios"
+        >
+          Desarrollado por codepalacios
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
