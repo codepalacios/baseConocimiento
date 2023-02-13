@@ -1,12 +1,12 @@
 /* Media Laptop */
-@media (min-width: 1280px) {
+@media (min-width: 720px) {
   .container-header__box {
-    width: 56rem;
+    width: 66rem;
   }
   .container-main {
-    width: 56rem;
+    width: 66rem;
   }
   .container-footer__box {
-    width: 56rem;
+    width: 66rem;
   }
 }

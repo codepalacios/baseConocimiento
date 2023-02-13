@@ -1,11 +1,11 @@
-/* Media Laptop */
-@media (min-width: 720px) {
+/* Media Mobile 2 */
+@media (min-width: 580px) {
   .container-header {
-    width: 66rem;
+    width: 56rem;
   }
   .container-main {
-    width: 66rem;
-    grid-template-columns: 66rem;
+    width: 56rem;
+    grid-template-columns: 56rem;
     justify-content: space-between;
     align-content: space-between;
   }

@@ -14,13 +14,18 @@
     <link rel="stylesheet" href="/estilos/articulos.css" />
     <link
       rel="stylesheet"
+      href="/estilos/articulos-2.css"
+      media="screen and (min-width: 580px)"
+    />
+    <link
+      rel="stylesheet"
       href="/estilos/articulos-laptop.css"
-      media="screen and (min-width: 1280px)"
+      media="screen and (min-width: 720px)"
     />
     <link
       rel="stylesheet"
       href="/estilos/articulos-laptop-l.css"
-      media="screen and (min-width: 1600px)"
+      media="screen and (min-width: 1080px)"
     />
   </head>
   <body>
@@ -36,7 +41,7 @@
         <span class="container-main__topic">
           Fundamentos del Desarrollador Web
         </span>
-        <p class="container-main__text container-main__text--bottom">
+        <p class="container-main__text">
           Existen tres est&aacute;ndares importantes para generar productos web.
           Esto son los lenguajes o est&aacute;ndares que entiende todo navegador
           web:
@@ -50,14 +55,14 @@
             (Chrome, Edge, Firefox, Safari, Opera, entre otros).
           </li>
           <li>
-            <span class="container-main__text-bold container-main__text--bold">
+            <span class="container-main__text container-main__text--bold">
               CSS:
             </span>
             es el lenguaje con el que se describen estilos a todo el contenido
             previamente etiquetado con HTML.
           </li>
           <li>
-            <span class="container-main__text-bold container-main__text--bold">
+            <span class="container-main__text container-main__text--bold">
               JavaScript:
             </span>
             es el lenguaje que se emplea para crear o brindar a las
@@ -72,25 +77,23 @@
             alt="html-css-javascript"
           />
         </picture>
-        <span class="container-main__topic container-main__topic--bottom"
-          >¿Qu&eacute; es el Frontend?</span
-        >
+        <span class="container-main__topic">¿Qu&eacute; es el Frontend?</span>
         <p class="container-main__text">
           Frontend es la parte de un programa o dispositivo a la que un usuario
           puede acceder directamente. Son todas las tecnolog&iacute;as de
           dise&ntilde;o y desarrollo que corren en el navegador y que se
           encargan de la interactividad con los usuarios.
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Un programador Frontend debe saber de c&oacute;digo que entienda el
           navegador (HTML, CSS y JavaScript) para poder usar algunos frameworks
           o librer&iacute;as que expanden sus capacidades para crear cualquier
           tipo de interfaces de usuarios.
         </p>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           Herramientas que maneja un desarrollador frontend
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Debido a que un frontend es el desarrollador que va a manejar las
           cosas del lado del cliente, las tecnolog&iacute;as con las que va a
           trabajar son:
@@ -111,9 +114,7 @@
             </a>
           </li>
         </ul>
-        <p class="container-main__text container-main__text--top-bottom">
-          Frameworks de CSS para fronted:
-        </p>
+        <p class="container-main__text">Frameworks de CSS para fronted:</p>
         <ul class="container-main__list">
           <li>
             Bootstrap:
@@ -130,7 +131,7 @@
             >
           </li>
         </ul>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Frameworks de JavaScript para frontend:
         </p>
         <ul class="container-main__list">
@@ -147,9 +148,7 @@
             <a href="https://vuejs.org/">https://vuejs.org/</a>
           </li>
         </ul>
-        <p class="container-main__text container-main__text--top-bottom">
-          Preprocesadores de CSS:
-        </p>
+        <p class="container-main__text">Preprocesadores de CSS:</p>
         <ul class="container-main__list">
           <li>
             Stylus:
@@ -160,9 +159,7 @@
             <a href="https://sass-lang.com/">https://sass-lang.com/</a>
           </li>
         </ul>
-        <p class="container-main__text container-main__text--top-bottom">
-          Compiladores / empaquetadores de JS:
-        </p>
+        <p class="container-main__text">Compiladores / empaquetadores de JS:</p>
         <ul class="container-main__list">
           <li>
             BABEL:
@@ -181,7 +178,7 @@
           l&oacute;gica que hay detr&aacute;s de una petici&oacute;n dada por el
           navegador hacia el servidor.
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Una carecter&iacute;stica que lo diferencia del Frontend es que no
           tiene est&aacute;ndares, puesto que tiene varios lenguajes de
           programaci&oacute;n (Node.js, Python, PHP, Ruby, GO, Java, .NET entre
@@ -195,7 +192,7 @@
           <li>Express (JavaScript)</li>
           <li>Spring (Java)</li>
         </ul>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           El Backend tambi&eacute;n tiene en cuenta la infraestructura donde va
           a realizar el deploy de su aplicaci&oacute;n (esto tambi&eacute;n
           puede ser tarea de un DevOps, un perfil dedicado a la
@@ -207,9 +204,7 @@
           <li>AWS</li>
           <li>Heroku, entre otras.</li>
         </ul>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--top-bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿Qu&eacute; es deploy?
         </p>
         <p class="container-main__text">
@@ -237,7 +232,7 @@
           de JavaScript en el backend y de HTML/CSS/JavaScript en el frontend
           para crear nuevas plataformas.
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           El nacimiento de tecnolog&iacute;as que funcionan entre el frontend y
           el backend ha dado lugar a la proliferaci&oacute;n de frameworks y
           herramientas de desarrollo full stack, que permiten a los
@@ -245,16 +240,16 @@
           empleando un &uacute;nico lenguaje de programaci&oacute;n, como Django
           para Python.
         </p>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿Qu&eacute; es un desarrollador Full Stack?
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Las y los desarrolladores Full Stack son profesionales que se encargan
           tanto de la parte visual y de la interaccion de un sitio (frontend),
           como de su l&oacute;gica y funcionamiento del lado del servidor
           (backend).
         </p>
-        <p class="container-main__text container-main__text--bottom">
+        <p class="container-main__text">
           Un Stack (en ingl&eacute;s: pila o mont&oacute;n) se refiere al grupo
           de tecnolog&iacute;as que componene un sitio web en todos los aspectos
           (desde la base de datos, hacia el manejo l&oacute;gico y la interfaz
@@ -262,25 +257,25 @@
           manejar la pila completa de un sitio, tanto de frontend como de
           backend, además saber utilizar su base de datos.
         </p>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿Qu&eacute; hace un desarrollador Full Stack?
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Una desarrolladora o desarrollador Full Stack entiende muy bien
           c&oacute;mo funciona un producto web de principio a fin, desde su
           dise&ntilde;o en mockup y deploy hasta producci&oacute;n.
         </p>
-        <p class="container-main__text container-main__text--bottom">
+        <p class="container-main__text">
           Este tipo de programador o programadora no maneja por completo todas
           las tecnolog&iacute;as de ambas partes, pues cada una requiere
           conocimiento profundo. De hecho, no es recomendado profundizar en
           tantas especialidades y no es sano. El desarrollo web evoluciona muy
           r&aacute;pido y cada dos o tres meses aparecer&aacute; algo nuevo.
         </p>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿C&oacute;mo ser un desarrollador Full Stack?
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Para convertirse en Full Stack developer se debe dominar las dos
           &aacute;reas b&aacute;sicas: backend y frontend. Esto ayudar&aacute; a
           comprender c&oacute;mo funciona cada uno y a generar una
@@ -290,16 +285,16 @@
           ayudar&aacute; a entender c&oacute;mo construir una API desde el
           Backend.
         </p>
-        <p class="container-main__text container-main__text--bottom">
+        <p class="container-main__text">
           Adem&aacute;s, aprender las diferentes formas de subir en internet una
           aplicaci&oacute;n web ayudar&aacute; a entender las diferentes
           estrategias de deploy que existen y permitir&aacute; ampliar los
           conocimientos en el mundo del desarrollo web.
         </p>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           Tecnolog&iacute;as Full Stack para desarrolladores
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Aprender un stack conocido puede ayudar a dar los primeros pasos como
           desarrollador Full Stack y a escalar un proyecto a producci&oacute;n
           de una manera m&aacute;s r&aacute;pida y con una mayor
@@ -311,7 +306,7 @@
           <li>PERN (PostgreSQL, Express.js, React, Node)<br /></li>
         </ul>
         <span class="container-main__topic"> Motores de renderizado </span>
-        <p class="container-main__text container-main__text--bottom">
+        <p class="container-main__text">
           La funci&oacute;n principal es pasar de archivos a p&iacute;xeles en
           pantalla. Los navegadores tienen motores y todos ellos
           b&aacute;sicamente hacen lo mismo para pasar los archivos a
@@ -323,9 +318,7 @@
           <li>Safari (Webkit)</li>
           <li>Firefox (Gecko)</li>
         </ul>
-        <p class="container-main__text container-main__text--top-bottom">
-          El navergador hace 5 pasos:
-        </p>
+        <p class="container-main__text">El navergador hace 5 pasos:</p>
         <ol class="container-main__list">
           <li>Pasa los archivos a objetos (DOM)</li>
           <li>Calcula el estilo correspondiente a cada nodo DOM</li>
@@ -342,22 +335,22 @@
         <span class="container-main__topic">
           P&aacute;ginas Est&aacute;ticas vs. Din&aacute;micas
         </span>
-        <p class="container-main__text container container-main__text--bottom">
+        <p class="container-main__text container">
           Los sitios web se comportan de forma diferente dependiendo de la forma
           en que fueron diseñados desde su concepci&oacute;n, tomando en cuenta
           la interacci&oacute;n con el usuario.
         </p>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           Sitios Web Est&aacute;ticos
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           La informaci&oacute;n que contiene se mantiene constante y
           est&aacute;tica. No se actualiza con la interacci&oacute;n del
           usuario. Es conveniente para realizar landing pages (p&aacute;ginas
           informativas o de aterrizaje) o blogs. Se mostrar&aacute;n siempre
           iguales para todos los usuarios.
         </p>
-        <p class="container-main__text container-main__text--bottom">
+        <p class="container-main__text">
           Ejemplo de p&aacute;ginas est&aacute;ticas:
         </p>
         <ul class="container-main__list">
@@ -365,9 +358,7 @@
           <li>Blog de viajes</li>
           <li>P&aacute;gina informativa de un negocio</li>
         </ul>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--top-bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           Sitios Web Din&aacute;micos
         </p>
         <p class="container-main__text">
@@ -377,7 +368,7 @@
           informaci&oacute;n. Ser&aacute;n diferentes, dependiendo del usuario
           que la use y la informaci&oacute;n que se ingrese.
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Ejemplo de p&aacute;ginas din&aacute;micas:
         </p>
         <ul class="container-main__list">
@@ -388,9 +379,7 @@
         <span class="container-main__topic">
           Anatom&iacute;a de un elemento HTML
         </span>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           Elemento y Atributo
         </p>
         <p class="container-main__text">
@@ -406,9 +395,7 @@
             alt="html-elemento-y-atributo"
           />
         </picture>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           Anidamiento
         </p>
         <p class="container-main__text">
@@ -419,22 +406,20 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/html-y-css/imagenes/anidamiento-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/html-y-css/imagenes/anidamiento-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/html-y-css/imagenes/anidamiento.png"
             alt="html-anidamiento"
           />
         </picture>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           Elementos vac&iacute;os
         </p>
         <p class="container-main__text">
@@ -460,15 +445,15 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/html-y-css/imagenes/documento-html-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/html-y-css/imagenes/documento-html-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/html-y-css/imagenes/documento-html.png"
             alt="anatomia-documento-html"
           />
@@ -482,9 +467,7 @@
           sitio web sean mejor interpretados por el navegador y por lo tanto
           m&aacute;s accesibles.
         </p>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--top-bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿Qu&eacute; es HTML sem&aacute;ntico?
         </p>
         <p class="container-main__text">
@@ -495,20 +478,20 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/html-y-css/imagenes/html-semantico-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/html-y-css/imagenes/html-semantico-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/html-y-css/imagenes/html-semantico.png"
             alt="html-semantico"
           />
         </picture>
-        <p class="container-main__text container-main__text--bottom">
+        <p class="container-main__text">
           Las etiquetas en HTML ayudan al desarrollador y usuario a diferencia
           en qu&eacute; parte del contenido se encuentra. HTML son las siglas
           que corresponden a HyperText Markup Languaje (Lenguaje de Marcado de
@@ -539,7 +522,7 @@
             mismo en cualquier sitio.
           </li>
         </ul>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           La web se conforma de tres conceptos:
         </p>
         <ul class="container-main__list">
@@ -566,12 +549,10 @@
             una web, darle sentido y propósito.
           </li>
         </ul>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--top-bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           Etiquetas de HTML m&aacute;s usadas
         </p>
-        <p class="container-main__text container-main__text--bottom">
+        <p class="container-main__text">
           Existen una amplia variedad de etiquetas en HTML, pero ciertas
           etiquetas presentan un uso m&aacute;s recurrente por parte de los
           desarrolladores:
@@ -615,19 +596,17 @@
           </li>
         </ul>
         <span class="container-main__topic">Im&aacute;genes para la web</span>
-        <p class="container-main__text container-main__text--bottom">
+        <p class="container-main__text">
           Las im&aacute;genes representan una pieza fundamental al momento de
           mostrar contenido para la web. El tama&ntilde;o m&aacute;ximo
           recomendado para una im&aacute;gen es 70kb. Tambi&eacute;n es
           importante conocer los principales tipos de im&aacute;genes web y sus
           formatos.
         </p>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           Tipos de im&aacute;genes para la web
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
-          Lossless (sin p&eacute;rdida):
-        </p>
+        <p class="container-main__text">Lossless (sin p&eacute;rdida):</p>
         <ul class="container-main__list">
           <li>Captura todos los datos del archivo original.</li>
           <li>No se pieder nada del archivo original.</li>
@@ -636,9 +615,7 @@
             original.
           </li>
         </ul>
-        <p class="container-main__text container-main__text--top-bottom">
-          Lossy (con p&eacute;dida):
-        </p>
+        <p class="container-main__text">Lossy (con p&eacute;dida):</p>
         <ul class="container-main__list">
           <li>Se aproxima a su imagen original.</li>
           <li>
@@ -656,9 +633,7 @@
             importantes
           </li>
         </ul>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--top-bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           Formatos de imagen para web
         </p>
         <ul class="container-main__list">
@@ -721,29 +696,29 @@
             alt="anatomia-declaracion-css"
           />
         </picture>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           Selectores b&aacute;sicos y combinadores
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Los selectores definenen sobre qu&eacute; elementos se aplicar&aacute;
           un conjunto de reglas CSS.
         </p>
         <p class="container-main__text">Selectores b&aacute;sicos:</p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/html-y-css/imagenes/selectores-basicos-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/html-y-css/imagenes/selectores-basicos-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/html-y-css/imagenes/selectores-basicos.png"
             alt="selectores-basicos-css"
           />
@@ -751,26 +726,24 @@
         <p class="container-main__text">Selectores combinadores:</p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/html-y-css/imagenes/selectores-combinadores-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/html-y-css/imagenes/selectores-combinadores-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/html-y-css/imagenes/selectores-combinadores.png"
             alt="selectores-combinadores-css"
           />
         </picture>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           Selectores de pseudoclases y pseudoelementos
         </p>
         <p class="container-main__text">
@@ -786,27 +759,27 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/html-y-css/imagenes/pseudoclases-pseudoelementos-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/html-y-css/imagenes/pseudoclases-pseudoelementos-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/html-y-css/imagenes/pseudoclases-pseudoelementos.png"
             alt="selectores-pseudoclases-y-pseudoelementos-css"
           />
         </picture>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           Etiquetas de HTML m&aacute;s usadas
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Existen una amplia variedad de propiedades en CSS, pero ciertas
           propiedades presentan un uso m&aacute;s recurrente por parte de los
           desarrolladores:
@@ -861,15 +834,15 @@
         </p>
         <picture class="container-main__picture">
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/html-y-css/imagenes/especificidad-css.png"
             alt="cascada-y-especificidad-css"
           />
         </picture>
-        <span class="container-main__topic container-main__topic--bottom">
+        <span class="container-main__topic">
           Tipos de display m&aacute;s usados
         </span>
-        <p class="container-main__text container-main__text--bottom">
+        <p class="container-main__text">
           Display es el tipo de visualizaci&oacute;n (el tipo de cuadro de
           representaci&oacute;n) que tienen los elementos.
         </p>
@@ -927,14 +900,12 @@
         </p>
         <picture class="container-main__picture">
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/html-y-css/imagenes/modelo-de-cajas.png"
             alt="modelo-de-cajas"
           />
         </picture>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           Colapso de m&aacute;rgenes
         </p>
         <p class="container-main__text">
@@ -948,15 +919,15 @@
         </p>
         <picture class="container-main__picture">
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/html-y-css/imagenes/colapso-margenes-css.png"
             alt="colapso-de-margenes-en-css"
           />
         </picture>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           Posicionamiento
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           La propiedad de CSS position o posicionamiento ayuda a ubicar
           elementos en un espacio determinado. En CSS existen diferentes tipos
           de position:
@@ -984,15 +955,15 @@
         </p>
         <picture class="container-main__picture">
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/html-y-css/imagenes/z-index.gif"
             alt="z-index-css"
           />
         </picture>
         <span class="container-main__topic">Unidades de medida</span>
         <p class="container-main__text container-main__text--bottom">
-          Las medidas en CSS se emplean para definir: altura,
-          anchura, m&aacute;rgenes de los elementos, bordes y para establecer el
+          Las medidas en CSS se emplean, entre otras, para definir altura,
+          anchura y m&aacute;rgenes de los elementos y para establecer el
           tama&ntilde;o de letra del texto. Todas las medidas se indican como un
           valor númerico entero o decimal seguido de una unidad de medida (sin
           ning&uacute;n espacio en blanco entre el número y la unidad de
@@ -1027,7 +998,7 @@
         </p>
         <picture class="container-main__picture">
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/html-y-css/imagenes/responsive-website-design.jpeg"
             alt="Responsive-design"
           />
@@ -1041,9 +1012,7 @@
           esclabe. Tambi&eacute;n ayudan a realizar buenas pr&aacute;cticas de
           lineamientos, documentaci&oacute;n, est&aacute;ndares y componentes.
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
-          Arquitecturas de CSS:
-        </p>
+        <p class="container-main__text">Arquitecturas de CSS:</p>
         <ul class="container-main__list">
           <li>OOCSS (Oriented Object CSS)</li>
           <li>BEM (Bloque, Elemento, Modificador)</li>

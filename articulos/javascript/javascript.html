@@ -14,16 +14,20 @@
     <link rel="stylesheet" href="/estilos/articulos.css" />
     <link
       rel="stylesheet"
+      href="/estilos/articulos-2.css"
+      media="screen and (min-width: 580px)"
+    />
+    <link
+      rel="stylesheet"
       href="/estilos/articulos-laptop.css"
-      media="screen and (min-width: 1280px)"
+      media="screen and (min-width: 720px)"
     />
     <link
       rel="stylesheet"
       href="/estilos/articulos-laptop-l.css"
-      media="screen and (min-width: 1600px)"
+      media="screen and (min-width: 1080px)"
     />
   </head>
-
   <body>
     <header class="container-header">
       <div class="container-header__box">
@@ -37,37 +41,37 @@
         <span class="container-main__topic">
           Introducci&oacute;n a JavaScript
         </span>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿Qu&eacute; es JavaScript?
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           JavaScript es un lenguaje de programaci&oacute;n din&aacute;mico que
           tiene la capacidad de ser utilizado en muchos dispositivos diferentes.
           Puede usarse en ordenadores personales, servidores web y
           tel&eacute;fonos intelegintes. Es un lenguaje interpretado, orientado
           a objetos, débilmente tipado y din&aacute;mico.
         </p>
-        <p class="container-main__text container-main__text--bottom">
+        <p class="container-main__text">
           JavaScript se emplea com&uacute;nmente para el desarrollo web
           front-end y m&aacute;s recientemente para algunos desarrollos back-end
           a trav&eacute;s de frameworks como Node.js o Next.js. Tiene
           caracter&iacute;sticas como la programaci&oacute;n orientada a
           objetos, funciones y herencia basada en prototipos.
         </p>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿C&oacute;mo nace JavaScript?
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Nace con la necesidad de generar dinamismo en las p&aacute;ginas web y
           que a su vez tanto los usuarios como las empresas pudieran interactuar
           unos con otros. Fue creado por Brendan Eich en 1995 y se convirtio en
           un est&aacute;ndar oficial del World Wide Web Consortium (W3C) en
           1997.
         </p>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿Por qu&eacute; JavaScript es un lenguaje din&aacute;mico?
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           JavaScript corre directamente en la etapa de Runtime, sin una etapa de
           compilaci&oacute;n previa. Esto permite probar el c&oacute;digo
           inmediatamente; pero tambi&eacute;n es lo que hace que los errores no
@@ -75,7 +79,7 @@
           primera vista, cuando se analiza el c&oacute;digo, es muy probable que
           no sea lo que se va a obtener cuando el programa se ejecute.
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           JavaScript permite declarar (por ejemplo) variables cuyo valor (y
           tipo) solo se conocer&aacute; al momento de su ejecuci&oacute;n en
           funci&oacute;n de las condiciones dadas al momento de correrlo en un
@@ -83,10 +87,10 @@
           compilar&aacute;n en c&oacute;digo ejecutable a menos que todos los
           valores (o tipos de valores) se conozcan por adelantado.
         </p>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿Por qu&eacute; JavaScript es d&eacute;bilemente tipado?
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Por que los tipos de datos no est&aacute;n bien definidos en el
           lenguaje y permite, por ejemplo, operaciones entre n&uacute;meros y
           letras. Esto sucede porque el lenguaje asume tipos de datos que no
@@ -96,32 +100,32 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/tipado-js-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/tipado-js-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/tipado-js.png"
             alt="tipado-javascript"
           />
         </picture>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿Es JavaScript un lenguaje interpretado?
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           S&iacute;, y la raz&oacute;n es que el navegador lee l&iacute;nea por
           l&iacute;nea el c&oacute;digo, el cual indica lo que tiene que ir
           haciendo, sin la necesidad de compilar. Todo esto es controlado por el
           motor de JavaScript V8 del navegador.
         </p>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿Qu&eacute; significa que JavaScript es Backwards Compatible?
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Todas las funciones nuevas que se agregan para JavaScript no
           dañar&aacute;n el trabajo ya hecho previamente, pero no se prodrá
           utilizar en el entorno de trabajo inmediatamente. Para solucionar esto
@@ -129,9 +133,7 @@
           del lenguaje, pero lo transforma a una versi&oacute;n que el navegador
           pueda entender.
         </p>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿Por qu&eacute; JavaScript?
         </p>
         <ol class="container-main__list">
@@ -163,9 +165,7 @@
             el Back-end.
           </li>
         </ol>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--top-bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           Tipos de datos en JavaScript
         </p>
         <p class="container-main__text">
@@ -173,9 +173,7 @@
           son: data que se guardan en memoria y tareas (funciones) que se
           realizaran con esa data.
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
-          Tipos primitivos:
-        </p>
+        <p class="container-main__text">Tipos primitivos:</p>
         <ul class="container-main__list">
           <li>
             <span class="container-main__text container-main__text--bold">
@@ -208,9 +206,7 @@
             tipo especial, contiene undefined.
           </li>
         </ul>
-        <p class="container-main__text container-main__text--top-bottom">
-          Tipos objetos:
-        </p>
+        <p class="container-main__text">Tipos objetos:</p>
         <ul class="container-main__list">
           <li>
             <span class="container-main__text container-main__text--bold">
@@ -239,9 +235,7 @@
             objeto global, objeto prototipo, otros.
           </li>
         </ul>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--top-bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           Operador typeof
         </p>
         <p class="container-main__text">
@@ -250,22 +244,20 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/typeof-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/typeof-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/typeof.png"
             alt="operador-typeof-javascript"
           />
         </picture>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿Qu&eacute; es una variable en JavaScript?
         </p>
         <p class="container-main__text">
@@ -277,20 +269,20 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/variable-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/variable-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/variable.png"
             alt="variables-en-javascript"
           />
         </picture>
-        <p class="container-main__text container-main__text--bottom">
+        <p class="container-main__text">
           Buenas pr&aacute;cticas para la declaraci&oacute;n de variables:
         </p>
         <ol class="container-main__list">
@@ -315,12 +307,10 @@
             lenguaje.
           </li>
         </ol>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--top-bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿Qu&eacute; es una funci&oacute;n en JavaScript?
         </p>
-        <p class="container-main__text container-main__text--bottom">
+        <p class="container-main__text">
           Una funci&oacute;n es un trozo o bloque de c&oacute;digo reutilizable
           en el que hay un conjunto de instrucciones, dicho c&oacute;digo solo
           se ejecuta cuando se llama o invoca dicha funci&oacute;n. Las
@@ -339,28 +329,28 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/funciones-javascript-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/funciones-javascript-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/funciones-javascript.png"
             alt="funciones-en-javascript"
           />
         </picture>
-        <span class="container-main__topic container-main__topic--bottom">
-          Bases de JavaScript
-        </span>
-        <p class="container-main__text container-main__text--bold">Scope</p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <span class="container-main__topic"> Bases de JavaScript </span>
+        <p class="container-main__topic container-main__topic--subtopic">
+          Scope
+        </p>
+        <p class="container-main__text">
           El scope es el alcance que una variable tiene en el c&oacute;digo,
           decide a qu&eacute; variables tiene acceso cada parte del
           c&oacute;digo desarrollado. Existen dos tipos de scope, el escope
@@ -375,15 +365,15 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/scope-local-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/scope-local-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/scope-local.png"
             alt="scope-local-en-javascript"
           />
@@ -396,15 +386,15 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/scope-global-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/scope-global-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/scope-global.png"
             alt="scope-global-en-javascript"
           />
@@ -418,15 +408,15 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/scope-lcv-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/scope-lcv-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/scope-lcv.png"
             alt="let-const-y-var-scope-en-javascript"
           />
@@ -440,27 +430,29 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/scope-funciones-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/scope-funciones-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/scope-funciones.png"
             alt="funciones-y-scope-en-javascript"
           />
         </picture>
-        <p class="container-main__text container-main__text--bold">Hoisting</p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__topic container-main__topic--subtopic">
+          Hoisting
+        </p>
+        <p class="container-main__text">
           Hoisting es un t&eacute;rmino para describir que las declaraciones de
           variables y funciones son desplazadas a la parte superior del scope
           m&aacute;s cercano, scope global o local. Esto sucede solamente con
           las declaraciones y no con las asignaciones.
         </p>
-        <p class="container-main__text container-main__text--bottom">
+        <p class="container-main__text">
           El c&oacute;digo permanece igual, solo es una interpretaci&oacute;n
           del motor de JavaScript. En el caso de las variables solamente sucede
           cuando son declaradas con la palabra reservada var. Lo que sucede es
@@ -474,15 +466,15 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/hoisting-var-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/hoisting-var-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/hoisting-var.png"
             alt="hoisting-var-en-javascritp"
           />
@@ -494,19 +486,19 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/hoisting-var-declaracion-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/hoisting-var-declaracion-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/hoisting-var-declaracion.png"
             alt="hoisting-var-declaracion-en-javascritp"
           />
@@ -517,19 +509,19 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/hoisting-funciones-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/hoisting-funciones-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/hoisting-funciones.png"
             alt="hoisting-funciones-en-javascritp"
           />
@@ -543,33 +535,33 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/hoisting-funciones-declaracion-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/hoisting-funciones-declaracion-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/hoisting-funciones-declaracion.png"
             alt="hoisting-funciones-declaracion-normal-en-javascritp"
           />
         </picture>
-        <p class="container-main__text container-main__text--bottom">
+        <p class="container-main__text">
           El hoisting solo sucede con las declaraciones de variables y
           funciones, por lo que se recomienda declarar las variables y funciones
           lo m&aacute;s arriba posible del c&oacute;digo, ya que se considera
           buena pr&aacute;ctica.
         </p>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           Coerci&oacute;n
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           La coerci&oacute;n consiste en transformar de un tipo de dato a otro
           de una variable. Existen dos tipos de coerci&oacute;n:
           impl&iacute;cita y expl&iacute;cita.
@@ -584,19 +576,19 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/coercion-implicita-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/coercion-implicita-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/coercion-implicita.png"
             alt="coercion-implicita-javascritp"
           />
@@ -610,26 +602,24 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/coercion-explicita-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/coercion-explicita-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/coercion-explicita.png"
             alt="coercion-explicita-javascritp"
           />
         </picture>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           Valores: Truthy y Falsy.
         </p>
         <p class="container-main__text">
@@ -641,24 +631,24 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/truthy-falsy-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/truthy-falsy-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/truthy-falsy.png"
             alt="valores-truthy-y-falsy-en-javascript"
           />
         </picture>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           Operadores: asignaci&oacute;n, comparaci&oacute;n y
           aritm&eacute;ticos.
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Los operadores permiten manipular el valor de las variables, realizar
           operaciones matem&aacute;ticas con sus valores y comparar diferentes
           variables. De esta forma, los operadores permiten a los programas
@@ -673,19 +663,19 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/operador-asignacion-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/operador-asignacion-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/operador-asignacion.png"
             alt="operador-de-asignacion-en-javascript"
           />
@@ -702,19 +692,19 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/operadores-comparacion-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/operadores-comparacion-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/operadores-comparacion.png"
             alt="operador-de-comparacion-en-javascript"
           />
@@ -728,30 +718,28 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/operadores-aritmeticos-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/operadores-aritmeticos-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/operadores-aritmeticos.png"
             alt="operadores-artimeticos-en-javascript"
           />
         </picture>
-        <span class="container-main__topic container-main__topic--bottom">
-          Condicionales
-        </span>
-        <p class="container-main__text container-main__text--bold">
+        <span class="container-main__topic"> Condicionales </span>
+        <p class="container-main__topic container-main__topic--subtopic">
           If, else, else if.
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           En cualquier lenguaje de programaci&oacute;n, el c&oacute;digo
           necesita realizar decisiones y llevar a cabo diferentes acciones
           acordes dependiendo de distintas entradas. Los condicionales son
@@ -766,15 +754,15 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/if-else-js-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/if-else-js-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/if-else-js.png"
             alt="if-else-javascript"
           />
@@ -789,26 +777,24 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/operador-condicional-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/operador-condicional-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/operador-condicional.png"
             alt="operador-condicional-javascript"
           />
         </picture>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           Switch
         </p>
         <p class="container-main__text">
@@ -821,30 +807,26 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/switch-js-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/switch-js-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/switch-js.png"
             alt="switch-javascript"
           />
         </picture>
-        <span class="container-main__topic container-main__topic--bottom">
-          Arrays
-        </span>
+        <span class="container-main__topic"> Arrays </span>
         <p class="container-main__text">
           Un array es una estructura de datos (objetos tipo lista de alto nivel)
           que permite almacenar una serie de datos localizados por
           &iacute;ndices y separados por comas.
         </p>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--top-bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿Qu&eacute; son los &iacute;ndices?
         </p>
         <p class="container-main__text">
@@ -855,22 +837,20 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/array-js-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/array-js-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/array-js.png"
             alt="array-javascript"
           />
         </picture>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--top-bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿C&oacute;mo acceder a los elementos de un array?
         </p>
         <p class="container-main__text">
@@ -885,24 +865,22 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/arrays-elementos-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/arrays-elementos-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/arrays-elementos.png"
             alt="acceder-a-elementos-de-un-array-en-javascript"
           />
         </picture>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿Qu&eacute; es la mutabilidad en los arrays?
         </p>
         <p class="container-main__text">
@@ -913,27 +891,27 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/arrays-elementos-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/arrays-mutabilidad-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/arrays-mutabilidad.png"
             alt="arrays-mutabilidad-en-javascript"
           />
         </picture>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           M&eacute;todos de arrays: push, unshift, pop, shift e indexOf.
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Existen m&eacute;todos mutables, es decir, que cambian el array
           original. Los m&eacute;todos de arrays son funcionalidades extras. Son
           semejantes a las funciones, pero se acceden mediante la
@@ -950,15 +928,15 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/arrays-metodos-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/arrays-metodos-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/arrays-metodos.png"
             alt="arrays-metodos-en-javascript"
           />
@@ -970,31 +948,27 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/arrays-indexof-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/arrays-indexof-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/arrays-indexof.png"
             alt="arrays-metodo-indexof-en-javascript"
           />
         </picture>
-        <span class="container-main__topic container-main__topic--code">
-          Loops
-        </span>
-        <p class="container-main__text container-main__text--top-bottom">
+        <span class="container-main__topic"> Loops </span>
+        <p class="container-main__text">
           Un bucle (loop) o ciclo repetitivo es una estructura de control que
           permite realizar una o varias instrucciones mientras una
           condici&oacute;n sea verdadera. Los bucles ofrecen una forma
           r&aacute;pida y sencilla de hacer algo repetidamente.
         </p>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           Ciclo for
         </p>
         <p class="container-main__text">
@@ -1004,15 +978,15 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/ciclo-for-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/ciclo-for-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/ciclo-for.png"
             alt="sintaxis-ciclo-for-javascript"
           />
@@ -1029,22 +1003,20 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/for-ejemplo-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/for-ejemplo-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/for-ejemplo.png"
             alt="ciclo-for-ejemplo-javascript"
           />
         </picture>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           Ciclo for...of
         </p>
         <p class="container-main__text">
@@ -1054,15 +1026,15 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/ciclo-for-of-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/ciclo-for-of-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/ciclo-for-of.png"
             alt="ciclo-for-of-javascript"
           />
@@ -1075,29 +1047,27 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/for-of-ejemplo-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/for-of-ejemplo-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/for-of-ejemplo.png"
             alt="for-of-ejemplo-javascript"
           />
         </picture>
-        <p class="container-main__text container-main__text--bottom">
+        <p class="container-main__text">
           Una limitaci&oacute;n del ciclo for...of es que solo accede al valor
           de cada uno de los elementos de un array. Por consiguiente, si se
           quiere cambiar el array original, no se podr&aacute;, ya que se
           necesita el &iacute;ndice para acceder y cambiar los valores de cada
           elemento respectivamente.
         </p>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--top-bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           Ciclo while
         </p>
         <p class="container-main__text">
@@ -1109,22 +1079,20 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/ciclo-while-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/ciclo-while-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/ciclo-while.png"
             alt="ciclo-while-javascript"
           />
         </picture>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--top-bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           Ciclo do..while
         </p>
         <p class="container-main__text">
@@ -1136,25 +1104,21 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/ciclo-do-while-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/ciclo-do-while-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/ciclo-do-while.png"
             alt="ciclo-do-while-javascript"
           />
         </picture>
-        <span class="container-main__topic container-main__topic--code">
-          Objetos
-        </span>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--top-bottom"
-        >
+        <span class="container-main__topic"> Objetos </span>
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿Qu&eacute; es un objeto en JavaScript?
         </p>
         <p class="container-main__text">
@@ -1165,9 +1129,7 @@
           Tambi&eacute;n es importante saber que los arrays son objetos en
           JavaScript.
         </p>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--top-bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           ¿Qu&eacute; son los atributos y m&eacute;todos?
         </p>
         <p class="container-main__text">
@@ -1180,22 +1142,20 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/objeto-js-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/objeto-js-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/objeto-js.png"
             alt="objeto-en-javascript"
           />
         </picture>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           C&oacute;mo acceder a los valores de un objeto
         </p>
         <p class="container-main__text">
@@ -1206,26 +1166,24 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/acceder-valores-obj-js-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/acceder-valores-obj-js-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/acceder-valores-obj-js.png"
             alt="acceder-a-valores-de-objetos-en-javascript"
           />
         </picture>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           C&oacute;mo a&ntilde;adir propiedades a un objeto
         </p>
         <p class="container-main__text">
@@ -1235,26 +1193,24 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/agregar-propiedad-obj-js-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/acceder-valores-obj-js-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/agregar-propiedad-obj-js.png"
             alt="agregar-propiedad-a-objeto-en-javascript"
           />
         </picture>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           C&oacute;mo modificar propiedades de un objeto
         </p>
         <p class="container-main__text">
@@ -1264,26 +1220,24 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/modificar-propiedad-obj-js-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/modificar-propiedad-obj-js-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/modificar-propiedad-obj-js.png"
             alt="modificar-propiedad-de-objeto-en-javascript"
           />
         </picture>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           C&oacute;mo eliminar propiedades de un objeto
         </p>
         <p class="container-main__text">
@@ -1292,26 +1246,24 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/eliminar-propiedad-obj-js-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/eliminar-propiedad-obj-js-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/eliminar-propiedad-obj-js.png"
             alt="eliminar-propiedad-de-objeto-en-javascript"
           />
         </picture>
-        <p
-          class="container-main__text container-main__text--bold container-main__text--bottom"
-        >
+        <p class="container-main__topic container-main__topic--subtopic">
           El objeto contexto this
         </p>
         <p class="container-main__text">
@@ -1327,25 +1279,23 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/this-js-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/this-js-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/this-js.png"
             alt="contexto-this-en-javascript"
           />
         </picture>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           Funci&oacute;n constructora
         </p>
-        <p
-          class="container-main__text contian container-main__text--top-bottom"
-        >
+        <p class="container-main__text">
           Existe un problema al momento de construir varios objetos a partir de
           un c&oacute;digo base (clase), los atributos deben cambiar con
           respecto a la nueva informaci&oacute;n. Para esto se utiliza una
@@ -1365,34 +1315,32 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/funcion-constructora-js-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/funcion-constructora-js-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/funcion-constructora-js.png"
             alt="funcion-constructora-en-javascript"
           />
         </picture>
-        <span class="container-main__topic container-main__topic--code">
-          M&eacute;todos de Arrays
-        </span>
-        <p class="container-main__text container-main__text--top-bottom">
+        <span class="container-main__topic"> M&eacute;todos de Arrays </span>
+        <p class="container-main__text">
           Existen m&eacute;todos de arrays para recorrerlos y devolver un valor
           o un array con nuevos resultados.
         </p>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           M&eacute;todo filter
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           El m&eacute;todo filter consiste en crear un nuevo array (no modifica
           el que ya est&aacute; creado) a partir de los elementos originales
           filtrados mediante una funci&oacute;n (callback) que indica la
@@ -1401,25 +1349,25 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/metodo-filter-js-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/metodo-filter-js-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/metodo-filter-js.png"
             alt="metodo-filter-en-javascript"
           />
         </picture>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           M&eacute;todo map
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           El m&eacute;todo map es inmutable y consiste en crear un nuevo array
           (no modifica el que ya est&aacute; creado) a partir de los elementos
           originales transformados mediante una funci&oacute;n (callback). Mapea
@@ -1427,23 +1375,23 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/metodo-map-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/metodo-map-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/metodo-map.png"
             alt="metodo-map-en-javascript"
           />
         </picture>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           M&eacute;todo find
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           El m&eacute;todo find consiste en encontrar el primer elemento de un
           array que cumpla con la condici&oacute;n especificada en la
           funci&oacute;n (callback). Si ning&uacute;n elemento cumple con la
@@ -1452,23 +1400,23 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/metodo-find-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/metodo-find-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/metodo-find.png"
             alt="metodo-find-en-javascript"
           />
         </picture>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           M&eacute;todo forEach
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           El m&eacute;todo forEach de los arrays consiste en ejecutar una
           funci&oacute;n (callback) para cada uno de los elementos iterados.
           Iterar significa repetir una acci&oacute;n varias veces. Este
@@ -1478,23 +1426,23 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/metodo-forEach-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/metodo-forEach-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/metodo-forEach.png"
             alt="metodo-forEach-en-javascript"
           />
         </picture>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           M&eacute;todo some
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           El m&eacute;todo some es inmutable y consiste en retornar un valor
           l&oacute;gico verdadero si existe al menos un elemento que cumpla la
           condici&oacute;n establecida en la funci&oacute;n (callback). El
@@ -1502,37 +1450,35 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/metodo-some-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/metodo-some-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/metodo-some.png"
             alt="metodo-some-en-javascript"
           />
         </picture>
-        <span class="container-main__topic container-main__topic--code">
-          Manipulaci&oacute;n del DOM
-        </span>
-        <p class="container-main__text container-main__text--top-bottom">
+        <span class="container-main__topic"> Manipulaci&oacute;n del DOM </span>
+        <p class="container-main__text">
           Las siglas DOM significan Document Object Model, o lo que es lo mismo,
           la estructura del documento HTML. Una p&aacute;gina HTML est&aacute;
           formada por m&uacute;ltiples etiquetas HTML, anidadas una dentro de
           otra, formando un &aacute;rbol de etiquetas relacionadas entre
           s&iacute;, que se denomina &aacute;rbol DOM (o simplemente DOM).
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           En JavaScript, cuando se habla del DOM se refiere a la estructura del
           documento HTML, que se puede modificar de forma din&aacute;mica desde
           JavaScript, a&ntilde;adiendo nuevas etiquetas, modificando o
           eliminando otras, cambiando sus atributos HTML; a&ntilde;adiendo
           clases, cambiando el contenido de textos, etc.
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Gracias a JavaScript el cambiar la estructura del documento HTML o DOM
           se puede automatizar, incluso indicando que se realicen cambios cuando
           el usuario haga acciones determinadas, como por ejemplo: pulsar un
@@ -1541,15 +1487,15 @@
         </p>
         <picture class="container-main__picture">
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/DOM.png"
             alt="DOM-en-javascript"
           />
         </picture>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           C&oacute;mo conectar JavaScript con HTML
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Existen varias formas de ejecutar JavaScript, pero es necesario un
           entorno de ejecuci&oacute;n y se puede desarrollar tanto para frontend
           como para el backend. El entorno de desarrollo para frontend puede ser
@@ -1560,23 +1506,23 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/etiqueta-script-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/etiqueta-script-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/etiqueta-script.png"
             alt="conectar-javascript-con-HTML"
           />
         </picture>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           Leyendo HTML desde JavaScript
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           En JavaScript, la forma de acceder al DOM es a trav&eacute;s de un
           objeto llamado document, que representa el &aacute;rbol DOM de la
           p&aacute;gina o pestaña del navegador donde se encuentra el usuario.
@@ -1587,38 +1533,38 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/leyendo-html-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/leyendo-html-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/leyendo-html.png"
             alt="leyendo-html-desde-javascript"
           />
         </picture>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/leyendo-html-js-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/leyendo-html-js-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/leyendo-html-js.png"
             alt="leyendo-html-desde-javascript-ejemplo"
           />
         </picture>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           Escribir HTML desde JavaScript
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           La manipulaci&oacute;n del DOM desde JavaScript consiste en editar e
           incluso crear nuevos elementos para el documento HMLT utilizando
           JavaScript. Tiene sentido que la manipulaci&oacute;n del DOM se haga
@@ -1628,44 +1574,44 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/modificando-html-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/modificando-html-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/modificando-html.png"
             alt="mostrando-html-desde-javascript"
           />
         </picture>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/modificando-html-js-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/modificando-html-js-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/modificando-html-js.png"
             alt="mostrando-html-desde-javascript-ejemplo"
           />
         </picture>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           Eventos en JavaScript
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Los eventos de JavaScript permiten la interacci&oacute;n entre las
           aplicaciones JavaScript y los usuarios. Cada vez que se pulsa un
           bot&oacute;n, se produce un evento. Cuando se pulsa una tecla,
@@ -1674,7 +1620,7 @@
           cada vez que se carga una p&aacute;gina, tambi&eacute;n se produce un
           evento.
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           El evento onclick en JavaScript permite ejecutar una funci&oacute;n
           cuando se da clic a un elemento. El evento onchange llama una
           funci&oacute;n cuando el usuario cambia la opci&oacute;n o valor de un
@@ -1683,40 +1629,40 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="/articulos/javascript/imagenes/eventos-js-laptop-l.png"
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/eventos-js-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/eventos-js.png"
             alt="eventos-en-javascript"
           />
         </picture>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/evento-js-ejemplo-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="/articulos/javascript/imagenes/evento-js-ejemplo-laptop.png"
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/evento-js-ejemplo.png"
             alt="eventos-en-javascript-ejemplo"
           />
         </picture>
-        <p class="container-main__text container-main__text--bold">
+        <p class="container-main__topic container-main__topic--subtopic">
           Escuchar eventos desde JavaScript
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           Los escuchadores de eventos se encuentran entre las estructuras de
           JavaScript que se usan m&aacute;s frecuentemente en el diseño web.
           Estos permiten a&ntilde;adir funcionalidad interactiva a los elementos
@@ -1724,7 +1670,7 @@
           p&aacute;gina web, como cuando el usuario hace clic en un
           bot&oacute;n, cuando presiona una tecla o cuando se carga un elemento.
         </p>
-        <p class="container-main__text container-main__text--top-bottom">
+        <p class="container-main__text">
           El m&eacute;todo addEventListener(), es un escuchador que indica al
           navegador que est&eacute; atento a la interacci&oacute;n del usuario.
           La ventaja es que se escribe totalmente en el archivo de JavaScript,
@@ -1732,38 +1678,38 @@
         </p>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/addeventlistener-js-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/addeventlistener-js-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/addeventlistener-js.png"
             alt="escuchar-eventos-en-javascript"
           />
         </picture>
         <picture class="container-main__picture">
           <source
-            media="(min-width:1600px)"
+            media="(min-width:1080px)"
             srcset="
               /articulos/javascript/imagenes/addeventlistener-js-ejemplo-laptop-l.png
             "
           />
           <source
-            media="(min-width:1280px)"
+            media="(min-width:580px)"
             srcset="
               /articulos/javascript/imagenes/addeventlistener-js-ejemplo-laptop.png
             "
           />
           <img
-            class="container-main__image container-main__image--code"
+            class="container-main__image"
             src="/articulos/javascript/imagenes/addeventlistener-js-ejemplo.png"
             alt="escuchar-eventos-en-javascript-ejemplo"
           />

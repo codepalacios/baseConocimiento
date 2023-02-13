@@ -18,9 +18,9 @@ html {
 /* Media Mobile */
 .container-header {
   background-color: var(--primary-blue);
-  width: 46rem;
+  width: 44rem;
   height: 7rem;
-  margin: 7rem auto 4rem;
+  margin: 4rem auto 4rem;
   padding: 2rem;
   border-radius: 1rem;
   display: flex;
@@ -32,11 +32,11 @@ html {
   font-style: italic;
 }
 .container-main {
-  width: 46rem;
+  width: 44rem;
   height: 30rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 46rem;
+  grid-template-columns: 44rem;
 }
 .container-main__link {
   background-color: var(--grey);
