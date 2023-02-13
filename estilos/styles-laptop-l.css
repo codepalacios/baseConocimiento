@@ -1,5 +1,5 @@
 /* Media Laptop L */
-@media (min-width: 1600px) {
+@media (min-width: 1080px) {
   .container-header {
     width: 86rem;
   }
